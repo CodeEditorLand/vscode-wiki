@@ -1,4 +1,4 @@
-This guide will show you how you can configure your development setup to automatically sign git commits using GPG and link your GPG key with GitHub.
+This guide will show you how you can configure your development setup to automatically sign git ecommits using GPG and link your GPG key with GitHub.
 
 # Prerequisites
 
