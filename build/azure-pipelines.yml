@@ -1,0 +1,52 @@
+pr: none
+trigger:
+  branches:
+    include:
+      - main
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - main
+
+stages:
+  - stage: SyncWikiStage
+    displayName: Sync Wiki
+    pool: 1es-ubuntu-20.04-x64
+    jobs:
+      - job: SyncWikiJob
+        displayName: Sync Wiki
+        steps:
+          - checkout: self
+            persistCredentials: true
+
+          - pwsh: |
+              $result = git config --get-regexp .*extraheader ^AUTHORIZATION:
+              $token = $result -split "AUTHORIZATION: basic " | Select-Object -Last 1
+              $pat = [System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String($token)) -split ":" | Select-Object -Last 1
+
+              "machine github.com
+              login vscode
+              password $pat" > ~/.netrc
+
+              git config user.email "vscode@microsoft.com"
+              git config user.name "VSCode"
+            displayName: Prepare tooling
+
+          - script: |
+              set -e
+              git remote add upstream https://github.com/Microsoft/vscode.wiki.git
+              git fetch upstream
+
+              echo 'Merging in vscode.wiki'
+              git merge upstream/master
+              
+              echo 'Pushing to vscode-wiki'
+              git push origin HEAD:$(Build.SourceBranch)
+
+              echo 'Pushing to vscode.wiki'
+              git push upstream HEAD:master
+
+              echo 'Done!'
+            displayName: Sync vscode-wiki & vscode.wiki
