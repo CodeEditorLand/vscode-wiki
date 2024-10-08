@@ -98,18 +98,17 @@ emitting of events, reading of contributions etc.
 -   Have and execute code like below
 -   The JavaScript Profiler tab will be populated with the profiles
 
-### Profile Startup
-
-You can start VS Code with a `--prof-startup` flag and it will automatically
-capture a profile of the main, renderer, and extension host process. Once it is
-done it asks you to restart and stores the files in your home directory. This is
-great to analyse the whole startup, esp of the built product.
-
 ```ts
 console.profile('Hi');
 // some code that you want to drill into
 console.profileEnd('Hi');
 ```
+
+
+### Profile Startup
+
+You can start VS Code with a `--prof-startup` flag and it will automatically capture a profile of the main, renderer, and extension host process. Once it is done it asks you to restart and stores the files in your home directory. This is great to analyse the whole startup, esp of the built product. 
+
 
 ### Delayed Services
 
