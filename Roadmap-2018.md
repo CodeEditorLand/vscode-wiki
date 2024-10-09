@@ -211,8 +211,6 @@ environment.
         closely.
 -   :runner: Refresh all of our dated overview videos.
 
-
-
 ## Summary
 
 These are examples of just some of the work we will be focusing on in the next 6

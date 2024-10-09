@@ -104,11 +104,12 @@ console.profile('Hi');
 console.profileEnd('Hi');
 ```
 
-
 ### Profile Startup
 
-You can start VS Code with a `--prof-startup` flag and it will automatically capture a profile of the main, renderer, and extension host process. Once it is done it asks you to restart and stores the files in your home directory. This is great to analyse the whole startup, esp of the built product. 
-
+You can start VS Code with a `--prof-startup` flag and it will automatically
+capture a profile of the main, renderer, and extension host process. Once it is
+done it asks you to restart and stores the files in your home directory. This is
+great to analyse the whole startup, esp of the built product.
 
 ### Delayed Services
 
