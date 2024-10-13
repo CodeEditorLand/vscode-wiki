@@ -22,7 +22,7 @@ digraph finite_state_machine {
 }
 ``` -->
 
-![gh-triaged](https://user-images.githubusercontent.com/4674940/67361352-3b582580-f51d-11e9-9f6c-4b62cca23170.png)
+![`gh-triaged`](https://user-images.githubusercontent.com/4674940/67361352-3b582580-f51d-11e9-9f6c-4b62cca23170.png)
 
 ## Our Triaging Flow
 
@@ -52,7 +52,7 @@ digraph finite_state_machine {
 }
 ``` -->
 
-![gh-issue-flow](https://user-images.githubusercontent.com/4674940/67361378-4f038c00-f51d-11e9-981e-f0b6964f27ce.png)
+![`gh-issue-flow`](https://user-images.githubusercontent.com/4674940/67361378-4f038c00-f51d-11e9-981e-f0b6964f27ce.png)
 
 The chart uses three major states. They are easily identifiable:
 
@@ -82,7 +82,7 @@ We close issues for the following reasons:
 | The issue is not related to the goals of our project and/or therefore unactionable | `*off-topic`                        |
 | The issue does not contain any valid or useful information or was unintended.      | `invalid`                           |
 | Given the information we have we can't reproduce the issue.                        | `*not-reproducible`                 |
-| The feature request is out of scope. (See [below](#managing-feature-requests))     | `*out-of-scope`                     |
+| The feature request is out of scope. (See [`below`](#managing-feature-requests))     | `*out-of-scope`                     |
 | The issue is tracked in a repository we rely on.                                   | `upstream-issue-linked`, `upstream` |
 
 We close issues with the help of a bot that responds to a particular comment
@@ -95,7 +95,7 @@ If an issue misses information that we need to understand the issue, we assign
 the `needs more info` label. We usually add the `/needsMoreInfo` comment to the
 issue which lets the bot add the label as well as a comment with links to
 documentation. If the issue is a performance issue we ask you to follow
-[this documentation](https://github.com/Microsoft/vscode/wiki/Performance-Issues).
+[`this documentation`](https://github.com/Microsoft/vscode/wiki/Performance-Issues).
 
 The bot is monitoring all issues labeled `needs more info`. If we don't receive
 the needed information within 7 days the bot closes the issue.
@@ -107,16 +107,16 @@ yellow. Bugs are grey with a touch of red.
 
 | Type                                                                                                                                                           | Description                                                                                          |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| [`needs more info`](https://github.com/microsoft/vscode/labels/needs%20more%20info)                                                                            | not possible to assign a type label due to missing information; see [above](#requesting-information) |
-| [`bug`](https://github.com/microsoft/vscode/labels/bug)                                                                                                        | the implementation of a feature is not correct                                                       |
-| [`feature-request`](https://github.com/microsoft/vscode/labels/feature-request)                                                                                | request for a new feature                                                                            |
-| [`under-discussion`](https://github.com/microsoft/vscode/labels/under-discussion)                                                                              | not decided whether the issue is a bug or feature                                                    |
-| [`debt`](https://github.com/microsoft/vscode/labels/debt)                                                                                                      | improve the implementation/architecture                                                              |
-| [`*question`](https://github.com/microsoft/vscode/labels/%2Aquestion)                                                                                          | we should direct questions to StackOverflow                                                          |
-| [`upstream`](https://github.com/microsoft/vscode/labels/upstream), [`upstream-issue-linked`](https://github.com/microsoft/vscode/labels/upstream-issue-linked) | an issue used to track an issue in an upstream component                                             |
-| [`electron`](https://github.com/microsoft/vscode/labels/electron)                                                                                              | an issue with electron                                                                               |
-| [`engineering`](https://github.com/microsoft/vscode/labels/engineering)                                                                                        | issues related to our engineering system or our processes                                            |
-| [`polish`](https://github.com/microsoft/vscode/labels/polish)                                                                                                  | a feature could be improved, but not necessarily a bug                                               |
+| [`needs more info`](https://github.com/microsoft/vscode/labels/needs%20more%20info)                                                                            | not possible to assign a type label due to missing information; see [above`](#requesting-information) |
+| [`bug``](https://github.com/microsoft/vscode/labels/bug)                                                                                                        | the implementation of a feature is not correct                                                       |
+| [`feature-request``](https://github.com/microsoft/vscode/labels/feature-request)                                                                                | request for a new feature                                                                            |
+| [`under-discussion``](https://github.com/microsoft/vscode/labels/under-discussion)                                                                              | not decided whether the issue is a bug or feature                                                    |
+| [`debt``](https://github.com/microsoft/vscode/labels/debt)                                                                                                      | improve the implementation/architecture                                                              |
+| [`*question``](https://github.com/microsoft/vscode/labels/%2Aquestion)                                                                                          | we should direct questions to StackOverflow                                                          |
+| [`upstream`](https://github.com/microsoft/vscode/labels/upstream), [`upstream-issue-linked``](https://github.com/microsoft/vscode/labels/upstream-issue-linked) | an issue used to track an issue in an upstream component                                             |
+| [`electron``](https://github.com/microsoft/vscode/labels/electron)                                                                                              | an issue with electron                                                                               |
+| [`engineering``](https://github.com/microsoft/vscode/labels/engineering)                                                                                        | issues related to our engineering system or our processes                                            |
+| [`polish``](https://github.com/microsoft/vscode/labels/polish)                                                                                                  | a feature could be improved, but not necessarily a bug                                               |
 
 We also use the following **type** labels, although they don't directly play a
 role in the triaging process as they are usually assigned to issues created by
@@ -124,18 +124,18 @@ our team or by tooling.
 
 | Type                                                                                      | Description                                     |
 | ----------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| [`iteration-plan`](https://github.com/microsoft/vscode/labels/iteration-plan)             | a plan tracking the work for an iteration       |
-| [`iteration-plan-draft`](https://github.com/microsoft/vscode/labels/iteration-plan-draft) | a draft of an iteration plan                    |
-| [`plan-item`](https://github.com/microsoft/vscode/labels/plan-item)                       | an issue to organize and structure planned work |
-| [`testplan-item`](https://github.com/microsoft/vscode/labels/testplan-item)               | an issue describing how to test a feature       |
-| [`endgame-plan`](https://github.com/microsoft/vscode/labels/endgame-plan)                 | a plan tracking the endgame of an iteration     |
-| [`perf-profile`](https://github.com/microsoft/vscode/labels/perf-profile)                 | a issue representing a performance profile      |
+| [`iteration-plan``](https://github.com/microsoft/vscode/labels/iteration-plan)             | a plan tracking the work for an iteration       |
+| [`iteration-plan-draft``](https://github.com/microsoft/vscode/labels/iteration-plan-draft) | a draft of an iteration plan                    |
+| [`plan-item``](https://github.com/microsoft/vscode/labels/plan-item)                       | an issue to organize and structure planned work |
+| [`testplan-item``](https://github.com/microsoft/vscode/labels/testplan-item)               | an issue describing how to test a feature       |
+| [`endgame-plan``](https://github.com/microsoft/vscode/labels/endgame-plan)                 | a plan tracking the endgame of an iteration     |
+| [`perf-profile``](https://github.com/microsoft/vscode/labels/perf-profile)                 | a issue representing a performance profile      |
 
 ## Assigning Feature Areas
 
 Each issue must have a **feature area** label. Feature area labels are dark
 blue. See the list of feature area labels
-[here](https://github.com/Microsoft/vscode/wiki/Feature-Areas).
+[`here`](https://github.com/Microsoft/vscode/wiki/Feature-Areas).
 
 ## Assigning a Milestone
 
@@ -146,7 +146,7 @@ In addition to milestones representing our iterations and releases such as
     feature request/fix the issue. The issue is not yet assigned to a concrete
     iteration. If and when a Backlog item is scheduled for a concrete iteration
     depends on how well the issue aligns with our
-    **[Roadmap](https://github.com/microsoft/vscode/wiki/Roadmap)**. We review
+    **[`Roadmap`](https://github.com/microsoft/vscode/wiki/Roadmap)**. We review
     and update our roadmap at least once every 12 months. The Backlog helps us
     shaping our Roadmap but it is not the only source of input. Therefore, some
     Backlog items will be closed as **out-of-scope** once it becomes clear that
@@ -158,7 +158,7 @@ In addition to milestones representing our iterations and releases such as
 -   Issues assigned to **`Backlog Candidates`**: Our team does not intend to
     implement the feature request/fix the issue but wants the community to weigh
     in before we make our final decision. See also
-    [Managing Feature Requests](#managing-feature-requests).
+    [`Managing Feature Requests`](#managing-feature-requests).
 
 ## Important Issues
 
@@ -242,7 +242,7 @@ digraph finite_state_machine {
 }
 ``` -->
 
-![gh-decision-tree](https://user-images.githubusercontent.com/4674940/67361393-5e82d500-f51d-11e9-955a-6a14c00ba390.png)
+![`gh-decision-tree`](https://user-images.githubusercontent.com/4674940/67361393-5e82d500-f51d-11e9-955a-6a14c00ba390.png)
 
 To put the diagram in words:
 
@@ -260,7 +260,7 @@ If the answer is `no` we close the issue as `out-of-scope`.
 
 3. Does the functionality described in the feature request have any reasonable
    chance to be implemented in the next 24 months? 24 months is longer than our
-   [roadmap](https://github.com/Microsoft/vscode/wiki/Roadmap) which outlines
+   [`roadmap`](https://github.com/Microsoft/vscode/wiki/Roadmap) which outlines
    the next 6-12 months. Thus, there is some crystal ball reading on our part,
    and we'll most likely keep more feature requests open than what we can
    accomplish in 24 months.

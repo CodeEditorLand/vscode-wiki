@@ -1,6 +1,6 @@
 # The VS Code Roadmap 2018
 
-As [2017](https://github.com/Microsoft/vscode/wiki/Roadmap-2017) comes to an
+As [`2017`](https://github.com/Microsoft/vscode/wiki/Roadmap-2017) comes to an
 end, now is the time to look towards the future. We typically look out 6 to 12
 months, establish a set of themes we want to work towards, and then schedule
 work each milestone supporting those themes. When planning, we look at potential
@@ -124,7 +124,7 @@ include support for both client and server side debugging in the box.
 -   :runner: Continue to refine and improve to Language Server Protocol with
     support from the community.
 -   [x] Enable
-        [proposed protocol additions](https://github.com/Microsoft/language-server-protocol/blob/master/contributing.md)
+        [`proposed protocol additions`](https://github.com/Microsoft/language-server-protocol/blob/master/contributing.md)
         from the community.
 
 ### Debug Adaptor Protocol
@@ -145,7 +145,7 @@ include support for both client and server side debugging in the box.
 ### TypeScript (and JavaScript)
 
 We closely collaborate with TypeScript, see also the
-[TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap)
+[`TypeScript roadmap`](https://github.com/Microsoft/TypeScript/wiki/Roadmap)
 
 -   [x] Organize imports, remove unused imports
 -   [x] Tag completion in `jsx` and `tsx` files
@@ -216,5 +216,5 @@ environment.
 These are examples of just some of the work we will be focusing on in the next 6
 to 12 months. We continuously tune the plan based on feedback and we will
 provide more detail in each of our
-[monthly iteration plans](https://github.com/Microsoft/vscode/wiki/Iteration-Plans).
+[`monthly iteration plans`](https://github.com/Microsoft/vscode/wiki/Iteration-Plans).
 Please follow along and let us know what you think!

@@ -1,6 +1,6 @@
 # The VS Code Roadmap 2019 - UPDATED
 
-As [2018](https://github.com/Microsoft/vscode/wiki/Roadmap-2018) has come to an
+As [`2018`](https://github.com/Microsoft/vscode/wiki/Roadmap-2018) has come to an
 end, now is the time to look towards the future. We typically look out 6 to 12
 months and establish topics we want to work on.
 
@@ -46,7 +46,7 @@ Our roadmap covers the following themes:
 
     -   Load less code on start-up and investigate improving the workbench
         restoration time by expanding on the
-        [rapid render](https://code.visualstudio.com/updates/v1_26#_rapid-render)
+        [`rapid render`](https://code.visualstudio.com/updates/v1_26#_rapid-render)
         approach.
     -   [x] Implement a new tree widget that scales better
     -   Adopt the new tree widget across the workbench:
@@ -66,9 +66,9 @@ Our roadmap covers the following themes:
 
 -   Workbench layout
     -   Support for detachable workbench parts is our most upvoted
-        [feature request](https://github.com/Microsoft/vscode/issues/10121)
+        [`feature request`](https://github.com/Microsoft/vscode/issues/10121)
         which due to
-        [architectural issues](https://github.com/Microsoft/vscode/issues/10121#issuecomment-345497635)
+        [`architectural issues`](https://github.com/Microsoft/vscode/issues/10121#issuecomment-345497635)
         is challenging to implement. We will explore how we can work around this
         limitation. This investigation will focus on detaching terminals (2nd
         most upvoted feature request) and editors.
@@ -78,10 +78,10 @@ Our roadmap covers the following themes:
     -   Investigate 'working sets' of files and folders
 -   Investigate how to safely provide richer customizability in the workbench
     -   :runner: Support
-        [custom editors](https://github.com/Microsoft/vscode/issues/12176).
+        [`custom editors`](https://github.com/Microsoft/vscode/issues/12176).
     -   Investigate custom views (based on `WebView`).
 -   :runer: Support
-    [synchronizing settings and extensions](https://github.com/microsoft/vscode/issues/2743)
+    [`synchronizing settings and extensions`](https://github.com/microsoft/vscode/issues/2743)
     across VS Code installations on different machines.
 -   [x] Provide filtering and fast keyboard navigation in trees across the
         workbench.
@@ -128,11 +128,11 @@ Our roadmap covers the following themes:
 We will continue to collaborate deeply with the TypeScript team to deliver the
 richest code editing, navigation, and understanding experiences for both
 TypeScript and JavaScript. see also the
-[TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap).
+[`TypeScript roadmap`](https://github.com/Microsoft/TypeScript/wiki/Roadmap).
 
--   [x] Improve the integration of [tslint](https://palantir.github.io/tslint/)
+-   [`x] Improve the integration of [tslint`](https://palantir.github.io/tslint/)
         by running it as a TypeScript Server
-        [plugin](https://github.com/Microsoft/TypeScript/wiki/Writing-a-Language-Service-Plugin).
+        [`plugin`](https://github.com/Microsoft/TypeScript/wiki/Writing-a-Language-Service-Plugin).
 
 ## Debug
 
@@ -152,7 +152,7 @@ TypeScript and JavaScript. see also the
     -   Add support to only activate signed extensions (see next section).
     -   [x] Support installing an extension without having to reload the
             workbench. This is our 3rd most upvoted
-            [feature request](https://github.com/Microsoft/vscode/issues/14444).
+            [`feature request`](https://github.com/Microsoft/vscode/issues/14444).
 
 -   Extension Management
 
@@ -164,7 +164,7 @@ TypeScript and JavaScript. see also the
 -   Extension Publishing
     -   :runner: Collaborate with extension authors to improve their extensions.
         Examples are: Use
-        [Webpack](https://github.com/Microsoft/vscode-extension-samples/tree/master/webpack-sample)
+        [`Webpack`](https://github.com/Microsoft/vscode-extension-samples/tree/master/webpack-sample)
         to improve install and activation, minimize dependencies of an
         extension, ensure `vscode` is only a development dependency.
     -   :runner: Enable extensions to install additional platform specific
@@ -180,36 +180,36 @@ place.
 Our main focus will be on the following extensions:
 
 -   :runner:
-    [VS Code Remote SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
+    [`VS Code Remote SSH`](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 -   :runner:
-    [VS Code Remote WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+    [`VS Code Remote WSL`](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 -   :runner:
-    [VS Code Remote Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+    [`VS Code Remote Containers`](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 -   :runner:
-    [GitHub Pull Request extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+    [`GitHub Pull Request extension`](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 -   :runner:
-    [Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
+    [`Azure Account extension`](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
 -   :runner:
-    [Vue extension](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+    [`Vue extension`](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 
 We will continue to maintain the following extensions:
 
 -   :runner:
-    [Chrome Debug extension](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+    [`Chrome Debug extension`](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 -   :runner:
-    [ES Lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+    [`ES Lint`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 -   :runner:
-    [TS Lint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
+    [`TS Lint`](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
 -   :runner:
-    [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
+    [`Ruby`](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 -   :runner:
-    [Markdown customization extensions](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview)
+    [`Markdown customization extensions`](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview)
 
 We will investigate into improving the performance of existing popular
 extensions that make the extension host unresponsive, e.g.
 
--   [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
--   [x] [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag).
+-   [`Bracket Pair Colorizer`](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+-   [`x] [Auto Rename Tag`](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag).
 
 ## Contributions to Underlying Components and Technologies
 
@@ -219,10 +219,10 @@ examples of technologies in which we are particularly active.
 ### Language Server Protocol
 
 -   :runner: Continue to refine and improve the
-    [Language Server Protocol](https://microsoft.github.io/language-server-protocol/)
+    [`Language Server Protocol`](https://microsoft.github.io/language-server-protocol/)
     with support from the community.
 -   [x] Define a
-        [Language Server Index Format](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md)
+        [`Language Server Index Format`](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md)
         (LSIF, pronounce like "else if") that enables a language server to
         persist their language intelligence, so that it can be subsequently used
         to answer LSP requests at-scale (for example, hover and go to
@@ -231,7 +231,7 @@ examples of technologies in which we are particularly active.
 ### Debug Adaptor Protocol
 
 -   :runner: Continue to refine and improve the
-    [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol/)
+    [`Debug Adapter Protocol`](https://microsoft.github.io/debug-adapter-protocol/)
     with support from the community.
 -   :runner: Expose more UI for DAP features that are currently not surfaced in
     the VS Code debugging UI. This includes moving the loaded scripts UI into
@@ -239,7 +239,7 @@ examples of technologies in which we are particularly active.
 
 ### xterm.js
 
--   [x] Work with the [`xterm.js`](https://xtermjs.org) community to improve
+-   [`x] Work with the [`xterm.js``](https://xtermjs.org) community to improve
         parsing and internal line representations
 -   [x] Adopt `conpty` on Windows
 -   [x] Reflow lines when resizing the terminal
@@ -263,5 +263,5 @@ examples of technologies in which we are particularly active.
 These are examples of some of the work we will be focusing on in the next 6 to
 12 months. We continuously tune the plan based on feedback and we will provide
 more detail in each of our
-[monthly iteration plans](https://github.com/Microsoft/vscode/wiki/Iteration-Plans).
+[`monthly iteration plans`](https://github.com/Microsoft/vscode/wiki/Iteration-Plans).
 Please follow along and let us know what you think!

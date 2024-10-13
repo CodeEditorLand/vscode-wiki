@@ -50,12 +50,12 @@ mind, we can simply separate components in the core into three layers:
 
 Here we'd like to take the outside-in approach to describe the architecture of
 Monaco, the relationship and dependencies of different components and even the
-source code structure, from [View](#view) to [ViewModel](#viewmodel) then
-finally [Model](#model).
+source code structure, from [`View](#view) to [ViewModel`](#viewmodel) then
+finally [`Model`](#model).
 
 ## View
 
-![View Components with details](images/monaco/Monaco-View-Details.png)
+![`View Components with details`](images/monaco/Monaco-View-Details.png)
 
 Above is what users usually see while working on source code files. This
 particular view is a CodeEditorWidget and it consists of multiple view parts,

@@ -3,10 +3,10 @@
 ### History
 
 In 1.43 we enabled Semantic Highlighting as a
-[new feature](https://code.visualstudio.com/updates/v1_43#_typescript-semantic-highlighting)
+[`new feature`](https://code.visualstudio.com/updates/v1_43#_typescript-semantic-highlighting)
 for all themes.
 
-Due to [feedback](https://github.com/microsoft/vscode/issues/92308), since
+Due to [`feedback`](https://github.com/microsoft/vscode/issues/92308), since
 1.43.1 only the built-in themes and custom themes that opt-in get semantic
 highlighting.
 
@@ -41,7 +41,7 @@ provider API is now available for all since 1.44.
 
 If you are a language extension author and want to implement a semantic token
 provider, please check out the
-[sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/semantic-tokens-sample).
+[`sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/semantic-tokens-sample).
 
 ### Which themes offer semantic highlighting
 
@@ -82,17 +82,17 @@ When set, language extensions like TypeScript start reporting semantic tokens.
 
 Each semantic token is described by a token type, any number of token modifiers
 and a language. There's a
-[standardized set](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-token-classification)
+[`standardized set`](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-token-classification)
 of semantic types and modifiers, but languages can also define new and derived
 types and modifiers.
 
 Color themes can
-[write rules](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#theming)
+[`write rules`](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#theming)
 directly against these semantic token types, modifiers and language.
 
 Alternatively, if a theme does not contain a semantic theming rule for a token,
 VSCode will use a
-[mapping from semantic token to a TextMate scopes](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-token-scope-map)
+[`mapping from semantic token to a TextMate scopes`](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-token-scope-map)
 and look up the color in the themes TextMate rules.
 
 Here's an example how theme can write theming rules for semantic token types and
@@ -140,26 +140,26 @@ Open a file for a language that has a semantic token provider available
 Set the cursor to the symbol to inspect and run the
 `Developer: Inspect Editor Tokens and Scopes` command.
 
-![](https://user-images.githubusercontent.com/57580/76448823-5f6bb480-63a1-11ea-862e-d59db8599a73.png)
+![`](https://user-images.githubusercontent.com/57580/76448823-5f6bb480-63a1-11ea-862e-d59db8599a73.png)
 
 `Semantic token type` and `modifiers` show the classification of the given
 symbol and the semantic theming rule or the TextMate theme rule that was used to
 style the token.
 
-[This readme](https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md)
+[`This readme`](https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md)
 describes the token types and modifiers that the TypeScript / JavaScript
 semantic highlighter produces, along with a list of known issues. If you feel
 that a classification is wrong, please file an issue against
-[that repo](https://github.com/aeschli/typescript-vscode-sh-plugin). Please add
+[`that repo`](https://github.com/aeschli/typescript-vscode-sh-plugin). Please add
 a small code sample to reproduce along what classification you expect.
 
 ## Links:
 
 -   API:
-    [vscode.d.ts](https://github.com/microsoft/vscode/blob/d4ca08f0976af1d9fe675d631e9e3cad52f1d00a/src/vs/vscode.d.ts#L3292)
+    [`vscode.d.ts`](https://github.com/microsoft/vscode/blob/d4ca08f0976af1d9fe675d631e9e3cad52f1d00a/src/vs/vscode.d.ts#L3292)
 -   Latest standard token types and modifiers:
-    [tokenClassificationRegistry.ts#L364](https://github.com/Microsoft/vscode/blob/master/src/vs/platform/theme/common/tokenClassificationRegistry.ts#L364)
+    [`tokenClassificationRegistry.ts#L364`](https://github.com/Microsoft/vscode/blob/master/src/vs/platform/theme/common/tokenClassificationRegistry.ts#L364)
 -   Semantic highlighting for JS in HTML:
-    [javascriptSemanticTokens.ts](https://github.com/microsoft/vscode/blob/master/extensions/html-language-features/server/src/modes/javascriptSemanticTokens.ts)
+    [`javascriptSemanticTokens.ts`](https://github.com/microsoft/vscode/blob/master/extensions/html-language-features/server/src/modes/javascriptSemanticTokens.ts)
 -   Sample:
-    [semantic-tokens-sample](https://github.com/microsoft/vscode-extension-samples/blob/master/semantic-tokens-sample)
+    [`semantic-tokens-sample`](https://github.com/microsoft/vscode-extension-samples/blob/master/semantic-tokens-sample)

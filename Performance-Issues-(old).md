@@ -26,16 +26,16 @@ questions:
     architecture and we need to know which process is causing the issue. You can
     identify the process based on the command line arguments that were used to
     start the process.
-    -   On Mac/Linux, we recommend to use the [htop](http://hisham.hm/htop/)
+    -   On Mac/Linux, we recommend to use the [`htop`](http://hisham.hm/htop/)
         process viewer. You can also use the **Activity Monitor** to find the
         `PID` of the process and from a terminal you can run
         `ps aux | grep <pid>` to find its arguments.
-        ![image](https://cloud.githubusercontent.com/assets/900690/18907063/65806550-856a-11e6-8b2e-83da9111445d.png).
+        ![`image`](https://cloud.githubusercontent.com/assets/900690/18907063/65806550-856a-11e6-8b2e-83da9111445d.png).
     -   On Windows, we recommend to use the
-        [process explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer).
+        [`process explorer`](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer).
         You can also use open the Task Manager, switch to the Details tab and
         make the "Command Line" column visible as shown below.
-        ![image](https://user-images.githubusercontent.com/172399/31660413-9fac1f02-b337-11e7-96fb-859c659b28f9.png)
+        ![`image`](https://user-images.githubusercontent.com/172399/31660413-9fac1f02-b337-11e7-96fb-859c659b28f9.png)
 
 ### Experiments
 
@@ -49,7 +49,7 @@ Please try to reproduce the performance problems in different setups:
 -   If you cannot reproduce the issue when the extensions are disabled, then can
     you narrow down the extension by selectively disabling extensions? You can
     disable extensions in the Extensions Viewlet
-    ![image](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png)
+    ![`image`](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png)
     and restart/reload. Once you found the extension please file an issue
     against the extension. To file an issue against an extension: find the
     extension in the market place, and use the `Issues` link in the Resources
@@ -77,7 +77,7 @@ When VS Code feels slow to start you can check the startup timers. Hit "F1" and
 select "Startup Performance". This will open developer tools and print some
 startup stats onto the the "Console".
 
-![image](https://user-images.githubusercontent.com/172399/32089769-3df19924-baec-11e7-9654-e199e1ab8c92.png)
+![`image`](https://user-images.githubusercontent.com/172399/32089769-3df19924-baec-11e7-9654-e199e1ab8c92.png)
 
 Please share these numbers with us as they often allows us to understand what is
 slow.

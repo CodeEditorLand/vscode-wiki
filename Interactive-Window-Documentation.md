@@ -47,7 +47,7 @@ updates to the editor service. One major difference between Interactive Editor
 and other editor panes is Interactive Window is never dirty so users never see a
 dot on the editor title bar.
 
-![editor registration](https://user-images.githubusercontent.com/2019016/228381812-314d9581-0886-4754-81f1-73ec96d49ba0.svg)
+![`editor registration`](https://user-images.githubusercontent.com/2019016/228381812-314d9581-0886-4754-81f1-73ec96d49ba0.svg)
 
 ## Interactive Window Editor Model Resolution
 
@@ -65,7 +65,7 @@ from a resource URI with the `fileService`. That content is passed to the the
 `ModelFactory` which retreives a `NotebookSerializer` from the `notebookService`
 and constructs a `NotebookTextModel`.
 
-![editor registration](https://user-images.githubusercontent.com/2019016/228381903-64213151-88dd-450c-ab74-3c25517c30e6.svg)
+![`editor registration`](https://user-images.githubusercontent.com/2019016/228381903-64213151-88dd-450c-ab74-3c25517c30e6.svg)
 
 The `FileSystem` provider that is registered for `vscode-interactive` schema
 will always return an empty buffer for any read, and will drop all write
@@ -86,4 +86,4 @@ Interactive Window it's much simpler as we are not resolving models ourselves
 but delegating to Notebook and TextEditor. `InteractiveEditorInput` does the
 coordination job.
 
-![arch](https://user-images.githubusercontent.com/2019016/228381958-500c74c4-3311-4d51-8be6-b6871486d58d.svg)
+![`arch`](https://user-images.githubusercontent.com/2019016/228381958-500c74c4-3311-4d51-8be6-b6871486d58d.svg)

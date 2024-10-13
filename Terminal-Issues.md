@@ -2,7 +2,7 @@
 
 This document is about reporting issues for the integrated terminal
 (<kbd>ctrl</kbd>+<kbd>`</kbd>). Learn more about how to use the terminal in the
-[documentation](https://code.visualstudio.com/docs/editor/integrated-terminal).
+[`documentation`](https://code.visualstudio.com/docs/editor/integrated-terminal).
 
 ### Creating great terminal issues
 
@@ -12,7 +12,7 @@ This document is about reporting issues for the integrated terminal
     extensions you're using. Ideally you should use the issue reporter built
     into VS Code for this as it automatically includes this information in the
     report.
--   Including a screenshot or [gif](https://gifcap.dev/) is normally a good
+-   Including a screenshot or [`gif`](https://gifcap.dev/) is normally a good
     idea.
 -   Including your settings.json is also a good idea as many issues are normally
     related to bad configuration.
@@ -33,31 +33,31 @@ This document is about reporting issues for the integrated terminal
 ### Common questions
 
 Make sure you read over the
-[common questions section on the website](https://code.visualstudio.com/docs/editor/integrated-terminal#_common-questions).
+[`common questions section on the website`](https://code.visualstudio.com/docs/editor/integrated-terminal#_common-questions).
 
 ### Long-standing known issues
 
 Here are some long standing known issues in the terminal:
 
 -   Various emulation issues on Windows
-    [#45693](https://github.com/Microsoft/vscode/issues/45693)
+    [`#45693`](https://github.com/Microsoft/vscode/issues/45693)
 -   Terminal does not show any text on Windows 7
-    [#43169](https://github.com/Microsoft/vscode/issues/43169)
+    [`#43169`](https://github.com/Microsoft/vscode/issues/43169)
     -   Try turning off compatibility mode
 -   Characters like underscore are being cut off
-    [#35901](https://github.com/Microsoft/vscode/issues/35901)
+    [`#35901`](https://github.com/Microsoft/vscode/issues/35901)
     -   Try changing the `terminal.integrated.fontFamily`
 -   Emojis are printed as double width but are single width
-    [xtermjs/xterm.js#1059](https://github.com/xtermjs/xterm.js/issues/1059)
+    [`xtermjs/xterm.js#1059`](https://github.com/xtermjs/xterm.js/issues/1059)
 -   Non-English characters duplicated on Windows
-    [#132715](https://github.com/microsoft/vscode/issues/132715)
+    [`#132715`](https://github.com/microsoft/vscode/issues/132715)
 
 ### Which issues go in which repos
 
 The terminal has several dependencies which are also open source projects such
-as [xterm.js](https://github.com/xtermjs/xterm.js),
-[node-pty](https://github.com/microsoft/node-pty) and
-[conpty](https://github.com/microsoft/terminal). Managing issues is difficult
+as [`xterm.js`](https://github.com/xtermjs/xterm.js),
+[`node-pty`](https://github.com/microsoft/node-pty) and
+[`conpty`](https://github.com/microsoft/terminal). Managing issues is difficult
 across so many repos so the general rule we follow with terminal issues is that
 fairly niche upstream issues are only tracked in the upstream repositories and
 major upstream issues are tracked in VS Code as well in order to improve
@@ -119,11 +119,11 @@ are good steps to help find the root cause of rendering problems:
 Known rendering problems:
 
 -   Corrupt texture showing after resuming OS from sleep
-    [#69665](https://github.com/microsoft/vscode/issues/69665)
+    [`#69665`](https://github.com/microsoft/vscode/issues/69665)
 -   Underscore and similar chars not showing up
-    [#35901](https://github.com/microsoft/vscode/issues/35901)
+    [`#35901`](https://github.com/microsoft/vscode/issues/35901)
 -   Characters become small or large after changing monitor DPI
-    [xtermjs/xterm.js#2137](https://github.com/xtermjs/xterm.js/issues/2137)
+    [`xtermjs/xterm.js#2137`](https://github.com/xtermjs/xterm.js/issues/2137)
 
 ### Text wrapping problems
 
@@ -154,5 +154,5 @@ is to move to the maintained official Microsoft backend conpty.
 
 Whether we can action the issue is the main reason we close issues off but we
 may also close an issue as designed or out of scope. You can visit
-[issue grooming](https://github.com/microsoft/vscode/wiki/Issue-Grooming) for
+[`issue grooming`](https://github.com/microsoft/vscode/wiki/Issue-Grooming) for
 more info on how we manage and triage issues.

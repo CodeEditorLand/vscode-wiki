@@ -3,7 +3,7 @@
 Our roadmap typically looks out 12-18 months and we establish topics we want to
 work on. We don't start with our roadmap on a blank sheet. We develop it based
 on our
-[last roadmap](https://github.com/microsoft/vscode/wiki/Roadmap%E2%80%902021%E2%80%902022),
+[`last roadmap`](https://github.com/microsoft/vscode/wiki/Roadmap%E2%80%902021%E2%80%902022),
 the findings we made over the course of the last year, and of course what we
 heard from you in issues, in face-to-face discussions, stack overflow, and
 twitter.
@@ -153,9 +153,9 @@ Chat extension.
 
 -   [ ] Workbench layout
     -   [x] Support for detachable workbench parts is our most upvoted
-            [feature request](https://github.com/Microsoft/vscode/issues/10121)
+            [`feature request`](https://github.com/Microsoft/vscode/issues/10121)
             which due to
-            [architectural issues](https://github.com/Microsoft/vscode/issues/10121#issuecomment-345497635)
+            [`architectural issues`](https://github.com/Microsoft/vscode/issues/10121#issuecomment-345497635)
             is challenging to implement. We will explore how we can work around
             this limitation. This investigation will focus on detaching
             terminals (2nd most upvoted feature request) and editors.
@@ -283,7 +283,7 @@ Chat extension.
 ### Debug Adapter Protocol (DAP)
 
 -   [ ] :runner: Continue to refine and improve the
-        [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol/)
+        [`Debug Adapter Protocol`](https://microsoft.github.io/debug-adapter-protocol/)
         with support from the community.
 
 ### Testing
@@ -303,7 +303,7 @@ Chat extension.
         than replaying raw data events
 -   [x] Investigate to allow terminals in the editor area
 -   [ ] :runner: Provide ongoing improvements to
-        [`xterm.js`](https://github.com/xtermjs/xterm.js) for performance,
+        [`xterm.js``](https://github.com/xtermjs/xterm.js) for performance,
         stability, and maintainability
 -   [ ] Explore intellisense-inspired CLI help support in the terminal
 
@@ -367,7 +367,7 @@ Chat extension.
 ### TypeScript
 
 We will continue to collaborate deeply with TypeScript. See also the
-[TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap).
+[`TypeScript roadmap`](https://github.com/Microsoft/TypeScript/wiki/Roadmap).
 
 -   [ ] :runner: Explore with additional refactorings provide high value to
         developers, e.g., 'change signature'
@@ -378,7 +378,7 @@ We will continue to collaborate deeply with TypeScript. See also the
 ### Python
 
 We have a dedicated
-[Python Roadmap](https://github.com/microsoft/vscode-python/wiki/Roadmap).
+[`Python Roadmap`](https://github.com/microsoft/vscode-python/wiki/Roadmap).
 
 ### HTML/CSS
 
@@ -400,21 +400,21 @@ We have a dedicated
 ### Language Server Protocol and LSIF
 
 -   [ ] :runner: Continue to refine and improve the
-        [Language Server Protocol](https://microsoft.github.io/language-server-protocol/)
+        [`Language Server Protocol`](https://microsoft.github.io/language-server-protocol/)
         with support from the community.
 -   [ ] :runner: Continue to refine and improve the
-        [Language Server Index Format](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md)
+        [`Language Server Index Format`](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md)
         with support from the community.
 -   [x] Support type hierarchies in LSP
 
 ## Contributions to VS Code Extensions
 
 -   [ ] :runner:
-        [ES Lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+        [`ES Lint`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 -   [ ] :runner:
-        [Markdown customization extensions](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview)
+        [`Markdown customization extensions`](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview)
 
--   [x] [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+-   [`x] [Bracket Pair Colorizer`](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 
 ## Install / Update
 
@@ -432,7 +432,7 @@ We have a dedicated
             automatically
 -   [x] Adopt a safe supply chain
 -   [x] Explore improving the build time by using
-        [esbuild](https://github.com/evanw/esbuild) (requires AMD support) -
+        [`esbuild`](https://github.com/evanw/esbuild) (requires AMD support) -
         ensure we don't lose our ability to use with the latest TS RC
 
 ## Website
@@ -454,6 +454,6 @@ We have a dedicated
 These are examples of some of the work we will be focusing on in the next 12-18
 months. We continuously tune the plan based on feedback and we will provide more
 detail in each of our
-[monthly iteration plans](https://github.com/Microsoft/vscode/wiki/Iteration-Plans).
+[`monthly iteration plans`](https://github.com/Microsoft/vscode/wiki/Iteration-Plans).
 We will develop our next roadmap in around 12 months from now. Please follow
 along and let us know what you think!

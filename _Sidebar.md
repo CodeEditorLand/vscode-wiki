@@ -38,8 +38,8 @@
 
 **Documentation**
 
--   [Extensions](https://code.visualstudio.com/docs/extensions/overview)
--   [API](https://code.visualstudio.com/docs/extensionAPI/overview)
--   [Visual Studio Code](https://code.visualstudio.com/docs)
--   [Document Repository](https://github.com/microsoft/vscode-docs)
--   [Multi Root Workspace API](https://github.com/Microsoft/vscode/wiki/Adopting-Multi-Root-Workspace-APIs)
+-   [`Extensions`](https://code.visualstudio.com/docs/extensions/overview)
+-   [`API`](https://code.visualstudio.com/docs/extensionAPI/overview)
+-   [`Visual Studio Code`](https://code.visualstudio.com/docs)
+-   [`Document Repository`](https://github.com/microsoft/vscode-docs)
+-   [`Multi Root Workspace API`](https://github.com/Microsoft/vscode/wiki/Adopting-Multi-Root-Workspace-APIs)

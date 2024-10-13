@@ -2,16 +2,16 @@
 
 ## Jump to a section:
 
-[About](#about) \
-[Getting Started](#getting-started) \
-[Steps to Test Per Build Type](#steps-to-test-per-build-type)
+[`About`](#about) \
+[`Getting Started`](#getting-started) \
+[`Steps to Test Per Build Type`](#steps-to-test-per-build-type)
 
 ## About
 
 ### What is sanity testing and why do we do it?
 
 VS Code has an extensive release process, called
-[Endgame](https://github.com/Microsoft/vscode/wiki/Running-the-Endgame), that
+[`Endgame`](https://github.com/Microsoft/vscode/wiki/Running-the-Endgame), that
 contains multiple testing processes to ensure that we deliver a product of the
 highest quality to our users. The final process a build must pass before being
 released is what we call "Sanity testing".
@@ -60,8 +60,8 @@ credit to @tylerleonhardt for this table and the below tool descriptions.
     can get a Parallels license.
 -   On Windows (virtualized or not), you can use the Sanity Testing WSL image
     created by @sbatten. Find images and instructions
-    [here](https://microsoft-my.sharepoint.com/:f:/p/stbatt/EvLnK6RCcW9KttxeqDR59WkBbqoPxHehXV4-EkQinN62sA?e=yk9YNE).
--   And don’t forget, we have [dev box](https://devbox.microsoft.com/%25C2%25A0)
+    [`here`](https://microsoft-my.sharepoint.com/:f:/p/stbatt/EvLnK6RCcW9KttxeqDR59WkBbqoPxHehXV4-EkQinN62sA?e=yk9YNE).
+-   And don’t forget, we have [`dev box`](https://devbox.microsoft.com/%25C2%25A0)
     thanks to @lszomoru which allows us to spin up Windows x64 VMs to access
     from any browser.
 
@@ -101,9 +101,9 @@ sudo snap install --classic --dangerous <file>.snap
 
 #### Pre-requisites
 
--   Install and run [Docker Desktop](https://docs.docker.com/engine/install/)
+-   Install and run [`Docker Desktop`](https://docs.docker.com/engine/install/)
 -   Install
-    [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+    [`Dev Containers`](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 #### Steps
 
@@ -154,14 +154,14 @@ This is a second option for sanity testing the Windows server. Use the
 Remote-SSH extension to connect from any client platform to a Windows remote.
 You can connect to localhost on your own Windows machine, a parallels VM, or
 another machine. You'll need to
-[set up and start OpenSSH services](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse),
+[`set up and start OpenSSH services`](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse),
 such as the OpenSSH SSH Server service and the OpenSSH Authentication Agent
 service.
 
 Note: if you are an
-[AAD user](https://github.com/PowerShell/Win32-OpenSSH/issues/1787) on your
+[`AAD user`](https://github.com/PowerShell/Win32-OpenSSH/issues/1787) on your
 Windows machine, you may have to apply
-[this workaround](https://github.com/PowerShell/Win32-OpenSSH/issues/1476#issuecomment-642974745).
+[`this workaround`](https://github.com/PowerShell/Win32-OpenSSH/issues/1476#issuecomment-642974745).
 
 Here is an example localhost config that can be added to your SSH `config` file:
 
@@ -186,7 +186,7 @@ installed server.
 Use the Remote-SSH extension to connect from any client platform to a macOS
 remote (connecting to `localhost` is ok). To start the SSH server, you just have
 to enable Remote Login as described
-[here](https://osxdaily.com/2011/09/30/remote-login-ssh-server-mac-os-x/).
+[`here`](https://osxdaily.com/2011/09/30/remote-login-ssh-server-mac-os-x/).
 
 ## CLI
 
@@ -202,7 +202,7 @@ to enable Remote Login as described
 
 #### Pre-requisites
 
--   Install [Docker Desktop](https://docs.docker.com/engine/install/)
+-   Install [`Docker Desktop`](https://docs.docker.com/engine/install/)
 
 #### Steps
 

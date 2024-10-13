@@ -24,7 +24,7 @@ an issue, you should do the following:
     **More Tools** > **JavaScript Profiler**
 -   Select **Load** and pick the `.cpuprofile`-file
 
-![profiler](https://user-images.githubusercontent.com/1794099/49524455-12e71e80-f8ac-11e8-84c1-3c8645128d17.gif)
+![`profiler`](https://user-images.githubusercontent.com/1794099/49524455-12e71e80-f8ac-11e8-84c1-3c8645128d17.gif)
 
 Use the JavaScript profiler to drill into individual functions and analyse in
 what part of the code most time has been spend. Keep in mind that a huge file, a

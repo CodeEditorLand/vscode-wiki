@@ -1,8 +1,8 @@
 This document applies to search (<kbd>CMD+SHIFT+F</kbd>/<kbd>CTRL+SHIFT+F</kbd>)
 and quickopen (<kbd>CMD+P</kbd>/<kbd>CTRL+P</kbd>). By default, VS Code uses the
-[ripgrep](https://github.com/BurntSushi/ripgrep) tool to drive search. Learn
+[`ripgrep`](https://github.com/BurntSushi/ripgrep) tool to drive search. Learn
 more about how to use search in
-[the documentation](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files).
+[`the documentation`](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files).
 
 ## Missing search results
 
@@ -15,7 +15,7 @@ levels, and your `.gitignore` file.
 
 Besides `.gitignore`, we also look at the `.ignore`, `.rgignore`, and
 `.git/info/exclude` files. You can read more about ripgrep's ignore file logic
-[here](https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#automatic-filtering).
+[`here`](https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#automatic-filtering).
 
 > **Tip**: You can set `"search.useIgnoreFiles": false` to disable using the
 > `.gitignore` file for search
@@ -24,7 +24,7 @@ An easy way to validate whether exclude setttings or ignore files are affecting
 your search is to turn off the "Use Exclude Settings and Ignore Files" button in
 the search viewlet. This is the gear button in the lower right corner:
 
-![Use Exclude Settings and Ignore Files button](https://user-images.githubusercontent.com/8586769/132767680-dd9048dc-beef-4849-a5cd-2cfadcd01e19.png)
+![`Use Exclude Settings and Ignore Files button`](https://user-images.githubusercontent.com/8586769/132767680-dd9048dc-beef-4849-a5cd-2cfadcd01e19.png)
 
 Another thing to watch for is that **it's possible to add a file covered by a
 `.gitignore` file to git**, and some tools like `git grep` will still search
@@ -36,7 +36,7 @@ VS Code also supports searching only in the files that are currently opened as
 tabs, this mode is controlled by the book icon in the "files to include" input,
 and a message is shown when this is enabled:
 
-![The book icon controlling whether only open editors are searched](https://user-images.githubusercontent.com/8586769/132784916-880415ce-ff7c-4e13-a50c-58d5ee7bfa49.png)
+![`The book icon controlling whether only open editors are searched`](https://user-images.githubusercontent.com/8586769/132784916-880415ce-ff7c-4e13-a50c-58d5ee7bfa49.png)
 
 If your workspace has files with a **non-UTF-8 encoding**, you will need to set
 the `files.encoding` setting to the correct encoding to search in those files.
@@ -46,7 +46,7 @@ supported for search.
 This is less common, but VS Code doesn't handle files with **CR-only line
 endings** well. Files that originated on older OS's may use these, and may have
 missing or inconsistent search results. There is an
-[open issue](https://github.com/Microsoft/vscode/issues/35797) for this.
+[`open issue`](https://github.com/Microsoft/vscode/issues/35797) for this.
 
 When looking at issues with missing results, remember that **search in open
 files** is implemented by the editor. Search in all other files is implemented
@@ -78,7 +78,7 @@ toggled on - it's not uncommon that users turn it off and forget about it.
 
 Another thing that can cause excluded files to be shown is that open files are
 still searched even when they are excluded. This is a vscode
-[bug](https://github.com/Microsoft/vscode/issues/31819).
+[`bug`](https://github.com/Microsoft/vscode/issues/31819).
 
 ## Slow search, `rg` running for a long time, or consuming lots of CPU/Memory
 
@@ -88,7 +88,7 @@ disable this.
 
 Does your search return results on **very long lines**? This will cause some
 slowdown and can even cause VS Code to hang. There is an
-[open bug](https://github.com/Microsoft/vscode/issues/31551) for this.
+[`open bug`](https://github.com/Microsoft/vscode/issues/31551) for this.
 
 If your workspace is **very large**, you might want to use the exclude settings,
 or the "files to include/exclude" text boxes to narrow down your search to the
@@ -128,7 +128,7 @@ in the output pane, see the logs in the channels named `Log (Window)` and
 logs show VS Code's internal query object, the arguments with which ripgrep was
 invoked, and any errors produced by ripgrep.
 
-![screen shot 2018-04-30 at 2 15 35 pm](https://user-images.githubusercontent.com/323878/39452722-1e2a6f48-4c88-11e8-84f8-5afad938d357.png)
+![`screen shot 2018-04-30 at 2 15 35 pm`](https://user-images.githubusercontent.com/323878/39452722-1e2a6f48-4c88-11e8-84f8-5afad938d357.png)
 
 There may also be errors that only show up in the developer tools. Open the
 developer tools (Help > Toggle Developer Tools) and check the Console for
@@ -137,7 +137,7 @@ errors.
 ## Notes on regular expression support
 
 Text search uses two different sets of regular expression engines. The workspace
-is searched using [ripgrep](https://github.com/BurntSushi/ripgrep), which will
+is searched using [`ripgrep`](https://github.com/BurntSushi/ripgrep), which will
 use the Rust regex engine, and will fallback to PCRE2 if the regex fails to
 parse in the Rust regex engine. The Rust regex engine doesn't support some
 features like backreferences and look-around, so if you use those features,

@@ -1,26 +1,26 @@
 The VS Code project tracks issues and feature requests using the
-[GitHub issue tracker](https://github.com/microsoft/vscode/issues) for the
+[`GitHub issue tracker`](https://github.com/microsoft/vscode/issues) for the
 `vscode` repository.
 
 ### Before Submitting an Issue
 
 Please begin by consulting any of the following pages that may be relevant:
 
--   [Performance Issues](Performance-Issues)
--   [Keybinding Issues](Keybinding-Issues)
--   [Native Crash Issues](Native-Crash-Issues)
--   [Search Issues](Search-Issues)
--   [Terminal Issues](Terminal-Issues)
+-   [`Performance Issues`](Performance-Issues)
+-   [`Keybinding Issues`](Keybinding-Issues)
+-   [`Native Crash Issues`](Native-Crash-Issues)
+-   [`Search Issues`](Search-Issues)
+-   [`Terminal Issues`](Terminal-Issues)
 
-Next, do a search in [open issues](https://github.com/Microsoft/vscode/issues)
+Next, do a search in [`open issues`](https://github.com/Microsoft/vscode/issues)
 to see if the issue or feature request has already been filed. Use this
-[query](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc)
+[`query`](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc)
 to search for the most popular feature requests.
 
 If you find your issue already exists, make relevant comments and add your
-[reaction](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments).
+[`reaction`](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments).
 Use
-[a reaction on the issue description](Issues-Triaging#up-voting-a-feature-request)
+[`a reaction on the issue description`](Issues-Triaging#up-voting-a-feature-request)
 rather than adding a "+1" comment.
 
 👍 - upvote
@@ -31,11 +31,11 @@ If the open issue is on the `Backlog Candidates` milestone your upvote can help
 it progress to the `Backlog`.
 
 The VS Code project is distributed across
-[multiple repositories](https://github.com/Microsoft/vscode/wiki/Related-Projects).
+[`multiple repositories`](https://github.com/Microsoft/vscode/wiki/Related-Projects).
 Try to file the issue against the correct repository.
 
 If your issue is a question then please ask the question on
-[Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using the
+[`Stack Overflow`](https://stackoverflow.com/questions/tagged/vscode) using the
 tag `vscode`.
 
 If you cannot find an existing issue that describes your bug or feature, submit
@@ -78,7 +78,7 @@ Please remember to do the following:
 -   Search the issue repository first to see if a duplicate exists.
 -   Make sure the issue can be reproduced without extensions. Either disable all
     extensions (see the
-    [docs for how to do this](https://code.visualstudio.com/docs/editor/extension-gallery#_disable-an-extension))
+    [`docs for how to do this`](https://code.visualstudio.com/docs/editor/extension-gallery#_disable-an-extension))
     or use start extension bisect via "F1 > Start Extension Bisect". If you find
     the issue is caused by an extension you have installed please file an issue
     on the extension. The `Report Issue` option can help you route the report to
@@ -88,11 +88,11 @@ Please remember to do the following:
 Don't feel bad if we can't reproduce the issue and ask for more information!
 
 Finally, this is our
-[issue tracking](https://github.com/Microsoft/vscode/wiki/Issue-Tracking) work
+[`issue tracking`](https://github.com/Microsoft/vscode/wiki/Issue-Tracking) work
 flow that describes what happens once you submitted an issue.
 
 ## Contributing Fixes
 
 If you are interested in fixing issues and contributing directly to the code
 base, please see the document
-[How to Contribute](https://github.com/Microsoft/vscode/wiki/How-to-Contribute).
+[`How to Contribute`](https://github.com/Microsoft/vscode/wiki/How-to-Contribute).

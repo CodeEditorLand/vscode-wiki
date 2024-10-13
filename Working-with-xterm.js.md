@@ -1,7 +1,7 @@
 ### Development
 
 Check out the
-[xterm.js contribution documentation](https://github.com/xtermjs/xterm.js/wiki/Contributing)
+[`xterm.js contribution documentation`](https://github.com/xtermjs/xterm.js/wiki/Contributing)
 for how to work on the project.
 
 ### Managing issues
@@ -51,7 +51,7 @@ Diff: https://github.com/xtermjs/xterm.js/compare/91cbeec...eb25243
 ### Updating `xterm` in vscode manually
 
 Every commit that goes into the master branch of
-[xterm.js](https://github.com/xtermjs/xterm.js) is automatically released under
+[`xterm.js`](https://github.com/xtermjs/xterm.js) is automatically released under
 the beta tag using Azure Pipelines. To update the module in vscode, follow these
 steps:
 
@@ -60,7 +60,7 @@ steps:
    `remote/web` folders). If you want an older commit the easiest way to do this
    right now is to identify the commit and then find the "Merge pull request"
    build on this
-   [pipeline](https://dev.azure.com/xtermjs/xterm.js/_build?definitionId=3),
+   [`pipeline`](https://dev.azure.com/xtermjs/xterm.js/_build?definitionId=3),
    click into the "Release" job and view the output of the "Publish to npm" step
    to find the version number then install it with `yarn add xterm@x.y.z-betaX`
 2. Build/test locally to make sure it works or push a branch and do a PR so that

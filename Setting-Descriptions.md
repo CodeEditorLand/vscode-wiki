@@ -26,7 +26,7 @@ This page describes style guidelines for writing descriptions for settings.
     enumDescriptions is specified, the length of enumDescriptions must match the
     length of enum. An empty string for an enumDescription is ok, if the value
     is self-evident. Example:
-    ![image](https://user-images.githubusercontent.com/323878/42973896-f92c6a0e-8b69-11e8-9c8e-a3e937a48098.png)
+    ![`image`](https://user-images.githubusercontent.com/323878/42973896-f92c6a0e-8b69-11e8-9c8e-a3e937a48098.png)
 
         - Enum values mentioned in a description must be in backticks with no quotes.
         - Note - if an enum setting has more than 10 options, its enum descriptions will be rendered inline inside the dropdown control (or in the old settings editor, only in the suggest widget). As far as I can tell, this only affects `files.encoding`.
@@ -40,7 +40,7 @@ This page describes style guidelines for writing descriptions for settings.
 ```ts
 'search.exclude': {
     type: 'object',
-    description: nls.localize('exclude', "[snip] [Read more about glob patterns](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)."),
+    description: nls.localize('exclude', "[`snip] [Read more about glob patterns`](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)."),
 ```
 
 -   Other setting references

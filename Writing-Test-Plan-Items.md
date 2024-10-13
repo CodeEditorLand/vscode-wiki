@@ -18,7 +18,7 @@ tested against and also how complex (1-5) it is to test.
 
 -   If a Test Plan Item cannot feasibly be written in such a way that any tester
     on the team can test, consider choosing a specific tester to assign to the
-    Item as described in [Example 5](<###Example-5-(Pre-assigned-to-users)>).
+    Item as described in [`Example 5`](<###Example-5-(Pre-assigned-to-users)>).
 
 -   A Test Plan Item shall not take too long to test and scoped to a specific
     feature. Please note that **Complexity 5 is not unlimited and there shall be
@@ -78,7 +78,7 @@ Refs: <!-- Refer to the issue that this test plan item is testing. -->
 
 -   Platform assignments mentioning on which platforms this TPI shall be tested.
     You can pre-assign them to a user you would like to test by adding the user
-    id next to platform. Refer to the [examples](#Examples) for how to include
+    id next to platform. Refer to the [`examples`](#Examples) for how to include
     this information.
 
     -   macOS
@@ -106,7 +106,7 @@ Authors: @user1, @user2
 
 -   If a TPI requires a certain skillset (e.g. the person should be a
     developer), then you can specify what roles people should hold to work on
-    the TPI. See the [examples](#Examples) on how to format such information.
+    the TPI. See the [`examples`](#Examples) on how to format such information.
     -   Content Developer
     -   Designer
     -   Developer

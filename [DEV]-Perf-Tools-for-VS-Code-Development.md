@@ -19,16 +19,16 @@ The screen capture below shows a sample and highlights some interesting bits
 like code loading, processing extension contributions, and extension stats. The
 durations are derived from well-known perf-markers. Simplest is to look them up
 in source
-[here](https://github.com/microsoft/vscode/blob/main/src/vs/workbench/services/timer/browser/timerService.ts#L666)
+[`here`](https://github.com/microsoft/vscode/blob/main/src/vs/workbench/services/timer/browser/timerService.ts#L666)
 
 <img width="1202" alt="Screenshot 2022-09-15 at 14 27 37" src="https://user-images.githubusercontent.com/1794099/190404112-326503e4-f888-4e3c-947d-6861d2d1072f.png">
 
 ### Performance Marks
 
 We have the
-[`performance.mark`](https://github.com/microsoft/vscode/blob/a3192fbad7bb02871ae8b6d3703c8bfc5433e661/src/vs/base/common/performance.d.ts#L11)-utility
+[`performance.mark``](https://github.com/microsoft/vscode/blob/a3192fbad7bb02871ae8b6d3703c8bfc5433e661/src/vs/base/common/performance.d.ts#L11)-utility
 that works very similar to the standard
-[`mark`](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark)-function.
+[`mark``](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark)-function.
 The difference is that you can use it in any context (node, electron, browser,
 or worker) and that it works with unix timestamps. This allows them to be
 compared across different processes.
@@ -75,7 +75,7 @@ listeners: if the average listener takes 2ms to execute then each `fire` costs
 200ms. This slows down your component but isn't in your control. A fun exercise
 is to step into each listener to see what they do or to profile firing. This is
 quite laborious too and therefore you can get a high-level overview via
-[`EmitterOptions._profName`](https://github.com/microsoft/vscode/blob/cd2381c266c162b144fdab91f91ec49542e07dea/src/vs/base/common/event.ts#L492).
+[`EmitterOptions._profName``](https://github.com/microsoft/vscode/blob/cd2381c266c162b144fdab91f91ec49542e07dea/src/vs/base/common/event.ts#L492).
 Do the following
 
 -   When creating your emitter, pass the `_profName`-option. ❗This is dev-time
@@ -115,13 +115,13 @@ great to analyse the whole startup, esp of the built product.
 
 We use dependency injection and services for most parts of VS Code. Concrete
 service are registered via the
-[`registerSingleton`](https://github.com/microsoft/vscode/blob/cd2381c266c162b144fdab91f91ec49542e07dea/src/vs/platform/instantiation/common/extensions.ts#L25)-function
+[`registerSingleton``](https://github.com/microsoft/vscode/blob/cd2381c266c162b144fdab91f91ec49542e07dea/src/vs/platform/instantiation/common/extensions.ts#L25)-function
 and when a service consumer (actions, workbench- or editor-contribution, etc) is
 being created our instantiation service ensures that the services it needs are
 also created. This is often wasteful because most consumers don't need the
 service right away - e.g their constructors simply store the service-instance
 for later use. To counter that a concrete service can mark itself as supporting
-[delayed instantiation](https://github.com/microsoft/vscode/blob/f3f9f7a10d877fd2177daec3e1f6054706c7e5bc/src/vs/platform/instantiation/common/extensions.ts#L22) -
+[`delayed instantiation`](https://github.com/microsoft/vscode/blob/f3f9f7a10d877fd2177daec3e1f6054706c7e5bc/src/vs/platform/instantiation/common/extensions.ts#L22) -
 in that case the instantiation service gives consumers a proxy of the actual
 service which becomes "real" when needed or when there is some idle time.
 
@@ -137,7 +137,7 @@ The instantiation service supports a trace mode. It records all invocations of
 and what creations it has caused. To use it, do the following
 
 -   Uncomment
-    [this line](https://github.com/microsoft/vscode/blob/b24fefc5403ae8152db6d79eb80333f77e199a6f/src/vs/platform/instantiation/common/instantiationService.ts#L15)
+    [`this line`](https://github.com/microsoft/vscode/blob/b24fefc5403ae8152db6d79eb80333f77e199a6f/src/vs/platform/instantiation/common/instantiationService.ts#L15)
     ❗ MUST NOT be committed and written so weirdly that this shouldn't happen
     by accident
 -   Run "F1 > Print Service Traces"
@@ -151,7 +151,7 @@ extension hosts. This gives you insight of how chatty and heavy communication
 is. Do the following
 
 -   Change
-    [this line](https://github.com/microsoft/vscode/blob/f3f9f7a10d877fd2177daec3e1f6054706c7e5bc/src/vs/workbench/services/extensions/common/extensionHostManager.ts#L32)
+    [`this line`](https://github.com/microsoft/vscode/blob/f3f9f7a10d877fd2177daec3e1f6054706c7e5bc/src/vs/workbench/services/extensions/common/extensionHostManager.ts#L32)
     ❗ MUST NOT be committed
 -   On the dev tools console and you will see a traces for each RPC message
 
@@ -191,7 +191,7 @@ We maintain a dashboard to show performance metrics for our Windows and macOS
 perf bots:
 https://dataexplorer.azure.com/dashboards/2e20491b-d517-40b5-bab4-269607f05221
 
-![image](https://github.com/microsoft/vscode/assets/900690/91211231-fd0e-41b9-b1a2-2c19e8682ae3)
+![`image`](https://github.com/microsoft/vscode/assets/900690/91211231-fd0e-41b9-b1a2-2c19e8682ae3)
 
 For numbers across all insiders and stable releases and knobs for drilling into
 non-standard scenarios you can visit

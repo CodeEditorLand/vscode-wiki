@@ -9,5 +9,5 @@ Please refer to the sidebar (on the right) for details on Project Management,
 Contributing to VS Code, and Documentation.
 
 If you are looking for more information on using VS Code, please visit our
-[the Visual Studio Code portal](http://code.visualstudio.com) and follow us on
-[Twitter](https://twitter.com/code)!
+[`the Visual Studio Code portal`](http://code.visualstudio.com) and follow us on
+[`Twitter`](https://twitter.com/code)!

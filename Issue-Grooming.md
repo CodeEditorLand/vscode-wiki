@@ -33,7 +33,7 @@ We close issues for the following reasons:
 | The issue is a user question.                                                          | `*question`            |
 | The issue is off-topic, does not contain any actionable information or was unintended. | `invalid`              |
 | Given the information we have we can't reproduce the issue.                            | `*not-reproducible`    |
-| The feature request is out of scope. (See [below](#out-of-scope-feature-requests))     | `*out-of-scope`        |
+| The feature request is out of scope. (See [`below`](#out-of-scope-feature-requests))     | `*out-of-scope`        |
 
 We close issues with the help of a bot that responds to a particular comment
 such as `/duplicate of #1234` or to assigning a label with adding a pre-canned
@@ -61,7 +61,7 @@ request:
 
 1. Does the functionality described in the feature request have any reasonable
    chance to be implemented in the next 24 months? 24 months is longer than our
-   [roadmap](https://github.com/Microsoft/vscode/wiki/Roadmap) which outlines
+   [`roadmap`](https://github.com/Microsoft/vscode/wiki/Roadmap) which outlines
    the next 6-12 months. Thus, there is some crystal ball reading on our part,
    and we'll most likely keep more feature requests open than what we can
    accomplish in 24 months.
