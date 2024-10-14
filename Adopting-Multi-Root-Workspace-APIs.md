@@ -118,7 +118,7 @@ file on disk. So, it must not always be a `file`-uri, but VS Code will soon
 support workspace folders from remote locations.
 
 The
-[`basic-multi-root-sample``](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample)
+[`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample)
 extension is demonstrating the use of this API by showing the workspace folder
 of the currently opened file on the left-hand side of the status bar.
 

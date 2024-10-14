@@ -6,9 +6,9 @@ bugs, submitting pull requests, reporting issues, and creating suggestions.
 After cloning and building the repo, check out the
 [`issues list`](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue).
 Issues labeled
-[`help wanted``](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+[`help wanted`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 are good issues to submit a PR for. Issues labeled
-[`good first issue``](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+[`good first issue`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 are great candidates to pick up if you are in the code for the first time. If
 you are contributing significant changes, or if the issue is already assigned to
 a specific month milestone, please discuss with the assignee of the issue first
@@ -436,9 +436,9 @@ request like:
 
 To improve the chances to get a pull request merged you should select an issue
 that is labelled with the
-[`help-wanted``](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
+[`help-wanted`](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 or
-[`bug``](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3A%22bug%22)
+[`bug`](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3A%22bug%22)
 labels. If the issue you want to work on is not labelled with `help-wanted` or
 `bug`, you can start a conversation with the issue owner asking whether an
 external contribution will be considered.

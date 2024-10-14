@@ -26,8 +26,8 @@ They can also be run from the VS Code UI using the
 **Infrastructure**
 
 Unit tests are written using Mocha's BDD interface. We use the
-[`sinon``](https://sinonjs.org/releases/latest/) library for mocks, and the
-[`assert``](https://nodejs.org/api/assert.html) module for making assertions.
+[`sinon`](https://sinonjs.org/releases/latest/) library for mocks, and the
+[`assert`](https://nodejs.org/api/assert.html) module for making assertions.
 
 When using Sinon, you should make sure to call `sinon.restore()` in your
 `teardown` block to avoid leaking memory

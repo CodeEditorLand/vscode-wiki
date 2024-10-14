@@ -1,11 +1,11 @@
 This article outlines the differences between the
-[`github.com/microsoft/vscode``](https://github.com/microsoft/vscode) GitHub
+[`github.com/microsoft/vscode`](https://github.com/microsoft/vscode) GitHub
 project (which we refer to as `Code - OSS`) and Microsoft's
 [`Visual Studio Code`](https://code.visualstudio.com) distribution.
 
 ## The `Code - OSS` Repository
 
-The [`Code - OSS``](https://github.com/Microsoft/vscode) repository is where we
+The [`Code - OSS`](https://github.com/Microsoft/vscode) repository is where we
 (Microsoft) develop the open source editor upon which we build the
 [`Visual Studio Code`](https://code.visualstudio.com) product. We contribute
 source code and manage issues in this repository. We also maintain the wiki,

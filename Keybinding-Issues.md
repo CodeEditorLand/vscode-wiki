@@ -414,8 +414,8 @@ Backslash: {
 
 ### Code pointers
 
--   [`node-native-keymap``](https://github.com/Microsoft/node-native-keymap/blob/master/src/keyboard_win.cc)
--   [`WindowsKeyboardMapper``](https://github.com/Microsoft/vscode/blob/master/src/vs/workbench/services/keybinding/common/windowsKeyboardMapper.ts)
+-   [`node-native-keymap`](https://github.com/Microsoft/node-native-keymap/blob/master/src/keyboard_win.cc)
+-   [`WindowsKeyboardMapper`](https://github.com/Microsoft/vscode/blob/master/src/vs/workbench/services/keybinding/common/windowsKeyboardMapper.ts)
 
 ## How it works on macOS/Linux
 
@@ -473,9 +473,9 @@ keybinding dispatching falls back to using `e.keyCode`.
 
 ### Code pointers
 
--   [`node-native-keymap``](https://github.com/Microsoft/node-native-keymap/blob/master/src/keyboard_x.cc)
--   [`node-native-keymap``](https://github.com/Microsoft/node-native-keymap/blob/master/src/keyboard_mac.mm)
--   [`MacLinuxKeyboardMapper``](https://github.com/Microsoft/vscode/blob/master/src/vs/workbench/services/keybinding/common/macLinuxKeyboardMapper.ts)
+-   [`node-native-keymap`](https://github.com/Microsoft/node-native-keymap/blob/master/src/keyboard_x.cc)
+-   [`node-native-keymap`](https://github.com/Microsoft/node-native-keymap/blob/master/src/keyboard_mac.mm)
+-   [`MacLinuxKeyboardMapper`](https://github.com/Microsoft/vscode/blob/master/src/vs/workbench/services/keybinding/common/macLinuxKeyboardMapper.ts)
 
 ---
 

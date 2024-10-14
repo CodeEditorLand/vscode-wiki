@@ -5,7 +5,7 @@ within the team.
 
 -   Daily:
     [`Triage all failed and partially succeeded builds`](#triage-non-green-builds)
--   Daily: [`Ensure a green Insiders build from `main``](#green-insiders-build)
+-   Daily: [`Ensure a green Insiders build from `main`](#green-insiders-build)
 -   At least once during the week:
     [`Review and triage error telemetry`](#triage-error-telemetry)
 -   On the following Monday: Hand over the role to the next person

@@ -108,15 +108,15 @@ yellow. Bugs are grey with a touch of red.
 | Type                                                                                                                                                           | Description                                                                                          |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | [`needs more info`](https://github.com/microsoft/vscode/labels/needs%20more%20info)                                                                            | not possible to assign a type label due to missing information; see [above`](#requesting-information) |
-| [`bug``](https://github.com/microsoft/vscode/labels/bug)                                                                                                        | the implementation of a feature is not correct                                                       |
-| [`feature-request``](https://github.com/microsoft/vscode/labels/feature-request)                                                                                | request for a new feature                                                                            |
-| [`under-discussion``](https://github.com/microsoft/vscode/labels/under-discussion)                                                                              | not decided whether the issue is a bug or feature                                                    |
-| [`debt``](https://github.com/microsoft/vscode/labels/debt)                                                                                                      | improve the implementation/architecture                                                              |
-| [`*question``](https://github.com/microsoft/vscode/labels/%2Aquestion)                                                                                          | we should direct questions to StackOverflow                                                          |
-| [`upstream`](https://github.com/microsoft/vscode/labels/upstream), [`upstream-issue-linked``](https://github.com/microsoft/vscode/labels/upstream-issue-linked) | an issue used to track an issue in an upstream component                                             |
-| [`electron``](https://github.com/microsoft/vscode/labels/electron)                                                                                              | an issue with electron                                                                               |
-| [`engineering``](https://github.com/microsoft/vscode/labels/engineering)                                                                                        | issues related to our engineering system or our processes                                            |
-| [`polish``](https://github.com/microsoft/vscode/labels/polish)                                                                                                  | a feature could be improved, but not necessarily a bug                                               |
+| [`bug`](https://github.com/microsoft/vscode/labels/bug)                                                                                                        | the implementation of a feature is not correct                                                       |
+| [`feature-request`](https://github.com/microsoft/vscode/labels/feature-request)                                                                                | request for a new feature                                                                            |
+| [`under-discussion`](https://github.com/microsoft/vscode/labels/under-discussion)                                                                              | not decided whether the issue is a bug or feature                                                    |
+| [`debt`](https://github.com/microsoft/vscode/labels/debt)                                                                                                      | improve the implementation/architecture                                                              |
+| [`*question`](https://github.com/microsoft/vscode/labels/%2Aquestion)                                                                                          | we should direct questions to StackOverflow                                                          |
+| [`upstream`](https://github.com/microsoft/vscode/labels/upstream), [`upstream-issue-linked`](https://github.com/microsoft/vscode/labels/upstream-issue-linked) | an issue used to track an issue in an upstream component                                             |
+| [`electron`](https://github.com/microsoft/vscode/labels/electron)                                                                                              | an issue with electron                                                                               |
+| [`engineering`](https://github.com/microsoft/vscode/labels/engineering)                                                                                        | issues related to our engineering system or our processes                                            |
+| [`polish`](https://github.com/microsoft/vscode/labels/polish)                                                                                                  | a feature could be improved, but not necessarily a bug                                               |
 
 We also use the following **type** labels, although they don't directly play a
 role in the triaging process as they are usually assigned to issues created by
@@ -124,12 +124,12 @@ our team or by tooling.
 
 | Type                                                                                      | Description                                     |
 | ----------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| [`iteration-plan``](https://github.com/microsoft/vscode/labels/iteration-plan)             | a plan tracking the work for an iteration       |
-| [`iteration-plan-draft``](https://github.com/microsoft/vscode/labels/iteration-plan-draft) | a draft of an iteration plan                    |
-| [`plan-item``](https://github.com/microsoft/vscode/labels/plan-item)                       | an issue to organize and structure planned work |
-| [`testplan-item``](https://github.com/microsoft/vscode/labels/testplan-item)               | an issue describing how to test a feature       |
-| [`endgame-plan``](https://github.com/microsoft/vscode/labels/endgame-plan)                 | a plan tracking the endgame of an iteration     |
-| [`perf-profile``](https://github.com/microsoft/vscode/labels/perf-profile)                 | a issue representing a performance profile      |
+| [`iteration-plan`](https://github.com/microsoft/vscode/labels/iteration-plan)             | a plan tracking the work for an iteration       |
+| [`iteration-plan-draft`](https://github.com/microsoft/vscode/labels/iteration-plan-draft) | a draft of an iteration plan                    |
+| [`plan-item`](https://github.com/microsoft/vscode/labels/plan-item)                       | an issue to organize and structure planned work |
+| [`testplan-item`](https://github.com/microsoft/vscode/labels/testplan-item)               | an issue describing how to test a feature       |
+| [`endgame-plan`](https://github.com/microsoft/vscode/labels/endgame-plan)                 | a plan tracking the endgame of an iteration     |
+| [`perf-profile`](https://github.com/microsoft/vscode/labels/perf-profile)                 | a issue representing a performance profile      |
 
 ## Assigning Feature Areas
 

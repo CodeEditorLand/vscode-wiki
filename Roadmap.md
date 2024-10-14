@@ -303,7 +303,7 @@ Chat extension.
         than replaying raw data events
 -   [x] Investigate to allow terminals in the editor area
 -   [ ] :runner: Provide ongoing improvements to
-        [`xterm.js``](https://github.com/xtermjs/xterm.js) for performance,
+        [`xterm.js`](https://github.com/xtermjs/xterm.js) for performance,
         stability, and maintainability
 -   [ ] Explore intellisense-inspired CLI help support in the terminal
 

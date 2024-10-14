@@ -26,9 +26,9 @@ in source
 ### Performance Marks
 
 We have the
-[`performance.mark``](https://github.com/microsoft/vscode/blob/a3192fbad7bb02871ae8b6d3703c8bfc5433e661/src/vs/base/common/performance.d.ts#L11)-utility
+[`performance.mark`](https://github.com/microsoft/vscode/blob/a3192fbad7bb02871ae8b6d3703c8bfc5433e661/src/vs/base/common/performance.d.ts#L11)-utility
 that works very similar to the standard
-[`mark``](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark)-function.
+[`mark`](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark)-function.
 The difference is that you can use it in any context (node, electron, browser,
 or worker) and that it works with unix timestamps. This allows them to be
 compared across different processes.
@@ -75,7 +75,7 @@ listeners: if the average listener takes 2ms to execute then each `fire` costs
 200ms. This slows down your component but isn't in your control. A fun exercise
 is to step into each listener to see what they do or to profile firing. This is
 quite laborious too and therefore you can get a high-level overview via
-[`EmitterOptions._profName``](https://github.com/microsoft/vscode/blob/cd2381c266c162b144fdab91f91ec49542e07dea/src/vs/base/common/event.ts#L492).
+[`EmitterOptions._profName`](https://github.com/microsoft/vscode/blob/cd2381c266c162b144fdab91f91ec49542e07dea/src/vs/base/common/event.ts#L492).
 Do the following
 
 -   When creating your emitter, pass the `_profName`-option. ❗This is dev-time
@@ -115,7 +115,7 @@ great to analyse the whole startup, esp of the built product.
 
 We use dependency injection and services for most parts of VS Code. Concrete
 service are registered via the
-[`registerSingleton``](https://github.com/microsoft/vscode/blob/cd2381c266c162b144fdab91f91ec49542e07dea/src/vs/platform/instantiation/common/extensions.ts#L25)-function
+[`registerSingleton`](https://github.com/microsoft/vscode/blob/cd2381c266c162b144fdab91f91ec49542e07dea/src/vs/platform/instantiation/common/extensions.ts#L25)-function
 and when a service consumer (actions, workbench- or editor-contribution, etc) is
 being created our instantiation service ensures that the services it needs are
 also created. This is often wasteful because most consumers don't need the

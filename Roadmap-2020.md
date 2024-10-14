@@ -316,7 +316,7 @@ examples of technologies in which we are particularly active.
 ### xterm.js
 
 -   [ ] :runner: Provide ongoing improvements to
-        [`xterm.js``](https://github.com/xtermjs/xterm.js) for performance,
+        [`xterm.js`](https://github.com/xtermjs/xterm.js) for performance,
         stability, and maintainability
 
 ## Engineering

@@ -239,7 +239,7 @@ examples of technologies in which we are particularly active.
 
 ### xterm.js
 
--   [`x] Work with the [`xterm.js``](https://xtermjs.org) community to improve
+-   [`x] Work with the [`xterm.js`](https://xtermjs.org) community to improve
         parsing and internal line representations
 -   [x] Adopt `conpty` on Windows
 -   [x] Reflow lines when resizing the terminal

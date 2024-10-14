@@ -162,7 +162,7 @@ To that end, it:
 
 1. Upon labeling an issue `feature-request`, it waits a few minutes. If a
    milestone has not been manually assigned, it assigns the issue to the
-   [`"Backlog Candidates"``](https://github.com/microsoft/vscode/milestone/107)
+   [`"Backlog Candidates"`](https://github.com/microsoft/vscode/milestone/107)
    milestone.
 2. Upon an issue being assigned to `"Backlog Candidates"`, it comments
    explaining the feature request triaging pipeline to the issue author.
