@@ -2,7 +2,7 @@
 
 ## Theme
 
-Get ready for [`Connect(); //2015`](http://connect2015.visualstudio.com/) and then
+Get ready for [`Connect(); //2015`](HTTP://connect2015.visualstudio.com/) and then
 recover.
 
 ## Items

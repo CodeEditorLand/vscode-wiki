@@ -6,7 +6,7 @@ issues. The following are the guidelines and extra powers for our community
 trackers:
 
 Check our
-[`"inbox"`](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen%20no%3Aassignee%20-label%3Afeature-request%20-label%3Atestplan-item%20-label%3Aplan-item%20-label%3Aextension-candidate)
+[`"inbox"`](HTTPS://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen%20no%3Aassignee%20-label%3Afeature-request%20-label%3Atestplan-item%20-label%3Aplan-item%20-label%3Aextension-candidate)
 for new issues and see if any can be helped with:
 
 -   If it needs more information, mark it as such with `/needsMoreInfo` (or
@@ -14,7 +14,7 @@ for new issues and see if any can be helped with:
     -   Does it reproduce with all extensions disabled (`--disable-extensions`
         or `Reload Window With Extensions Disabled`)?
     -   For native crashes ask them to follow
-        https://github.com/Microsoft/vscode/wiki/Native-Crash-Issues.
+        HTTPS://github.com/Microsoft/vscode/wiki/Native-Crash-Issues.
     -   For non-English reports, ask them to describe the issue in English and
         suggest a machine translator.
 -   If a screenshot would be useful, mark it with `/gifPlease`.
@@ -25,7 +25,7 @@ for new issues and see if any can be helped with:
 -   If it is an issue with an extension from the Marketplace (i.e., not a
     built-in one), use `/causedByExtension` and optionally point the user to the
     repository where they can file the issue for the extension. For
-    [`some extensions`](https://github.com/microsoft/vscode/blob/main/.github/commands.json)
+    [`some extensions`](HTTPS://github.com/microsoft/vscode/blob/main/.github/commands.json)
     you can do this by using a specific response instead of
     `/causedByExtension`:
 

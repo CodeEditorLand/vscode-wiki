@@ -1,8 +1,8 @@
 Every new UI component that we add to VS Code needs to be accessible so all
 developers out there can use it with joy. If you have not already, please read
 these public facing docs as well:
-https://code.visualstudio.com/docs/editor/accessibility and
-https://www.w3.org/TR/WCAG20/#guidelines.
+HTTPS://code.visualstudio.com/docs/editor/accessibility and
+HTTPS://www.w3.org/TR/WCAG20/#guidelines.
 
 ### New features
 

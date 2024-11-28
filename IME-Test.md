@@ -1,5 +1,5 @@
 Input method smoke test. VS Code is powered by
-[`Monaco`](https://github.com/Microsoft/monaco-editor), a browser based code
+[`Monaco`](HTTPS://github.com/Microsoft/monaco-editor), a browser based code
 editor which supports IE 9/10/11, Edge, Chrome, Firefox, Safari and Opera, so
 when we make changes to the editor part, we should make sure it still works on
 all browsers Monaco support.
@@ -76,7 +76,7 @@ The golden standard is Word
 
 ## [Windows] Vietnamese with UniKey
 
--   Download and Run [`UniKey`](http://www.unikey.org/bdownload.php#uk)
+-   Download and Run [`UniKey`](HTTP://www.unikey.org/bdownload.php#uk)
 
 -   Click the button with a down arrow:
 
@@ -133,7 +133,7 @@ The golden standard is Word
 -   Install Sogou pinyin Chinese input method
 
     -   Download Sogou pinyin Chinese input method from
-        [`this link`](http://pinyin.sogou.com/)
+        [`this link`](HTTP://pinyin.sogou.com/)
 
         ![`download Sogou`](images/ime/sogou-install.png)
 
@@ -202,11 +202,11 @@ The golden standard is Word
 
 ## [Linux] Japanese
 
-Use [`mozc`](https://wiki.archlinux.org/index.php/Mozc).
+Use [`mozc`](HTTPS://wiki.archlinux.org/index.php/Mozc).
 
 ### Ubuntu
 
-Follow [`this guide`](https://moritzmolch.com/1453), from the **Mozc** section:
+Follow [`this guide`](HTTPS://moritzmolch.com/1453), from the **Mozc** section:
 
 -   `sudo apt-get install ibus-mozc`
 -   `System Settings > Text Entry`, add `Japanese (Mozc)(IBus)` to the list
@@ -215,7 +215,7 @@ Follow [`this guide`](https://moritzmolch.com/1453), from the **Mozc** section:
 
 ### Elementary OS
 
-http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-input
+HTTP://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-input
 
 ### Test
 
@@ -230,15 +230,15 @@ http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-in
 ### Ubuntu
 
 -   guide:
-    https://10wontips.blogspot.com/2019/03/typing-in-korean-on-lubuntu-1810.html
+    HTTPS://10wontips.blogspot.com/2019/03/typing-in-korean-on-lubuntu-1810.html
 -   Follow
-    [`this guide`](http://ubuntuhandbook.org/index.php/2016/07/2-best-chinese-pinyin-im-ubuntu-16-04/)
+    [`this guide`](HTTP://ubuntuhandbook.org/index.php/2016/07/2-best-chinese-pinyin-im-ubuntu-16-04/)
     to install and setup fcitx.
 
 ### Elementary OS
 
 -   Install fcitx: Follow instructions
-    [`here`](https://www.reddit.com/r/elementaryos/comments/33cfha/multiple_inputs_under_freya_chinese_case_pinyin/)
+    [`here`](HTTPS://www.reddit.com/r/elementaryos/comments/33cfha/multiple_inputs_under_freya_chinese_case_pinyin/)
 -   Install Korean-Hangul support: `sudo apt-get install fcitx-hangul`
 
 ### Test
@@ -252,13 +252,13 @@ http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-in
 ### Ubuntu
 
 -   Follow
-    [`this guide`](http://ubuntuhandbook.org/index.php/2016/07/2-best-chinese-pinyin-im-ubuntu-16-04/)
+    [`this guide`](HTTP://ubuntuhandbook.org/index.php/2016/07/2-best-chinese-pinyin-im-ubuntu-16-04/)
     to install and setup fcitx.
 
 ### Elementary OS
 
 -   Install fcitx: Follow instructions
-    [`here`](https://www.reddit.com/r/elementaryos/comments/33cfha/multiple_inputs_under_freya_chinese_case_pinyin/)
+    [`here`](HTTPS://www.reddit.com/r/elementaryos/comments/33cfha/multiple_inputs_under_freya_chinese_case_pinyin/)
 -   Select Google Pinyin
 
 ### Test
@@ -271,7 +271,7 @@ http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-in
 
 -   Install fcitx as above
 -   Install the deb images (32/64 bit) from
-    http://pinyin.sogou.com/linux/?r=pinyin
+    HTTP://pinyin.sogou.com/linux/?r=pinyin
 
 ### Test
 
@@ -283,9 +283,9 @@ http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-in
 
 Content created from:
 
--   [`#1168`](https://github.com/Microsoft/vscode/issues/1168)
--   [`#2250`](https://github.com/Microsoft/vscode/issues/2250)
--   [`#2374`](https://github.com/Microsoft/vscode/issues/2374)
--   [`#5615`](https://github.com/Microsoft/vscode/issues/5615)
--   [`#7997`](https://github.com/Microsoft/vscode/issues/7997)
--   [`#10937`](https://github.com/Microsoft/vscode/issues/10937)
+-   [`#1168`](HTTPS://github.com/Microsoft/vscode/issues/1168)
+-   [`#2250`](HTTPS://github.com/Microsoft/vscode/issues/2250)
+-   [`#2374`](HTTPS://github.com/Microsoft/vscode/issues/2374)
+-   [`#5615`](HTTPS://github.com/Microsoft/vscode/issues/5615)
+-   [`#7997`](HTTPS://github.com/Microsoft/vscode/issues/7997)
+-   [`#10937`](HTTPS://github.com/Microsoft/vscode/issues/10937)

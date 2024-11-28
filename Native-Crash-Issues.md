@@ -32,10 +32,10 @@ One can install electron-minidump globally using
    Insiders or Stable version of Code. Those versions use an internal Electron,
    and symbol files for the internal Electron along with Insiders and Stable are
    available at
-   [`microsoft/vscode-electron-prebuilt`](https://github.com/microsoft/vscode-electron-prebuilt/releases).
+   [`microsoft/vscode-electron-prebuilt`](HTTPS://github.com/microsoft/vscode-electron-prebuilt/releases).
    Meanwhile, Code-OSS uses the OSS version of Electron, which has symbol files
    available at
-   [`electron/electron`](https://github.com/electron/electron/releases).
+   [`electron/electron`](HTTPS://github.com/electron/electron/releases).
 3. Unzip the downloaded symbol zip file, and after verifying folder hashes, copy
    over individual `.sym` files as needed to the correct subdirectory within the
    electron-minidump breakpad_symbols directory, which can be found at

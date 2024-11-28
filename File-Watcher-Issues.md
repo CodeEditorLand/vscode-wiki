@@ -7,7 +7,7 @@ workspace and setup:
 
 -   no folder opened: files in opened editors are watched via node.js `fs.watch`
 -   folder opened: folder is watched recursively for all changes via
-    [`parcel`](https://github.com/parcel-bundler/watcher), opened editors with
+    [`parcel`](HTTPS://github.com/parcel-bundler/watcher), opened editors with
     files not within the folder are watched via node.js `fs.watch`
 
 If you are connected to a remote (SSH, WSL, Docker), the file watcher will run
@@ -52,7 +52,7 @@ provide logging for file events when you enable verbose logging. Steps are:
 -   filter the output by typing `File Watcher` into the filter box
 -   attach the output when doing the operation that exhibits the issue
 
-![`image`](https://user-images.githubusercontent.com/900690/156323290-f3ba6470-dfed-4066-a19c-951395611738.png)
+![`image`](HTTPS://user-images.githubusercontent.com/900690/156323290-f3ba6470-dfed-4066-a19c-951395611738.png)
 
 ### Logging (remote)
 
@@ -68,4 +68,4 @@ logging. Steps are:
 -   select `Log (Remote Server)` from the dropdown
 -   attach the output when doing the operation that exhibits the issue
 
-![`image`](https://user-images.githubusercontent.com/900690/156323886-6b7dfa25-d6ac-4316-9150-80e5c8104d04.png)
+![`image`](HTTPS://user-images.githubusercontent.com/900690/156323886-6b7dfa25-d6ac-4316-9150-80e5c8104d04.png)

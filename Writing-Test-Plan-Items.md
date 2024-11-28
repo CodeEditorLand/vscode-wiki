@@ -12,9 +12,9 @@ tested against and also how complex (1-5) it is to test.
     is recommended to provide as much context as possible for the tester to
     understand the feature and test it effectively. Examples:
 
-    -   https://github.com/microsoft/vscode/issues/158388
-    -   https://github.com/microsoft/vscode/issues/156224
-    -   https://github.com/microsoft/vscode/issues/183547
+    -   HTTPS://github.com/microsoft/vscode/issues/158388
+    -   HTTPS://github.com/microsoft/vscode/issues/156224
+    -   HTTPS://github.com/microsoft/vscode/issues/183547
 
 -   If a Test Plan Item cannot feasibly be written in such a way that any tester
     on the team can test, consider choosing a specific tester to assign to the

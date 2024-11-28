@@ -5,22 +5,22 @@ fast compile toolchain by running it in WSL. The drawback is that running VS
 Code from sources actually runs on **Linux** which is OK for most development
 tasks.
 
-![`image`](https://user-images.githubusercontent.com/22350/77914929-f2a85380-7296-11ea-96ca-7a6988c17234.png)
+![`image`](HTTPS://user-images.githubusercontent.com/22350/77914929-f2a85380-7296-11ea-96ca-7a6988c17234.png)
 
 ## Setting up WSL with GUI
 
-### In Windows 11 builds [`that support wslg`](https://github.com/microsoft/wslg#pre-requisites):
+### In Windows 11 builds [`that support wslg`](HTTPS://github.com/microsoft/wslg#pre-requisites):
 
 1. Open up powershell and enter `wsl --install`
 
 ### In Windows builds that do not support wslg:
 
-1. Install [`WSL2`](https://docs.microsoft.com/en-us/windows/wsl/install) and
-   [`Ubuntu`](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab).
-2. Install [`vcxsrv`](https://sourceforge.net/projects/vcxsrv/), it will create a
+1. Install [`WSL2`](HTTPS://docs.microsoft.com/en-us/windows/wsl/install) and
+   [`Ubuntu`](HTTPS://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab).
+2. Install [`vcxsrv`](HTTPS://sourceforge.net/projects/vcxsrv/), it will create a
    `XLaunch` shortcut in your Desktop`.
 3. Download the `config.xlaunch` file from
-   [`this gist`](https://gist.github.com/joaomoreno/90d3915379a862d99cd4f3e79feb0f8a)
+   [`this gist`](HTTPS://gist.github.com/joaomoreno/90d3915379a862d99cd4f3e79feb0f8a)
    to your user home directory `C:\Users\USERNAME\`.
 4. Hit <kbd>Win R</kbd> and type `shell:startup`, hit <kbd>Enter</kbd>. Add a
    shortcut here for `C:\Program Files\VcXsrv\xlaunch.exe`.
@@ -47,7 +47,7 @@ fi
 ## Building and running in WSL
 
 1. Install the
-   [`Debian-based Linux prerequisites`](https://github.com/microsoft/vscode/wiki/How-to-Contribute#prerequisites).
+   [`Debian-based Linux prerequisites`](HTTPS://github.com/microsoft/vscode/wiki/How-to-Contribute#prerequisites).
 2. Install the build dependencies
 
 ```
@@ -55,10 +55,10 @@ sudo apt install python3 python-is-python3 libsecret-1-dev libxss1 libx11-dev li
 ```
 
 3. Install
-   [`VS Code Insiders for Windows`](https://code.visualstudio.com/docs/?dv=win64user&build=insiders)
+   [`VS Code Insiders for Windows`](HTTPS://code.visualstudio.com/docs/?dv=win64user&build=insiders)
    and the
-   [`Remote - WSL`](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+   [`Remote - WSL`](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
    extension.
 4. Follow the
-   [`build and run`](https://github.com/microsoft/vscode/wiki/How-to-Contribute#getting-the-sources)
+   [`build and run`](HTTPS://github.com/microsoft/vscode/wiki/How-to-Contribute#getting-the-sources)
    instructions for Linux.

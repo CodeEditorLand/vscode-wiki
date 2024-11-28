@@ -6,7 +6,7 @@ positives can cause people to care less about health of the pipeline.
 green**. Even if the test only failed a couple of times in the past month, not
 disabling it will cause more wasted effort and more false positives down the
 line. You can check how often the test is failing in the
-[`ADO dashboards`](https://monacotools.visualstudio.com/Monaco/_build?definitionId=111&view=ms.vss-pipelineanalytics-web.new-build-definition-pipeline-analytics-view-cardmetrics).
+[`ADO dashboards`](HTTPS://monacotools.visualstudio.com/Monaco/_build?definitionId=111&view=ms.vss-pipelineanalytics-web.new-build-definition-pipeline-analytics-view-cardmetrics).
 
 Here are some strategies for dealing with flakiness:
 
@@ -34,7 +34,7 @@ Here are some strategies for dealing with flakiness:
         to find in the output.
 -   **Test against the product build**: Some failures may only happen in the
     product build, not out of sources. Integration and
-    [`smoke tests`](https://github.com/Microsoft/vscode/blob/main/test/smoke/README.md)
+    [`smoke tests`](HTTPS://github.com/Microsoft/vscode/blob/main/test/smoke/README.md)
     can both run against the product build:
 
     ```sh
@@ -54,5 +54,5 @@ Here are some strategies for dealing with flakiness:
         the test failed. You might need to wrap a timeout failure in a try/catch
         and add an `assert.fail` within the catch block.
 -   **Playback Playwright traces**: Browser smoke tests can be played back on
-    https://trace.playwright.dev/ by downloading the `playwright-trace-*.zip`
+    HTTPS://trace.playwright.dev/ by downloading the `playwright-trace-*.zip`
     build artifacts under `logs-<platform>-*` -> `smoke-tests-browser`.

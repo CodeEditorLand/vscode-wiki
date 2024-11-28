@@ -15,7 +15,7 @@ WIP
 # Logging
 
 All logs emitted by the git extension are written to
-[`the Git output channel`](https://code.visualstudio.com/docs/editor/versioncontrol#_git-output-window).
+[`the Git output channel`](HTTPS://code.visualstudio.com/docs/editor/versioncontrol#_git-output-window).
 You can access the Git output channel by invoking the `Git: Show Git Output`
 command from the command palette or using the **View > Output** menu, and
 selecting Git in the dropdown menu.

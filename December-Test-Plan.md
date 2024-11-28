@@ -135,7 +135,7 @@ Make sure that ES6 is supported without the need to configure something. Test:
 The language client / server libraries now support the complete set of language
 features available in the extension host. Implement a sample language server
 with more features by taking
-https://github.com/Microsoft/vscode-languageserver-node-example as a starting
+HTTPS://github.com/Microsoft/vscode-languageserver-node-example as a starting
 point. Focus on the new support for CodeActions, CodeLens, Formatting and
 rename.
 
@@ -304,18 +304,18 @@ features enabled.
 
 The sync action is back in the status bar:
 
-![`image`](https://cloud.githubusercontent.com/assets/22350/11761005/3e9a1b4a-a0b2-11e5-8144-812cbc021e16.png)
+![`image`](HTTPS://cloud.githubusercontent.com/assets/22350/11761005/3e9a1b4a-a0b2-11e5-8144-812cbc021e16.png)
 
 If you check out to a branch that doesn't have an upstream link, we assume it is
 **unpublished**. The following UI should show up. Clicking it will publish the
 branch.
 
-![`image`](https://cloud.githubusercontent.com/assets/22350/11761011/563d6806-a0b2-11e5-9fb4-dadf19755147.png)
+![`image`](HTTPS://cloud.githubusercontent.com/assets/22350/11761011/563d6806-a0b2-11e5-9fb4-dadf19755147.png)
 
 If you are in a repository without a **remote** configured, none of the previous
 actions should show up:
 
-![`image`](https://cloud.githubusercontent.com/assets/22350/11761022/83add9e2-a0b2-11e5-9890-83b88f96437f.png)
+![`image`](HTTPS://cloud.githubusercontent.com/assets/22350/11761022/83add9e2-a0b2-11e5-9890-83b88f96437f.png)
 
 ## ES6 JavaScript grammar
 
@@ -355,7 +355,7 @@ was to stay as close as possible to what we had in 0.9.0: We stick to a few
 major colors: blue for keywords, green for comments and red for strings.
 
 -   Test JavaScript and TypeScript in the light and dark theme, compare it our
-    old state at https://opentools.azurewebsites.net/try. Note, new colors for
+    old state at HTTPS://opentools.azurewebsites.net/try. Note, new colors for
     method, function and parameters declarations
 -   Test XML, HTML, Jade, Razor, Handlebars, CSS, LESS and SASS, JSON in the
     light and dark theme: They should all look consistent. Check stings,

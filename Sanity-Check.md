@@ -11,7 +11,7 @@
 ### What is sanity testing and why do we do it?
 
 VS Code has an extensive release process, called
-[`Endgame`](https://github.com/Microsoft/vscode/wiki/Running-the-Endgame), that
+[`Endgame`](HTTPS://github.com/Microsoft/vscode/wiki/Running-the-Endgame), that
 contains multiple testing processes to ensure that we deliver a product of the
 highest quality to our users. The final process a build must pass before being
 released is what we call "Sanity testing".
@@ -60,8 +60,8 @@ credit to @tylerleonhardt for this table and the below tool descriptions.
     can get a Parallels license.
 -   On Windows (virtualized or not), you can use the Sanity Testing WSL image
     created by @sbatten. Find images and instructions
-    [`here`](https://microsoft-my.sharepoint.com/:f:/p/stbatt/EvLnK6RCcW9KttxeqDR59WkBbqoPxHehXV4-EkQinN62sA?e=yk9YNE).
--   And don’t forget, we have [`dev box`](https://devbox.microsoft.com/%25C2%25A0)
+    [`here`](HTTPS://microsoft-my.sharepoint.com/:f:/p/stbatt/EvLnK6RCcW9KttxeqDR59WkBbqoPxHehXV4-EkQinN62sA?e=yk9YNE).
+-   And don’t forget, we have [`dev box`](HTTPS://devbox.microsoft.com/%25C2%25A0)
     thanks to @lszomoru which allows us to spin up Windows x64 VMs to access
     from any browser.
 
@@ -101,14 +101,14 @@ sudo snap install --classic --dangerous <file>.snap
 
 #### Pre-requisites
 
--   Install and run [`Docker Desktop`](https://docs.docker.com/engine/install/)
+-   Install and run [`Docker Desktop`](HTTPS://docs.docker.com/engine/install/)
 -   Install
-    [`Dev Containers`](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+    [`Dev Containers`](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 #### Steps
 
 1. Install VS Code at the exact version (commit) that needs sanity checking.
-   https://builds.code.visualstudio.com/builds/stable
+   HTTPS://builds.code.visualstudio.com/builds/stable
 2. Run the following commands. They register the QEMU hardware emulator and
    start 5 kinds of containers:
 
@@ -154,14 +154,14 @@ This is a second option for sanity testing the Windows server. Use the
 Remote-SSH extension to connect from any client platform to a Windows remote.
 You can connect to localhost on your own Windows machine, a parallels VM, or
 another machine. You'll need to
-[`set up and start OpenSSH services`](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse),
+[`set up and start OpenSSH services`](HTTPS://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse),
 such as the OpenSSH SSH Server service and the OpenSSH Authentication Agent
 service.
 
 Note: if you are an
-[`AAD user`](https://github.com/PowerShell/Win32-OpenSSH/issues/1787) on your
+[`AAD user`](HTTPS://github.com/PowerShell/Win32-OpenSSH/issues/1787) on your
 Windows machine, you may have to apply
-[`this workaround`](https://github.com/PowerShell/Win32-OpenSSH/issues/1476#issuecomment-642974745).
+[`this workaround`](HTTPS://github.com/PowerShell/Win32-OpenSSH/issues/1476#issuecomment-642974745).
 
 Here is an example localhost config that can be added to your SSH `config` file:
 
@@ -186,7 +186,7 @@ installed server.
 Use the Remote-SSH extension to connect from any client platform to a macOS
 remote (connecting to `localhost` is ok). To start the SSH server, you just have
 to enable Remote Login as described
-[`here`](https://osxdaily.com/2011/09/30/remote-login-ssh-server-mac-os-x/).
+[`here`](HTTPS://osxdaily.com/2011/09/30/remote-login-ssh-server-mac-os-x/).
 
 ## CLI
 
@@ -202,7 +202,7 @@ to enable Remote Login as described
 
 #### Pre-requisites
 
--   Install [`Docker Desktop`](https://docs.docker.com/engine/install/)
+-   Install [`Docker Desktop`](HTTPS://docs.docker.com/engine/install/)
 
 #### Steps
 
@@ -221,11 +221,11 @@ $env:COMMIT='<commit>' # PowerShell
 
 docker run --privileged --rm tonistiigi/binfmt --install all
 
-docker run -e COMMIT -it --rm --platform linux/amd64 mcr.microsoft.com/devcontainers/base:latest /bin/sh -c 'apt update && apt install -y wget libatomic1 ca-certificates python3-minimal && wget "https://update.code.visualstudio.com/commit:$COMMIT/cli-linux-x64/stable" -O- | tar -xz && ./code tunnel'
-docker run -e COMMIT -it --rm --platform linux/arm64 mcr.microsoft.com/devcontainers/base:latest /bin/sh -c 'apt update && apt install -y wget libatomic1 ca-certificates python3-minimal && wget "https://update.code.visualstudio.com/commit:$COMMIT/cli-linux-arm64/stable" -O- | tar -xz && ./code tunnel'
-docker run -e COMMIT -it --rm arm32v7/ubuntu /bin/sh -c 'apt update && apt install -y wget libatomic1 ca-certificates python3-minimal && wget "https://update.code.visualstudio.com/commit:$COMMIT/cli-linux-armhf/stable" -O- | tar -xz && ./code tunnel'
-docker run -e COMMIT -it --rm amd64/alpine /bin/sh -c 'apk update && apk add musl libgcc libstdc++ && wget "https://update.code.visualstudio.com/commit:$COMMIT/cli-alpine-x64/stable" -O- | tar -xz && ./code tunnel'
-docker run -e COMMIT -it --rm arm64v8/alpine /bin/sh -c 'apk update && apk add musl libgcc libstdc++ && wget "https://update.code.visualstudio.com/commit:$COMMIT/cli-alpine-arm64/stable" -O- | tar -xz && ./code tunnel'
+docker run -e COMMIT -it --rm --platform linux/amd64 mcr.microsoft.com/devcontainers/base:latest /bin/sh -c 'apt update && apt install -y wget libatomic1 ca-certificates python3-minimal && wget "HTTPS://update.code.visualstudio.com/commit:$COMMIT/cli-linux-x64/stable" -O- | tar -xz && ./code tunnel'
+docker run -e COMMIT -it --rm --platform linux/arm64 mcr.microsoft.com/devcontainers/base:latest /bin/sh -c 'apt update && apt install -y wget libatomic1 ca-certificates python3-minimal && wget "HTTPS://update.code.visualstudio.com/commit:$COMMIT/cli-linux-arm64/stable" -O- | tar -xz && ./code tunnel'
+docker run -e COMMIT -it --rm arm32v7/ubuntu /bin/sh -c 'apt update && apt install -y wget libatomic1 ca-certificates python3-minimal && wget "HTTPS://update.code.visualstudio.com/commit:$COMMIT/cli-linux-armhf/stable" -O- | tar -xz && ./code tunnel'
+docker run -e COMMIT -it --rm amd64/alpine /bin/sh -c 'apk update && apk add musl libgcc libstdc++ && wget "HTTPS://update.code.visualstudio.com/commit:$COMMIT/cli-alpine-x64/stable" -O- | tar -xz && ./code tunnel'
+docker run -e COMMIT -it --rm arm64v8/alpine /bin/sh -c 'apk update && apk add musl libgcc libstdc++ && wget "HTTPS://update.code.visualstudio.com/commit:$COMMIT/cli-alpine-arm64/stable" -O- | tar -xz && ./code tunnel'
 ```
 
 4. For each CLI test:

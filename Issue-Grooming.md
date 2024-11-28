@@ -61,7 +61,7 @@ request:
 
 1. Does the functionality described in the feature request have any reasonable
    chance to be implemented in the next 24 months? 24 months is longer than our
-   [`roadmap`](https://github.com/Microsoft/vscode/wiki/Roadmap) which outlines
+   [`roadmap`](HTTPS://github.com/Microsoft/vscode/wiki/Roadmap) which outlines
    the next 6-12 months. Thus, there is some crystal ball reading on our part,
    and we'll most likely keep more feature requests open than what we can
    accomplish in 24 months.

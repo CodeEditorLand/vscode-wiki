@@ -7,7 +7,7 @@ While still maintaining flexibility in the API making process.
 ## About Proposed APIs
 
 All proposed APIs are defined in the
-[`vscode-dts`](https://github.com/microsoft/vscode/blob/main/src/vscode-dts)
+[`vscode-dts`](HTTPS://github.com/microsoft/vscode/blob/main/src/vscode-dts)
 folder.
 
 We iterate, both internally and externally, on API proposals before making any
@@ -16,7 +16,7 @@ flexible, powerful, and more ergonomic APIs. Therefore, ideally, proposals would
 be reviewed, tried, and tested by extension authors. To try out a proposed API,
 do the following:
 
--   Use [`Insiders`](https://code.visualstudio.com/insiders/) because proposed
+-   Use [`Insiders`](HTTPS://code.visualstudio.com/insiders/) because proposed
     APIs change frequently.
 -   To your package.json, add "enabledApiProposals": ["<proposalName>"].
 -   Copy the vscode.proposed.<proposalName>.d.ts file into your project's source
@@ -30,7 +30,7 @@ extensions.
 
 Here is a rough flow chart of the process.
 
-![`Flow`](https://user-images.githubusercontent.com/10179520/83657557-60267800-a597-11ea-8831-7bf284d5233a.png)
+![`Flow`](HTTPS://user-images.githubusercontent.com/10179520/83657557-60267800-a597-11ea-8831-7bf284d5233a.png)
 
 #### API Idea
 
@@ -51,7 +51,7 @@ Before proposing your new API, ask yourself the following:
 -   Does the proposal alter an existing API? If yes, it **must** be backward
     compatible with the existing API.
 -   Does it violate our
-    [`API guidelines`](https://github.com/Microsoft/vscode/wiki/Extension-API-guidelines)?
+    [`API guidelines`](HTTPS://github.com/Microsoft/vscode/wiki/Extension-API-guidelines)?
 
 An API proposal is suggested, either internally or externally via a GitHub
 issue.
@@ -71,7 +71,7 @@ gauge continued interest in the proposal. Ideally, extension
 authors/contributors will try out the new API and provide real-world feedback.
 
 -   The corresponding
-    [`vscode.proposed.<proposalName>.d.ts`](https://github.com/microsoft/vscode/blob/main/src/vscode-dts)
+    [`vscode.proposed.<proposalName>.d.ts`](HTTPS://github.com/microsoft/vscode/blob/main/src/vscode-dts)
     file will be updated with the new API
     -   Each proposed API is contained within its own
         vscode.proposed.<proposalName>.d.ts file and contains a short
@@ -80,7 +80,7 @@ authors/contributors will try out the new API and provide real-world feedback.
 
 As an API proposal is reviewed and gathers feedback, it is very likely to evolve
 in response. As this continues, look to the corresponding
-[`vscode.proposed.<proposalName>.d.ts`](https://github.com/microsoft/vscode/blob/main/src/vscode-dts)
+[`vscode.proposed.<proposalName>.d.ts`](HTTPS://github.com/microsoft/vscode/blob/main/src/vscode-dts)
 file for the latest version.
 
 #### API Proposal Finalization
@@ -103,9 +103,9 @@ ideally, the finalization of an API will be attached to an upcoming milestone,
 again as an intent not guarantee.
 
 And finally, assuming a successful finalization, the API will move from
-[`vscode.proposed.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts)
+[`vscode.proposed.d.ts`](HTTPS://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts)
 into
-[`vscode.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.d.ts)
+[`vscode.d.ts`](HTTPS://github.com/Microsoft/vscode/blob/master/src/vs/vscode.d.ts)
 and the API proposal issue will be closed.
 
 To migrate from a proposed API to its finalized version, you should:

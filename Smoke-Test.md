@@ -3,7 +3,7 @@ that we execute before we release VS Code to the public on all platforms.
 
 ## Automated Smoke Test
 
-https://github.com/Microsoft/vscode/blob/main/test/smoke/README.md
+HTTPS://github.com/Microsoft/vscode/blob/main/test/smoke/README.md
 
 ## Manual Smoke Test
 
@@ -11,7 +11,7 @@ https://github.com/Microsoft/vscode/blob/main/test/smoke/README.md
 
 -   For the best debugging experience you'll need node version 6.5 (or higher)
 -   Clone the 'express' smoke test repository:
-    -   `git clone https://github.com/Microsoft/vscode-smoketest-express.git`
+    -   `git clone HTTPS://github.com/Microsoft/vscode-smoketest-express.git`
     -   `cd vscode-smoketest-express`
     -   `yarn`
 -   In the following steps we'll produce a data directory and extensions
@@ -144,7 +144,7 @@ never started Code before.
 -   Press <kbd>F5</kbd> to start debugging. Verify:
     -   workbench transforms into "debug mode" - glyph margin and status bar
         turns orange
--   Open browser at http://localhost:3000/
+-   Open browser at HTTP://localhost:3000/
     -   verify the breakpoint in index.js gets hit
 -   Verify step over, step in, continue work
 -   While stopped, verify:

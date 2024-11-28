@@ -1,5 +1,5 @@
 We are using `@types/vscode` for publishing `vscode.d.ts`. See
-https://github.com/Microsoft/vscode/issues/70175 for details.
+HTTPS://github.com/Microsoft/vscode/issues/70175 for details.
 
 > **Note:** The steps in the bottom section refer to a CI task that is currently
 > broken. @roblourens is trying to fix it. Until then, we will submit the PR to
@@ -7,9 +7,9 @@ https://github.com/Microsoft/vscode/issues/70175 for details.
 > unpublish a `@types/vscode` version.
 
 Example of PR when releasing 1.84 -
-https://github.com/DefinitelyTyped/DefinitelyTyped/pull/67287/files.
+HTTPS://github.com/DefinitelyTyped/DefinitelyTyped/pull/67287/files.
 
-1. Create your own fork of https://github.com/DefinitelyTyped/DefinitelyTyped,
+1. Create your own fork of HTTPS://github.com/DefinitelyTyped/DefinitelyTyped,
    and create a PR branch
 2. Update `types/vscode/index.d.ts` by copying the vscode.d.ts from our release
    branch. But leave the comment header in place -- we mean this one:
@@ -17,7 +17,7 @@ https://github.com/DefinitelyTyped/DefinitelyTyped/pull/67287/files.
 ```
 /**
  * Type Definition for Visual Studio Code <Major Version>.<Minor Version> Extension API
- * See https://code.visualstudio.com/api for more information
+ * See HTTPS://code.visualstudio.com/api for more information
  */
 ```
 
@@ -35,7 +35,7 @@ https://github.com/DefinitelyTyped/DefinitelyTyped/pull/67287/files.
 7. `@types/vscode` will be published in ~10 minutes.
 8. Make sure a correct version of `@types/vscode` was published, e.g., if you're
    releasing VS Code 1.84, you should see `@types/vscode` version 1.84.0
-   [`here`](https://www.npmjs.com/package/@types/vscode)
+   [`here`](HTTPS://www.npmjs.com/package/@types/vscode)
 
 ## Recovery
 

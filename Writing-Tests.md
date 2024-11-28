@@ -17,17 +17,17 @@ Unit tests are the files in `src/vs/**/*.test.ts`. Depending on the
 -   or Node.js (in `common` or `node`)
 
 Tests can be run manually on the command line, see the instructions
-[`here`](https://github.com/microsoft/vscode/blob/main/test/unit/README.md#L1).
+[`here`](HTTPS://github.com/microsoft/vscode/blob/main/test/unit/README.md#L1).
 They can also be run from the VS Code UI using the
-[`Selfhost Test Provider`](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-selfhost-test-provider).
+[`Selfhost Test Provider`](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-selfhost-test-provider).
 
 ### Writing Tests
 
 **Infrastructure**
 
 Unit tests are written using Mocha's BDD interface. We use the
-[`sinon`](https://sinonjs.org/releases/latest/) library for mocks, and the
-[`assert`](https://nodejs.org/api/assert.html) module for making assertions.
+[`sinon`](HTTPS://sinonjs.org/releases/latest/) library for mocks, and the
+[`assert`](HTTPS://nodejs.org/api/assert.html) module for making assertions.
 
 When using Sinon, you should make sure to call `sinon.restore()` in your
 `teardown` block to avoid leaking memory
@@ -55,9 +55,9 @@ suite("myCoolTests", () => {
 **Snapshot Testing**
 
 Aside from that, we also support Jest-like
-[`snapshot tests`](https://jestjs.io/docs/snapshot-testing) using the
+[`snapshot tests`](HTTPS://jestjs.io/docs/snapshot-testing) using the
 `assertSnapshot` helper.
-[`Here's an example`](https://github.com/microsoft/vscode/blob/01029a44a2f6b3eef401849612b4a08b532c62bb/src/vs/base/test/node/snapshot.test.ts#L124-L145).
+[`Here's an example`](HTTPS://github.com/microsoft/vscode/blob/01029a44a2f6b3eef401849612b4a08b532c62bb/src/vs/base/test/node/snapshot.test.ts#L124-L145).
 
 The first time you run a snapshot-containing test, the snapshot will be written
 to the `**snapshots**`` directory beside the test file. Look at the output file
@@ -80,7 +80,7 @@ can be executed using `./scripts/test-integration` or by manually running
 ## Extension Tests
 
 Extension tests are written using the standard, public
-[`extension testing system`](https://code.visualstudio.com/api/working-with-extensions/testing-extension).
+[`extension testing system`](HTTPS://code.visualstudio.com/api/working-with-extensions/testing-extension).
 They are not supported by the selfhost test provider _yet_. They can be executed
 using `./scripts/test-integration`, or by running the launch configs found in
 individual extensions' folders.

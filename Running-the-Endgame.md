@@ -1,5 +1,5 @@
 Each iteration closes with an
-[`endgame`](https://github.com/Microsoft/vscode/wiki/Development-Process#end-game).
+[`endgame`](HTTPS://github.com/Microsoft/vscode/wiki/Development-Process#end-game).
 
 ## Duties of the endgame champion
 
@@ -30,11 +30,11 @@ Each iteration closes with an
 ### Endgame Plan
 
 The template for the Endgame plan is
-[`here`](https://insiders.vscode.dev/github/microsoft/vscode-internalbacklog/blob/main/templates/endgame-plan.md).
+[`here`](HTTPS://insiders.vscode.dev/github/microsoft/vscode-internalbacklog/blob/main/templates/endgame-plan.md).
 Endgame champ can create the endgame plan for a given milestone from the
-[`Endgame Duty`](https://tools.code.visualstudio.com/duties/endgame) website.
+[`Endgame Duty`](HTTPS://tools.code.visualstudio.com/duties/endgame) website.
 
-<img width="267" alt="create-endgame-plan" src="https://user-images.githubusercontent.com/10746682/234839464-15ddaf88-01c6-4536-951f-e4de49690571.png">
+<img width="267" alt="create-endgame-plan" src="HTTPS://user-images.githubusercontent.com/10746682/234839464-15ddaf88-01c6-4536-951f-e4de49690571.png">
 
 This will create the endgame plan for the selected milestone. All you have to do
 after is to update the release and endgame dates.
@@ -58,5 +58,5 @@ we do not include the fix". Here are some examples:
 ### Recovery Endgame Plan
 
 Create the Endgame plan using the
-[`template`](https://insiders.vscode.dev/github/microsoft/vscode-internalbacklog/blob/main/templates/endgame-recovery-plan.md)
+[`template`](HTTPS://insiders.vscode.dev/github/microsoft/vscode-internalbacklog/blob/main/templates/endgame-recovery-plan.md)
 and update the placeholders with appropriate data.

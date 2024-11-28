@@ -26,16 +26,16 @@ questions:
     architecture and we need to know which process is causing the issue. You can
     identify the process based on the command line arguments that were used to
     start the process.
-    -   On Mac/Linux, we recommend to use the [`htop`](http://hisham.hm/htop/)
+    -   On Mac/Linux, we recommend to use the [`htop`](HTTP://hisham.hm/htop/)
         process viewer. You can also use the **Activity Monitor** to find the
         `PID` of the process and from a terminal you can run
         `ps aux | grep <pid>` to find its arguments.
-        ![`image`](https://cloud.githubusercontent.com/assets/900690/18907063/65806550-856a-11e6-8b2e-83da9111445d.png).
+        ![`image`](HTTPS://cloud.githubusercontent.com/assets/900690/18907063/65806550-856a-11e6-8b2e-83da9111445d.png).
     -   On Windows, we recommend to use the
-        [`process explorer`](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer).
+        [`process explorer`](HTTPS://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer).
         You can also use open the Task Manager, switch to the Details tab and
         make the "Command Line" column visible as shown below.
-        ![`image`](https://user-images.githubusercontent.com/172399/31660413-9fac1f02-b337-11e7-96fb-859c659b28f9.png)
+        ![`image`](HTTPS://user-images.githubusercontent.com/172399/31660413-9fac1f02-b337-11e7-96fb-859c659b28f9.png)
 
 ### Experiments
 
@@ -49,7 +49,7 @@ Please try to reproduce the performance problems in different setups:
 -   If you cannot reproduce the issue when the extensions are disabled, then can
     you narrow down the extension by selectively disabling extensions? You can
     disable extensions in the Extensions Viewlet
-    ![`image`](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png)
+    ![`image`](HTTPS://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png)
     and restart/reload. Once you found the extension please file an issue
     against the extension. To file an issue against an extension: find the
     extension in the market place, and use the `Issues` link in the Resources
@@ -60,7 +60,7 @@ Please try to reproduce the performance problems in different setups:
 
 -   Try to reproduce the issue in the VS Code **Insider** version. This will run
     our latest code and use a different setup (settings, extensions). You can
-    install the insider version here https://code.visualstudio.com/insiders.
+    install the insider version here HTTPS://code.visualstudio.com/insiders.
 
 -   Run VS Code when your settings are reset/empty. Open your settings, copy
     your customizations and then emtpy the JSON contents so that only `{}` is
@@ -77,7 +77,7 @@ When VS Code feels slow to start you can check the startup timers. Hit "F1" and
 select "Startup Performance". This will open developer tools and print some
 startup stats onto the the "Console".
 
-![`image`](https://user-images.githubusercontent.com/172399/32089769-3df19924-baec-11e7-9654-e199e1ab8c92.png)
+![`image`](HTTPS://user-images.githubusercontent.com/172399/32089769-3df19924-baec-11e7-9654-e199e1ab8c92.png)
 
 Please share these numbers with us as they often allows us to understand what is
 slow.
@@ -92,7 +92,7 @@ help us by providing performance profiles that we can analyze:
     profile:
     -   Execute "F1 > Toggle Developer Tools." In the overflow menu of the
         developer tools
-        <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
+        <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="HTTPS://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
     -   Select 'More Tools > JavaScript Profiler'. In there select start.
     -   Let it profile for 30 to 60 seconds, stop it.
     -   When the performance issue happens on startup, start the profiler and

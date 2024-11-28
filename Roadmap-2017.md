@@ -144,7 +144,7 @@ stacks, and even live editing of your applications during a debug session.
 -   Update recommended Node extension triggers (e.g. on `package.json`,
     recommend Node extension pack)
 -   [x] Include the
-        [`npm`](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
+        [`npm`](HTTPS://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
         extension functionality
 -   Node Debugging
     -   [x] Async stacks
@@ -187,8 +187,8 @@ extensions contribute to their environment.
 
 ### Contribute to Extensions
 
--   :runner: [`GO`](https://github.com/microsoft/vscode-go)
--   :runner: [`Docker`](https://github.com/microsoft/vscode-docker)
+-   :runner: [`GO`](HTTPS://github.com/microsoft/vscode-go)
+-   :runner: [`Docker`](HTTPS://github.com/microsoft/vscode-docker)
 
 ## Summary
 

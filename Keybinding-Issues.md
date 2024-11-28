@@ -73,7 +73,7 @@ dispatched as `meta+[Slash]`. There were two keybinding entries mapped from
         irrespective of keyboard layouts.
     -   **explanation**: VS Code on Linux **does not** detect switching the
         keyboard layout. We have an
-        [`open feature request and a PR is welcome - #23690`](https://github.com/Microsoft/vscode/issues/23690)
+        [`open feature request and a PR is welcome - #23690`](HTTPS://github.com/Microsoft/vscode/issues/23690)
 
 -   Are you using multiple keyboard layouts?
 
@@ -91,8 +91,8 @@ dispatched as `meta+[Slash]`. There were two keybinding entries mapped from
         Code uses to read the current keyboard layout. This means that VS Code
         ends up sometimes reading one of the other configured keyboard layouts
         and not the current active one. PR welcome:
-        [`#23505`](https://github.com/Microsoft/vscode/issues/23505),
-        [`#24166`](https://github.com/Microsoft/vscode/issues/24166)
+        [`#23505`](HTTPS://github.com/Microsoft/vscode/issues/23505),
+        [`#24166`](HTTPS://github.com/Microsoft/vscode/issues/24166)
 
 -   Are you customizing keyboard mappings via `setxkbmap` or equivalents?
 
@@ -102,7 +102,7 @@ dispatched as `meta+[Slash]`. There were two keybinding entries mapped from
         restart VS Code.
     -   **explanation**: VS Code does not honour keyboard mappings at this time
         when determining what scan codes it should listen for.
-        [`Ideas and PR welcome - #23991`](https://github.com/Microsoft/vscode/issues/23991)
+        [`Ideas and PR welcome - #23991`](HTTPS://github.com/Microsoft/vscode/issues/23991)
 
 -   Are you using some keyboard layout that remaps more than the printable
     characters?
@@ -114,7 +114,7 @@ dispatched as `meta+[Slash]`. There were two keybinding entries mapped from
         keyboard layout whatsoever.
     -   **explanation**: VS Code only looks at scan codes that usually produce
         printable characters in determining what scan codes to listen to.
-        [`Ideas and PR welcome - #24043`](https://github.com/Microsoft/vscode/issues/24043)
+        [`Ideas and PR welcome - #24043`](HTTPS://github.com/Microsoft/vscode/issues/24043)
 
 -   An important action is not mapped to a good keybinding by default.
 
@@ -128,7 +128,7 @@ dispatched as `meta+[Slash]`. There were two keybinding entries mapped from
         mapped by VS Code automatically to a scan code on the Ukrainian keyboard
         layout because no modifier + scan code combination produces
         <kbd>\`</kbd> on the Ukrainian keyboard layout. You can upvote in
-        [`issue #1240`](https://github.com/Microsoft/vscode/issues/1240).
+        [`issue #1240`](HTTPS://github.com/Microsoft/vscode/issues/1240).
 
 -   Is <kbd>Ctrl</kbd>+<kbd>.</kbd> inserting a small `e` when running with kde
     desktop and ibus-daemon?
@@ -138,8 +138,8 @@ dispatched as `meta+[Slash]`. There were two keybinding entries mapped from
     -   **solution**: if you disable emoji shortcuts from ibus-daemon (run
         "ibus-setup" to show ibus preferences), the shortcut for Quick Fix
         <kbd>Ctrl</kbd>+<kbd>.</kbd> works again. Special thanks to
-        [`danjaredg`](https://github.com/danjaredg) for
-        [`pointing this out`](https://github.com/microsoft/vscode/issues/142583)
+        [`danjaredg`](HTTPS://github.com/danjaredg) for
+        [`pointing this out`](HTTPS://github.com/microsoft/vscode/issues/142583)
 
 -   Experiencing any other issue?
     -   **try**: use `"keyboard.dispatch": "keyCode"` in your settings and
@@ -172,7 +172,7 @@ dispatched as `meta+[Slash]`. There were two keybinding entries mapped from
         keyboard event basis, we need to poll and check if the last keyboard
         event came from an ISO keyboard and then expect that Chromium swaps the
         scan codes such that we can un-un-swap them.
-        [`Read more in issue #26506`](https://github.com/Microsoft/vscode/issues/26506)
+        [`Read more in issue #26506`](HTTPS://github.com/Microsoft/vscode/issues/26506)
 
 -   Are you using some keyboard layout that remaps more than the printable
     characters?
@@ -184,7 +184,7 @@ dispatched as `meta+[Slash]`. There were two keybinding entries mapped from
         keyboard layout whatsoever.
     -   **explanation**: VS Code only looks at scan codes that usually produce
         printable characters in determining what scan codes to listen to.
-        [`Ideas and PR welcome - #24043`](https://github.com/Microsoft/vscode/issues/24043)
+        [`Ideas and PR welcome - #24043`](HTTPS://github.com/Microsoft/vscode/issues/24043)
 
 -   An important action is not mapped to a good keybinding by default.
 
@@ -198,7 +198,7 @@ dispatched as `meta+[Slash]`. There were two keybinding entries mapped from
         mapped by VS Code automatically to a scan code on the Ukrainian keyboard
         layout because no modifier + scan code combination produces
         <kbd>\`</kbd> on the Ukrainian keyboard layout. You can upvote in
-        [`issue #1240`](https://github.com/Microsoft/vscode/issues/1240).
+        [`issue #1240`](HTTPS://github.com/Microsoft/vscode/issues/1240).
 
 -   Experiencing any other issue?
     -   **try**: use `"keyboard.dispatch": "keyCode"` in your settings and
@@ -219,7 +219,7 @@ dispatched as `meta+[Slash]`. There were two keybinding entries mapped from
         to more, remove, or add a set of key codes and it is possible that under
         your keyboard layout a specific key code, e.g. `VK_OEM_3` is not used.
         You can upvote in
-        [`issue #1240`](https://github.com/Microsoft/vscode/issues/1240).
+        [`issue #1240`](HTTPS://github.com/Microsoft/vscode/issues/1240).
 
 -   Experiencing any other issue?
     -   **further troubleshooting**:
@@ -234,7 +234,7 @@ dispatched as `meta+[Slash]`. There were two keybinding entries mapped from
     -   **solution**: check what key combination we receive from the OS. If we
         don't receive a good key combination, you need to configure your OS or
         drivers to release that key combination to applications. e.g.:
-        ![`keyboard-input`](https://cloud.githubusercontent.com/assets/5047891/25478333/fe31c830-2b40-11e7-865c-b2c3bb10dd75.gif)
+        ![`keyboard-input`](HTTPS://cloud.githubusercontent.com/assets/5047891/25478333/fe31c830-2b40-11e7-865c-b2c3bb10dd75.gif)
 
 -   A keybinding does something unexpected.
 
@@ -269,7 +269,7 @@ dispatched as `meta+[Slash]`. There were two keybinding entries mapped from
         you don't want.
 
 -   I want to find out which commands are bound to a key combination.
-    ![`keyboard-conflicts`](https://cloud.githubusercontent.com/assets/5047891/25484174/38f5b004-2b59-11e7-994b-dfa96ef043ce.gif)
+    ![`keyboard-conflicts`](HTTPS://cloud.githubusercontent.com/assets/5047891/25484174/38f5b004-2b59-11e7-994b-dfa96ef043ce.gif)
 
 -   I have tried **all of the above**
     -   open an editor.
@@ -342,7 +342,7 @@ specifically, on Windows:
     <kbd>Shift+0x37</kbd> produces `/` on the GER keyboard layout.
 
 Read more about how keyboard layouts work under Windows
-[`here`](<https://msdn.microsoft.com/en-us/library/windows/desktop/ms646267(v=vs.85).aspx>).
+[`here`](<HTTPS://msdn.microsoft.com/en-us/library/windows/desktop/ms646267(v=vs.85).aspx>).
 
 ### What's wrong with `e.code`
 
@@ -414,8 +414,8 @@ Backslash: {
 
 ### Code pointers
 
--   [`node-native-keymap`](https://github.com/Microsoft/node-native-keymap/blob/master/src/keyboard_win.cc)
--   [`WindowsKeyboardMapper`](https://github.com/Microsoft/vscode/blob/master/src/vs/workbench/services/keybinding/common/windowsKeyboardMapper.ts)
+-   [`node-native-keymap`](HTTPS://github.com/Microsoft/node-native-keymap/blob/master/src/keyboard_win.cc)
+-   [`WindowsKeyboardMapper`](HTTPS://github.com/Microsoft/vscode/blob/master/src/vs/workbench/services/keybinding/common/windowsKeyboardMapper.ts)
 
 ## How it works on macOS/Linux
 
@@ -473,9 +473,9 @@ keybinding dispatching falls back to using `e.keyCode`.
 
 ### Code pointers
 
--   [`node-native-keymap`](https://github.com/Microsoft/node-native-keymap/blob/master/src/keyboard_x.cc)
--   [`node-native-keymap`](https://github.com/Microsoft/node-native-keymap/blob/master/src/keyboard_mac.mm)
--   [`MacLinuxKeyboardMapper`](https://github.com/Microsoft/vscode/blob/master/src/vs/workbench/services/keybinding/common/macLinuxKeyboardMapper.ts)
+-   [`node-native-keymap`](HTTPS://github.com/Microsoft/node-native-keymap/blob/master/src/keyboard_x.cc)
+-   [`node-native-keymap`](HTTPS://github.com/Microsoft/node-native-keymap/blob/master/src/keyboard_mac.mm)
+-   [`MacLinuxKeyboardMapper`](HTTPS://github.com/Microsoft/vscode/blob/master/src/vs/workbench/services/keybinding/common/macLinuxKeyboardMapper.ts)
 
 ---
 

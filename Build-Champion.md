@@ -43,11 +43,11 @@ Follow this as a rough guide for how to review a build:
 
 **Test failure:** If it looks like the test failed because of the linked change,
 ping the [`area owner`](#area-owners). If it looks like the test flaked, search
-[`GH issues`](https://github.com/microsoft/vscode/issues) for the failure (useful
+[`GH issues`](HTTPS://github.com/microsoft/vscode/issues) for the failure (useful
 queries:
-[`smoke-test-failure`](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Asmoke-test-failure),
-[`integration-test-failure`](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aintegration-test-failure),
-[`unit-test-failure`](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aunit-test-failure))
+[`smoke-test-failure`](HTTPS://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Asmoke-test-failure),
+[`integration-test-failure`](HTTPS://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aintegration-test-failure),
+[`unit-test-failure`](HTTPS://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aunit-test-failure))
 and comment on it if found, otherwise create an issue for the
 [`area owner`](#area-owners). If you end up seeing the test flake multiple times,
 you can skip the test and comment on the associated issue.
@@ -62,9 +62,9 @@ relevant, ping the committer if they have not yet commented.
     build.
 -   If the failure still occurs, contact the Terrapin team
     (terrapin@microsoft.com) and let them know that we run
-    `npx https://aka.ms/enablesecurefeed standAlone` as well as detailed info on
+    `npx HTTPS://aka.ms/enablesecurefeed standAlone` as well as detailed info on
     the errors we're getting. Also reach out to them by creating an IcM ticket
-    against them: https://aka.ms/icm. They have a team there **Terrapin**.
+    against them: HTTPS://aka.ms/icm. They have a team there **Terrapin**.
 
 👉 It's important to use ✅ on failed builds as that helps save other team
 members from investigating failures that don't need it which could happen when
@@ -74,7 +74,7 @@ they're pinged directly.
 
 It is crucial for our success to have a green insiders build from `main` branch
 that gets published to our
-[`update site`](https://builds.code.visualstudio.com/builds/insider) at least once
+[`update site`](HTTPS://builds.code.visualstudio.com/builds/insider) at least once
 on a day. Various tools depend on this to happen, for example performance
 testing to figure out performance regressions early.
 
@@ -82,10 +82,10 @@ Insider builds are scheduled to running daily automatically. In case of failure,
 it is your responsibility to act accordingly:
 
 -   when automated release is disabled (debt week): run the
-    [`pipeline`](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
+    [`pipeline`](HTTPS://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
     but do not release the build
 -   when automated release is enabled (otherwise): run the
-    [`pipeline`](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
+    [`pipeline`](HTTPS://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
     and release the build
 
 👉 even in debt week, when the automated release is disabled, we still want the
@@ -95,7 +95,7 @@ rhythm is not impacted at all and we can act on build issues early on
 ## Triage error telemetry
 
 Our error telemetry captures any uncaught errors thrown in VS Code and presents
-them in https://errors.code.visualstudio.com/. This website allows us to view
+them in HTTPS://errors.code.visualstudio.com/. This website allows us to view
 errors by each release and they also contain stats on the number of hits and
 machines that particular error had. Errors typically represent a case that
 wasn't considered in code, a broken feature and/or a bad error notification
@@ -152,7 +152,7 @@ feature/test.
 
 ### Useful links
 
--   [`Error telemetry website`](https://errors.code.visualstudio.com/)
--   [`ADO VS Code build`](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
--   [`ADO VS Code build analytics`](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111&view=ms.vss-pipelineanalytics-web.new-build-definition-pipeline-analytics-view-cardmetrics)
--   [`Dealing with test flakiness wiki page`](https://github.com/microsoft/vscode/wiki/Dealing-with-Test-Flakiness)
+-   [`Error telemetry website`](HTTPS://errors.code.visualstudio.com/)
+-   [`ADO VS Code build`](HTTPS://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
+-   [`ADO VS Code build analytics`](HTTPS://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111&view=ms.vss-pipelineanalytics-web.new-build-definition-pipeline-analytics-view-cardmetrics)
+-   [`Dealing with test flakiness wiki page`](HTTPS://github.com/microsoft/vscode/wiki/Dealing-with-Test-Flakiness)
