@@ -19,7 +19,7 @@ To report a performance issue please use the 'Report Issue' command available in
 the 'Help' menu. In the Issue Reporter window that shows up, set the issue type
 to 'Performance Issue'.
 
-![`image`](HTTPS://user-images.githubusercontent.com/172399/42494913-e3532ece-8421-11e8-9f37-2da879c80ed6.png)
+![`image`](https://user-images.githubusercontent.com/172399/42494913-e3532ece-8421-11e8-9f37-2da879c80ed6.png)
 
 The following sections describe how you can narrow down a performance issue.
 
@@ -35,17 +35,17 @@ Find out whether an extension is causing the high CPU load. You can open the
 Process Explorer using `Help>Open Process Explorer` to open a new window with a
 continuously updating list of VS Code processes.
 
-![`image`](HTTPS://user-images.githubusercontent.com/172399/40024023-383afbfa-57cd-11e8-91cc-24e14e5566df.png)
+![`image`](https://user-images.githubusercontent.com/172399/40024023-383afbfa-57cd-11e8-91cc-24e14e5566df.png)
 
 Try to reproduce the issue with this window open, or take a snapshot of the
 processes by running `code --status` from the command line. For information on
 how to run `code` from the command line on OS X please see the
-[`setup documentation`](HTTPS://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
+[`setup documentation`](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
 When the process listing in the Process Explorer or the output of
 `code --status` shows that the `extensionHost` is consuming a high percentage of
 CPU (see below) then this is likely caused by an extension.
 
-![`image`](HTTPS://user-images.githubusercontent.com/172399/36384870-1aac63c2-1591-11e8-8924-b30756643f3f.png)
+![`image`](https://user-images.githubusercontent.com/172399/36384870-1aac63c2-1591-11e8-8924-b30756643f3f.png)
 
 <a name="extensions-disabled"/>
 
@@ -56,7 +56,7 @@ You can disable the extensions either from the command line using the
 `--disable-extensions` command line argument, e.g., `code --disable-extensions`
 or from the `...` menu in the Extensions Viewlet:
 
-![`image`](HTTPS://user-images.githubusercontent.com/172399/34978338-33e7bf98-fa9e-11e7-9c79-1138936c5c34.png)
+![`image`](https://user-images.githubusercontent.com/172399/34978338-33e7bf98-fa9e-11e7-9c79-1138936c5c34.png)
 
 If you cannot reproduce the issue when **all** extensions are disabled, then can
 you narrow down the extension by selectively disabling extensions? You can
@@ -71,7 +71,7 @@ been identified.
 Alternatively, you can manually disable extensions in the Extensions Viewlet and
 restart/reload.
 
-![`image`](HTTPS://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png)
+![`image`](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png)
 
 Once you found the extension, please file an issue against the extension. To
 file an issue against an extension open the Running Extensions editor by
@@ -91,13 +91,13 @@ or us. To create a CPU profile:
 -   To start recording a profile click the run control in the editor's title
     bar:
 
-![`image`](HTTPS://user-images.githubusercontent.com/172399/33882668-212c793c-df39-11e7-9844-6e2f4abf194f.png)
+![`image`](https://user-images.githubusercontent.com/172399/33882668-212c793c-df39-11e7-9844-6e2f4abf194f.png)
 
 -   Perform some steps in VS Code that expose the slowdown
 -   Stop the recording using the same control.
 -   Save the extension host profile:
 
-![`image`](HTTPS://user-images.githubusercontent.com/172399/33882757-831a321a-df39-11e7-899e-032ab9174fab.png)
+![`image`](https://user-images.githubusercontent.com/172399/33882757-831a321a-df39-11e7-899e-032ab9174fab.png)
 
 -   Attach the profile to a Github issue.
 
@@ -130,7 +130,7 @@ If you can reproduce the problem with extensions disabled, then use
 This command collects status about your running VS Code and the workspace you
 have opened. You can attach this information when reporting a performance issue.
 
-![`image`](HTTPS://github.com/Microsoft/vscode-docs/blob/main/release-notes/images/1_19/status.png)
+![`image`](https://github.com/Microsoft/vscode-docs/blob/main/release-notes/images/1_19/status.png)
 
 The output includes information about the environment, all running VS Code
 processes, and the counts of some typical files in the workspace.
@@ -139,7 +139,7 @@ processes, and the counts of some typical files in the workspace.
 
 ### The Renderer/Window process consumes a lot of CPU
 
-![`image`](HTTPS://user-images.githubusercontent.com/172399/33888504-89fde40a-df4d-11e7-90f4-bff73c281ec8.png)
+![`image`](https://user-images.githubusercontent.com/172399/33888504-89fde40a-df4d-11e7-90f4-bff73c281ec8.png)
 
 Try to reproduce the problem on different folders; a folder with less files, a
 folder that is not under source control, or open a single file.
@@ -176,7 +176,7 @@ narrow down on a slow-down. So, please create a CPU profile of the VS Code core
 
 ### The Shared process consumes a lot of CPU
 
-![`shared-process`](HTTPS://user-images.githubusercontent.com/10746682/132195495-50043d34-b0ee-4301-80fe-1011c0d8bb2a.png)
+![`shared-process`](https://user-images.githubusercontent.com/10746682/132195495-50043d34-b0ee-4301-80fe-1011c0d8bb2a.png)
 
 Try to reproduce the problem on different folders; a folder with less files, or
 open a single file or open an empty window,

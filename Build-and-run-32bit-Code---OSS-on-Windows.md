@@ -5,7 +5,7 @@ version of VS Code but you're running 64bit Windows. To get a local build of the
 32bit VS Code that you can debug, do the following:
 
 1. Follow the
-   [`regular contributing guide`](HTTPS://github.com/microsoft/vscode/wiki/How-to-Contribute)
+   [`regular contributing guide`](https://github.com/microsoft/vscode/wiki/How-to-Contribute)
    and make sure you can get the 64bit version of VS Code running locally.
 1. Stop any running processes from the regular contributing guide.
 1. Start a PowerShell session in the `vscode` directory that you cloned.

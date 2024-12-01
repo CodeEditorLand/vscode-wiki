@@ -43,11 +43,11 @@ Follow this as a rough guide for how to review a build:
 
 **Test failure:** If it looks like the test failed because of the linked change,
 ping the [`area owner`](#area-owners). If it looks like the test flaked, search
-[`GH issues`](HTTPS://github.com/microsoft/vscode/issues) for the failure (useful
+[`GH issues`](https://github.com/microsoft/vscode/issues) for the failure (useful
 queries:
-[`smoke-test-failure`](HTTPS://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Asmoke-test-failure),
-[`integration-test-failure`](HTTPS://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aintegration-test-failure),
-[`unit-test-failure`](HTTPS://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aunit-test-failure))
+[`smoke-test-failure`](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Asmoke-test-failure),
+[`integration-test-failure`](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aintegration-test-failure),
+[`unit-test-failure`](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aunit-test-failure))
 and comment on it if found, otherwise create an issue for the
 [`area owner`](#area-owners). If you end up seeing the test flake multiple times,
 you can skip the test and comment on the associated issue.
@@ -74,7 +74,7 @@ they're pinged directly.
 
 It is crucial for our success to have a green insiders build from `main` branch
 that gets published to our
-[`update site`](HTTPS://builds.code.visualstudio.com/builds/insider) at least once
+[`update site`](https://builds.code.visualstudio.com/builds/insider) at least once
 on a day. Various tools depend on this to happen, for example performance
 testing to figure out performance regressions early.
 
@@ -82,10 +82,10 @@ Insider builds are scheduled to running daily automatically. In case of failure,
 it is your responsibility to act accordingly:
 
 -   when automated release is disabled (debt week): run the
-    [`pipeline`](HTTPS://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
+    [`pipeline`](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
     but do not release the build
 -   when automated release is enabled (otherwise): run the
-    [`pipeline`](HTTPS://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
+    [`pipeline`](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
     and release the build
 
 👉 even in debt week, when the automated release is disabled, we still want the
@@ -152,7 +152,7 @@ feature/test.
 
 ### Useful links
 
--   [`Error telemetry website`](HTTPS://errors.code.visualstudio.com/)
--   [`ADO VS Code build`](HTTPS://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
--   [`ADO VS Code build analytics`](HTTPS://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111&view=ms.vss-pipelineanalytics-web.new-build-definition-pipeline-analytics-view-cardmetrics)
--   [`Dealing with test flakiness wiki page`](HTTPS://github.com/microsoft/vscode/wiki/Dealing-with-Test-Flakiness)
+-   [`Error telemetry website`](https://errors.code.visualstudio.com/)
+-   [`ADO VS Code build`](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
+-   [`ADO VS Code build analytics`](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111&view=ms.vss-pipelineanalytics-web.new-build-definition-pipeline-analytics-view-cardmetrics)
+-   [`Dealing with test flakiness wiki page`](https://github.com/microsoft/vscode/wiki/Dealing-with-Test-Flakiness)

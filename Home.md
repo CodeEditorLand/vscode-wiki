@@ -10,4 +10,4 @@ Contributing to VS Code, and Documentation.
 
 If you are looking for more information on using VS Code, please visit our
 [`the Visual Studio Code portal`](HTTP://code.visualstudio.com) and follow us on
-[`Twitter`](HTTPS://twitter.com/code)!
+[`Twitter`](https://twitter.com/code)!

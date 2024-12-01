@@ -1,7 +1,7 @@
 ## Intro
 
 These are VS Code coding guidelines. Please also review our
-[`Source Code Organisation`](HTTPS://github.com/microsoft/vscode/wiki/Source-Code-Organization)
+[`Source Code Organisation`](https://github.com/microsoft/vscode/wiki/Source-Code-Organization)
 page.
 
 ## Indentation

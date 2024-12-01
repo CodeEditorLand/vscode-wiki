@@ -4,11 +4,11 @@ There are many ways to contribute to the Visual Studio Code project: logging
 bugs, submitting pull requests, reporting issues, and creating suggestions.
 
 After cloning and building the repo, check out the
-[`issues list`](HTTPS://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue).
+[`issues list`](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue).
 Issues labeled
-[`help wanted`](HTTPS://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+[`help wanted`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 are good issues to submit a PR for. Issues labeled
-[`good first issue`](HTTPS://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+[`good first issue`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 are great candidates to pick up if you are in the code for the first time. If
 you are contributing significant changes, or if the issue is already assigned to
 a specific month milestone, please discuss with the assignee of the issue first
@@ -21,10 +21,10 @@ dependencies via `npm i`, you need network access.
 
 You'll need the following tools:
 
--   [`Git`](HTTPS://git-scm.com)
--   [`Node.JS`](HTTPS://nodejs.org/en/), **x64**, version `>=18.15.x and <19`
--   [`Python`](HTTPS://www.python.org/downloads/) (required for node-gyp; check
-    the [`node-gyp readme`](HTTPS://github.com/nodejs/node-gyp#installation) for
+-   [`Git`](https://git-scm.com)
+-   [`Node.JS`](https://nodejs.org/en/), **x64**, version `>=18.15.x and <19`
+-   [`Python`](https://www.python.org/downloads/) (required for node-gyp; check
+    the [`node-gyp readme`](https://github.com/nodejs/node-gyp#installation) for
     the currently supported Python versions)
     -   **Note:** Python will be automatically installed for Windows users
         through installing `windows-build-tools` npm module (see below)
@@ -32,19 +32,19 @@ You'll need the following tools:
     -   **Windows 10/11**
         -   Install the Windows Build Tools:
             -   if you install Node on your system using the Node installer from
-                the [`Node.JS`](HTTPS://nodejs.org/en/download/) page then ensure
+                the [`Node.JS`](https://nodejs.org/en/download/) page then ensure
                 that you have installed the 'Tools for Native Modules'.
                 Everything should work out of the box then.
             -   if you use a node version manager like
-                [`nvm`](HTTPS://github.com/coreybutler/nvm-windows) or
-                [`nvs`](HTTPS://github.com/jasongin/nvs) then follow these steps:
+                [`nvm`](https://github.com/coreybutler/nvm-windows) or
+                [`nvs`](https://github.com/jasongin/nvs) then follow these steps:
                 -   Install the current version of Python using the
-                    [`Microsoft Store Package`](HTTPS://docs.python.org/3/using/windows.html#the-microsoft-store-package).
+                    [`Microsoft Store Package`](https://docs.python.org/3/using/windows.html#the-microsoft-store-package).
                 -   Install the Visual C++ Build Environment by either
                     installing the
-                    [`Visual Studio Build Tools`](HTTPS://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools)
+                    [`Visual Studio Build Tools`](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools)
                     or the
-                    [`Visual Studio Community Edition`](HTTPS://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community).
+                    [`Visual Studio Community Edition`](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community).
                     The minimum workload to install is 'Desktop Development with
                     C++'.
                 -   open a command prompt and run
@@ -53,13 +53,13 @@ You'll need the following tools:
                     `npm config set msvs_version 2019`)
         -   **Warning:** Make sure your profile path only contains ASCII
             letters, e.g. _John_, otherwise, it can lead to
-            [`node-gyp usage problems (nodejs/node-gyp/issues#297)](HTTPS://github.com/nodejs/node-gyp/issues/297)
+            [`node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
         -   **Note**: Building and debugging via the Windows subsystem for Linux
             (WSL) is currently not supported.
     -   **Windows WSL2**:
         HTTPS://github.com/microsoft/vscode/wiki/Selfhosting-on-Windows-WSL
     -   **macOS**
-        -   [`Xcode`](HTTPS://developer.apple.com/xcode/resources/) and the
+        -   [`Xcode`](https://developer.apple.com/xcode/resources/) and the
             Command Line Tools, which will install `gcc` and the related
             toolchain containing `make`
             -   Run `xcode-select --install` to install the Command Line Tools
@@ -70,8 +70,8 @@ You'll need the following tools:
             `sudo yum groupinstall "Development Tools" && sudo yum install libX11-devel.x86_64 libxkbfile-devel.x86_64 libsecret-devel krb5-devel # or .i686`.
         -   Others:
             -   `make`
-            -   [`pkg-config`](HTTPS://www.freedesktop.org/wiki/Software/pkg-config/)
-            -   [`GCC`](HTTPS://gcc.gnu.org) or another compile toolchain
+            -   [`pkg-config`](https://www.freedesktop.org/wiki/Software/pkg-config/)
+            -   [`GCC`](https://gcc.gnu.org) or another compile toolchain
         -   Building deb and rpm packages requires `fakeroot` and `rpm`; run:
             `sudo apt-get install fakeroot rpm`
 
@@ -95,7 +95,7 @@ In case of issues, try deleting the contents of `~/.node-gyp` (alternatively
 > If you have Visual Studio 2019 installed, you may face issues when using the
 > default version of node-gyp. If you have Visual Studio 2019 installed, you may
 > need to follow the solutions
-> [`here`](HTTPS://github.com/nodejs/node-gyp/issues/1747).
+> [`here`](https://github.com/nodejs/node-gyp/issues/1747).
 
 #### Missing spectre mitigated libraries on Windows
 
@@ -116,24 +116,24 @@ restart your build session
 
 Alternatively, you can avoid local dependency installation as this repository
 includes a Visual Studio Code Remote - Containers / Codespaces
-[`development container`](HTTPS://github.com/microsoft/vscode/tree/main/.devcontainer).
+[`development container`](https://github.com/microsoft/vscode/tree/main/.devcontainer).
 
--   For [`Remote - Containers`](HTTPS://aka.ms/vscode-remote/download/containers),
+-   For [`Remote - Containers`](https://aka.ms/vscode-remote/download/containers),
     use the **Remote-Containers: Open Repository in Container...** command which
     creates a Docker volume for better disk I/O on macOS and Windows.
 -   For Codespaces, install the
-    [`GitHub Codespaces`](HTTPS://marketplace.visualstudio.com/items?itemName=GitHub.codespaces)
+    [`GitHub Codespaces`](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces)
     extension in VS Code, and use the **Codespaces: Create New Codespace**
     command.
 
 Docker / the Codespace should have at least **4 Cores and 6 GB of RAM (8 GB
 recommended)** to run the full build. See the
-[`development container README`](HTTPS://github.com/microsoft/vscode/blob/main/.devcontainer/README.md)
+[`development container README`](https://github.com/microsoft/vscode/blob/main/.devcontainer/README.md)
 for more information.
 
 If you'd like to contribute to the list of available development containers in
 the Remote - Containers extension, you can check out the
-[`Contributing documentation`](HTTPS://github.com/microsoft/vscode-dev-containers/blob/master/CONTRIBUTING.md)
+[`Contributing documentation`](https://github.com/microsoft/vscode-dev-containers/blob/master/CONTRIBUTING.md)
 in the vscode-dev-containers repo.
 
 ## Enable Commit Signing
@@ -141,7 +141,7 @@ in the vscode-dev-containers repo.
 If you're a community member, feel free to jump over this step.
 
 Otherwise, if you're a member of the VS Code team, follow the
-[`Commit Signing`](HTTPS://github.com/microsoft/vscode/wiki/Commit-Signing) guide.
+[`Commit Signing`](https://github.com/microsoft/vscode/wiki/Commit-Signing) guide.
 
 ## Build and Run
 
@@ -150,7 +150,7 @@ want to get the source, build it, and run the tool locally.
 
 > NOTE: If you need to debug the 32bit version of VS Code on 64bit Windows,
 > follow
-> [`the guide on how to do that`](HTTPS://github.com/microsoft/vscode/wiki/Build-and-run-32bit-Code---OSS-on-Windows).
+> [`the guide on how to do that`](https://github.com/microsoft/vscode/wiki/Build-and-run-32bit-Code---OSS-on-Windows).
 
 ### Getting the sources
 
@@ -212,7 +212,7 @@ incrementally, giving you a fast, iterative coding experience.
     confuse it with _VS2015 x64 Native Tools Command Prompt_, if installed.
 -   **Linux:** You may hit a ENOSPC error when running the build. To get around
     this follow instructions in the
-    [`Common Questions`](HTTPS://code.visualstudio.com/docs/setup/linux#_common-questions).
+    [`Common Questions`](https://code.visualstudio.com/docs/setup/linux#_common-questions).
 
 If the build step fails, or if the built version fails to run (see next
 section), run `git clean -xfd` in your `vscode` folder, then re-run `npm i`.
@@ -299,7 +299,7 @@ UI in the browser, extensions run in code server (NodeJS):
 You can identify the development version of VS Code ("Code - OSS") by the
 following icon in the Dock or Taskbar:
 
-[![VS Code default icon](HTTPS://i.imgur.com/D2CeX0y.png)](HTTPS://i.imgur.com/D2CeX0y.png)
+[![VS Code default icon](https://i.imgur.com/D2CeX0y.png)](https://i.imgur.com/D2CeX0y.png)
 
 ### Debugging
 
@@ -339,32 +339,32 @@ out.
 
 Run the unit tests directly from a terminal by running `./scripts/test.sh` from
 the `vscode` folder (`scripts\test` on Windows). The
-[`test README`](HTTPS://github.com/Microsoft/vscode/blob/main/test/README.md) has
+[`test README`](https://github.com/Microsoft/vscode/blob/main/test/README.md) has
 complete details on how to run and debug tests, as well as how to produce
 coverage reports.
 
 We also have automated UI tests. The
-[`smoke test README`](HTTPS://github.com/Microsoft/vscode/blob/main/test/smoke/README.md)
+[`smoke test README`](https://github.com/Microsoft/vscode/blob/main/test/smoke/README.md)
 has all the details.
 
 ### Unit Testing
 
 Run the tests directly from a terminal by running `./scripts/test.sh` from the
 `vscode` folder (`scripts\test` on Windows). The
-[`test README`](HTTPS://github.com/Microsoft/vscode/blob/main/test/README.md) has
+[`test README`](https://github.com/Microsoft/vscode/blob/main/test/README.md) has
 complete details on how to run and debug tests, as well as how to produce
 coverage reports.
 
 ### Linting
 
-We use [`eslint`](HTTPS://eslint.org/) for linting our sources. You can run eslint
+We use [`eslint`](https://eslint.org/) for linting our sources. You can run eslint
 across the sources by calling `npm run eslint` from a terminal or command
 prompt. You can also run `npm run eslint` as a VS Code task by pressing
 <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> on macOS) and entering
 `task eslint`.
 
 To lint the source as you make changes you can install the
-[`eslint extension`](HTTPS://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+[`eslint extension`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
 ### Extensions
 
@@ -375,7 +375,7 @@ or if it is open source you can clone and build the extension locally. Once you
 have the .VSIX, you can "side load" the extension either through the command
 line or using **Install from VSIX** command in the Extensions View command
 drop-down
-([`see more`](HTTPS://code.visualstudio.com/docs/editor/extension-gallery#_command-line-extension-management)
+([`see more`](https://code.visualstudio.com/docs/editor/extension-gallery#_command-line-extension-management)
 on command line extension management).
 
 ## Work Branches
@@ -393,7 +393,7 @@ automated process and you only need to do it once.
 
 To enable us to quickly review and accept your pull requests, always create one
 pull request per issue and
-[`link the issue in the pull request`](HTTPS://github.com/blog/957-introducing-issue-mentions).
+[`link the issue in the pull request`](https://github.com/blog/957-introducing-issue-mentions).
 Never merge multiple requests in one unless they have the same root cause. Be
 sure to follow our [[Coding Guidelines|Coding-Guidelines]] and keep code changes
 as small as possible. Avoid pure formatting changes to code that has not been
@@ -418,7 +418,7 @@ thumb:
 ### Where to Contribute
 
 Check out the
-[`full issues list`](HTTPS://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue)
+[`full issues list`](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue)
 for a list of all potential areas for contributions. Note that just because an
 issue exists in the repository does not mean we will accept a contribution to
 the core editor for it. There are several reasons we may not accept a pull
@@ -436,9 +436,9 @@ request like:
 
 To improve the chances to get a pull request merged you should select an issue
 that is labelled with the
-[`help-wanted`](HTTPS://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
+[`help-wanted`](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 or
-[`bug`](HTTPS://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3A%22bug%22)
+[`bug`](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3A%22bug%22)
 labels. If the issue you want to work on is not labelled with `help-wanted` or
 `bug`, you can start a conversation with the issue owner asking whether an
 external contribution will be considered.
@@ -451,7 +451,7 @@ are working on it by saying so in a comment.
 Pull requests that fix spell check errors in **translatable strings** (strings
 in `nls.localize(...)` calls) are welcomed but please make sure it doesn't touch
 multiple
-[`feature areas`](HTTPS://github.com/microsoft/vscode/wiki/Feature-Areas),
+[`feature areas`](https://github.com/microsoft/vscode/wiki/Feature-Areas),
 otherwise it will be difficult to review. Pull requests only fixing spell check
 errors in source code are **not** recommended.
 
@@ -470,7 +470,7 @@ These `gulp` tasks are available:
 example `npm run gulp vscode-linux-x64`
 
 See also:
-[`Cross-Compiling for Debian-based Linux`](HTTPS://github.com/Microsoft/vscode/wiki/Cross-Compiling-for-Debian-Based-Linux)
+[`Cross-Compiling for Debian-based Linux`](https://github.com/Microsoft/vscode/wiki/Cross-Compiling-for-Debian-Based-Linux)
 
 ## Suggestions
 
@@ -482,7 +482,7 @@ them more clearly.
 ## Translations
 
 We accept feedback on translations in language packs via GitHub issues in our
-[`localization repo`](HTTPS://github.com/Microsoft/vscode-loc/issues) that
+[`localization repo`](https://github.com/Microsoft/vscode-loc/issues) that
 contains our currently supported language packs.
 
 ## Discussion Etiquette

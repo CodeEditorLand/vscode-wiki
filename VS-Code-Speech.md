@@ -5,19 +5,19 @@
 </p>
 
 The
-[`VS Code Speech`](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-speech)
+[`VS Code Speech`](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-speech)
 extension adds speech-to-text capabilities to the chat interfaces in Visual
 Studio Code. No internet connection is required, the voice audio data is
 processed locally on your computer.
 
-![`Speech to text in Visual Studio Code`](HTTPS://github.com/microsoft/vscode/assets/900690/63279c01-3941-46c5-bf51-284fbc31fbfe)
+![`Speech to text in Visual Studio Code`](https://github.com/microsoft/vscode/assets/900690/63279c01-3941-46c5-bf51-284fbc31fbfe)
 
 ## Getting Started
 
 Install the
-[`GitHub Copilot Chat`](HTTPS://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
+[`GitHub Copilot Chat`](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
 extension and sign in and then install
-[`VS Code Speech`](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-speech).
+[`VS Code Speech`](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-speech).
 You will see a microphone icon in all chat interfaces that GitHub Copilot Chat
 extension provides.
 
@@ -58,6 +58,6 @@ in the future.
 ## Issues
 
 This extension is still in development, so please refer to our
-[`issue tracker for known issues`](HTTPS://github.com/Microsoft/vscode/issues),
+[`issue tracker for known issues`](https://github.com/Microsoft/vscode/issues),
 and please contribute with additional information if you encounter an issue
 yourself.

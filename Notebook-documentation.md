@@ -43,7 +43,7 @@ resolution, the `TextModel`s will have a mirror in the extension host, just like
 a normal resource opened in a text editor. Extensions can treat them as normal
 text documents.
 
-![`arch`](HTTPS://user-images.githubusercontent.com/876920/141845889-abe0384e-0093-4b08-831a-04424a4b8101.png)
+![`arch`](https://user-images.githubusercontent.com/876920/141845889-abe0384e-0093-4b08-831a-04424a4b8101.png)
 
 ## Viewport rendering
 
@@ -83,9 +83,9 @@ When we introduce new UI elements to notebook cell, we would make it a
 `CellPart` and ensure that we batch the DOM read and write operations in the
 right phases.
 
-![`render viewport`](HTTPS://user-images.githubusercontent.com/2019016/228382452-d7ef0751-015e-4577-87a4-bac463576f9f.svg)
+![`render viewport`](https://user-images.githubusercontent.com/2019016/228382452-d7ef0751-015e-4577-87a4-bac463576f9f.svg)
 
-<!-- ![`render in the core`](HTTPS://user-images.githubusercontent.com/876920/142806570-a477d315-40f3-4e0c-8079-f2867d5f3e88.png) -->
+<!-- ![`render in the core`](https://user-images.githubusercontent.com/876920/142806570-a477d315-40f3-4e0c-8079-f2867d5f3e88.png) -->
 
 When the notebook document contains markdown cells or rich outputs, the workflow
 is a bit more complex and become asynchronous partially due to the fact the
@@ -96,7 +96,7 @@ come back in current frame. Once we receive the output rendering results from
 the webview (say next frame), we would ask the list view to adjust the
 position/dimension of the cell and ones below.
 
-![`render outputs in the webview/iframe`](HTTPS://user-images.githubusercontent.com/876920/142923784-4e7a297c-6ce4-4741-b306-cbfb3277699b.png)
+![`render outputs in the webview/iframe`](https://user-images.githubusercontent.com/876920/142923784-4e7a297c-6ce4-4741-b306-cbfb3277699b.png)
 
 ## Cell rendering
 
@@ -145,7 +145,7 @@ Copy in Notebook depends on the focus tracking
 -   Copy cells if the focus is on notebook cell list
 -   Copy text if the focus is in cell editor (monaco editor)
 
-![`diagram`](HTTPS://user-images.githubusercontent.com/876920/141730905-2818043e-1a84-45d3-ad27-83bd89235ca5.png)
+![`diagram`](https://user-images.githubusercontent.com/876920/141730905-2818043e-1a84-45d3-ad27-83bd89235ca5.png)
 
 # Optimizations
 
@@ -169,7 +169,7 @@ We always ensure that elements in current viewport are stable (their visual
 positions don't change) when cells above current viewport resize. Resizing a
 cell above viewport will then include following steps as shown in below diagram
 
-![`cell resize above viewport`](HTTPS://user-images.githubusercontent.com/2019016/228382563-daa7c8c1-61b6-4270-beda-22f2737b0443.svg)
+![`cell resize above viewport`](https://user-images.githubusercontent.com/2019016/228382563-daa7c8c1-61b6-4270-beda-22f2737b0443.svg)
 
 1. User scrolls to the middle of the document, with one markdown cell partially
    visible (blue box in the green container) and one code cell fully visible

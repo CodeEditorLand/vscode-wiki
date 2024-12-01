@@ -10,7 +10,7 @@ experience in these new editors that users got used to when editing text files.
 ## Working Copy
 
 The API shape
-([`IWorkingCopy`](HTTPS://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/workingCopy/common/workingCopy.ts#L120))
+([`IWorkingCopy`](https://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/workingCopy/common/workingCopy.ts#L120))
 of a working copy provides the minimal structure for participating as an
 editable "thing" in the workbench. In most cases the user would edit it using an
 editor. If you build a new component that allows for editing, you can introduce
@@ -33,14 +33,14 @@ The fundamental pieces of a working copy are:
 
 **Note:** you will likely already have a model in your component that can map
 directly onto the working copy shape. For example, the
-[`ITextFileModel`](HTTPS://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/textfile/common/textfiles.ts#L482)
+[`ITextFileModel`](https://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/textfile/common/textfiles.ts#L482)
 that is used for every textual edit in files implements `IWorkingCopy` so that
 essentially the text file model IS the working copy that gets registered.
 
 ### Lifecycle
 
 As soon as your working copy comes to existence, call
-[`IWorkingCopyService.registerWorkingCopy`](HTTPS://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/workingCopy/common/workingCopyService.ts#L104).
+[`IWorkingCopyService.registerWorkingCopy`](https://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/workingCopy/common/workingCopyService.ts#L104).
 From that moment on, the workbench will observe the working copy for changes
 using its events.
 
@@ -67,7 +67,7 @@ no longer reports as dirty.
 The workbench is not in charge of resolving your working copy, it is up to you
 as provider. In order to restore potential backups that might be present from a
 previous session, you have to use
-[`IWorkingCopyBackupService.resolve`](HTTPS://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/workingCopy/common/workingCopyBackup.ts#L64)
+[`IWorkingCopyBackupService.resolve`](https://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/workingCopy/common/workingCopyBackup.ts#L64)
 with the identifier (`resource` and `typeId`) and set the contents of the
 working copy to that when resolving. In addition, you should mark your working
 copy as dirty.
@@ -89,7 +89,7 @@ code so that the workbench knows how to open an editor from a working copy:
 `IWorkingCopyEditorService`
 
 When you introduce a working copy to the workbench, make sure to call
-[`IWorkingCopyEditorService.registerHandler`](HTTPS://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/workingCopy/common/workingCopyEditorService.ts#L48):
+[`IWorkingCopyEditorService.registerHandler`](https://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/workingCopy/common/workingCopyEditorService.ts#L48):
 
 -   `handles`: given a working copy, return whether it is yours or not
 -   `isOpen`: given a working copy, return whether you know the working copy is

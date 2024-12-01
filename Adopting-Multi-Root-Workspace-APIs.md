@@ -18,7 +18,7 @@ single tree and the full-text search will search across all folders. It is in
 the best interest of the users that extensions also adapt to supporting multiple
 folders.
 
-![`explorer`](HTTPS://user-images.githubusercontent.com/900690/30064942-9dc2e608-9253-11e7-9f01-5b18f3e90065.png)
+![`explorer`](https://user-images.githubusercontent.com/900690/30064942-9dc2e608-9253-11e7-9f01-5b18f3e90065.png)
 
 There are numerous ways how to create a multi-root workspace, the simplest one
 is to just open multiple folders from the command line:
@@ -54,7 +54,7 @@ metadata associated (for example a `name` property).
 This guide will help you as an extension author to make your extension ready for
 multi-root workspaces. It touches on three major pieces (basics, settings,
 language client/server) and is joined by samples from our
-[`samples repository`](HTTPS://github.com/Microsoft/vscode-extension-samples).
+[`samples repository`](https://github.com/Microsoft/vscode-extension-samples).
 
 ## Do I need to do anything?
 
@@ -118,11 +118,11 @@ file on disk. So, it must not always be a `file`-uri, but VS Code will soon
 support workspace folders from remote locations.
 
 The
-[`basic-multi-root-sample`](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample)
+[`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample)
 extension is demonstrating the use of this API by showing the workspace folder
 of the currently opened file on the left-hand side of the status bar.
 
-![`Show the folder of the active file`](HTTPS://raw.githubusercontent.com/Microsoft/vscode-extension-samples/master/basic-multi-root-sample/preview.gif)
+![`Show the folder of the active file`](https://raw.githubusercontent.com/Microsoft/vscode-extension-samples/master/basic-multi-root-sample/preview.gif)
 
 ### New helpful API
 
@@ -132,7 +132,7 @@ added some new API. For example, if you need to ask the user for a specific
 will open a picker and returns the result. This method will return `undefined`
 in case the user did not pick any folder or in case no workspace is opened.
 
-![`Workspace Folder Picker`](HTTPS://github.com/Microsoft/vscode-docs/raw/vnext/release-notes/images/1_17/picker.png)
+![`Workspace Folder Picker`](https://github.com/Microsoft/vscode-docs/raw/vnext/release-notes/images/1_17/picker.png)
 
 In addition, we introduced the `RelativePattern` type and support it in the API
 where we ask for glob patterns to match on file paths. There may be scenarios
@@ -232,7 +232,7 @@ resource (see the Settings API section below).
 
 To declare a setting scope, simply define the scope as part of your setting from
 the `package.json` file. The example below is copied from the
-[`Configuration Sample`](HTTPS://github.com/Microsoft/vscode-extension-samples/blob/master/configuration-sample/package.json)
+[`Configuration Sample`](https://github.com/Microsoft/vscode-extension-samples/blob/master/configuration-sample/package.json)
 extension:
 
 ```json
@@ -271,7 +271,7 @@ extension:
 The configuration example above defines a setting scoped to a resource. To fetch
 its value you use the `workspace.getConfiguration()` API and pass the URI of the
 resource as the second parameter. You can see
-[`Example 3`](HTTPS://github.com/Microsoft/vscode-extension-samples/blob/master/configuration-sample/src/extension.ts)
+[`Example 3`](https://github.com/Microsoft/vscode-extension-samples/blob/master/configuration-sample/src/extension.ts)
 how the setting is used in the basic-multi-root sample.
 
 Under the hood, resource settings are resolved with simple logic: We try to find
@@ -337,7 +337,7 @@ the resource.
     scoped while registering in the package.json.
 
 Refer to
-[`Configuration Sample`](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/configuration-sample)
+[`Configuration Sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/configuration-sample)
 extension for more information.
 
 ## Language Client / Language Server
@@ -348,12 +348,12 @@ check for the following items and adopt its code accordingly:
 
 -   If the server accesses the `rootPath` or `rootURI` property of the
     `InitializeParams` passed in the
-    [`initialize` request`](HTTPS://github.com/Microsoft/language-server-protocol/blob/master/protocol.md#initialize),
+    [`initialize` request`](https://github.com/Microsoft/language-server-protocol/blob/master/protocol.md#initialize),
     then the language server must instead use the property `workspaceFolders`.
     Since workspace folders can come and go dynamically the server also needs to
     register for `workspace/didChangeWorkspaceFolders` notifications. The
     documentation can be found
-    [`here`](HTTPS://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.workspaceFolders.ts).
+    [`here`](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.workspaceFolders.ts).
 
 -   If the server is using configuration settings the author also has to review
     the scope of the settings (see the [`Settings section`](#settings) above). For
@@ -375,7 +375,7 @@ linters that validate a single file at a time, can easily handle multiple
 folders. We have already migrated the HTML, JSON, CSS language servers and the
 'eslint' and 'tslint' Language servers. We have implemented them all as a single
 language server. The
-[`lsp-sample example`](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample)
+[`lsp-sample example`](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample)
 demonstrates the use of the new protocol workspace folder and configuration
 protocol. We recommend that you also review the corresponding extensions when
 migrating your server.
@@ -386,7 +386,7 @@ workspace folder to isolate folders from each other. We have migrated the
 TypeScript/JavaScript language server, and we were able to use a single server
 for multiple folders. We added support to this to the `vscode-languageclient`
 library, and the
-[`lsp-multi-server-sample`](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-server-sample)
+[`lsp-multi-server-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-server-sample)
 example demonstrates the use of a server per folder.
 
 ### Language settings
@@ -397,7 +397,7 @@ possible anymore since the actual settings values can depend on a resource. We
 introduce a protocol which allows servers to fetch settings from a client
 comparable to the `getConfiguration` API in the extension host. The protocol
 addition is documented
-[`here`](HTTPS://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.configuration.ts).
+[`here`](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.configuration.ts).
 The bundled CSS or HTML language extensions illustrate this approach.
 
 A setting that supports file paths relative to a workspace needs special
@@ -409,7 +409,7 @@ defined as a resource scoped setting, then the path needs to be resolved per
 root folder. One approach that has worked well for us is to resolve the relative
 file path of a setting on the client using the new settings API. In this way,
 the server only sees absolute paths. An example for this can be found in
-[`vscode-tslint`](HTTPS://github.com/Microsoft/vscode-tslint/blob/2a9b46d57489b180f3fc0ad0acc15c3071541acf/tslint/extension.ts#L199).
+[`vscode-tslint`](https://github.com/Microsoft/vscode-tslint/blob/2a9b46d57489b180f3fc0ad0acc15c3071541acf/tslint/extension.ts#L199).
 It uses the `vscode-languageclient` middleware to transform the relative file
 paths.
 
@@ -417,9 +417,9 @@ paths.
 
 | Sample                                                                                                                 | Description                                                                                         |
 | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| **[`Basic multi root`](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample)**      | Illustrates the `WorkspaceFolder` API and how to work with a resource scoped configuration setting. |
-| **[`Language Server Settings`](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample)**           | Demonstrates how to handle configuration settings in a language server.                             |
-| **[`Multi Language Server`](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-server-sample)** | Starts a language server for each root folder in a workspace.                                       |
+| **[`Basic multi root`](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample)**      | Illustrates the `WorkspaceFolder` API and how to work with a resource scoped configuration setting. |
+| **[`Language Server Settings`](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample)**           | Demonstrates how to handle configuration settings in a language server.                             |
+| **[`Multi Language Server`](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-server-sample)** | Starts a language server for each root folder in a workspace.                                       |
 
 ## Writing Tests
 

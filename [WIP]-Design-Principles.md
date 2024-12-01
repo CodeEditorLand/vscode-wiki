@@ -3,7 +3,7 @@
 In order for a product to evolve there needs to be a set of core principles that
 will guide it in the right direction. Here are a set of over-arching design
 principles that we apply to our problem solving. Additionally, our
-[`design checklist`](HTTPS://github.com/Microsoft/vscode/wiki/%5BWIP%5D-Design-Checklist)
+[`design checklist`](https://github.com/Microsoft/vscode/wiki/%5BWIP%5D-Design-Checklist)
 will be based off these principles.
 
 # Design principles

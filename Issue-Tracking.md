@@ -2,25 +2,25 @@ This page describes how we track issues in the `vscode` repository.
 
 ## Popular queries
 
--   [`Global Inbox`](HTTPS://github.com/Microsoft/vscode/issues?q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Atestplan-item+-label%3Aplan-item)
--   [`Bugs to be Verified`](HTTPS://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Abug+-label%3Averified+is%3Aclosed+-label%3A*duplicate+-label%3Ainvalid+) -
+-   [`Global Inbox`](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Atestplan-item+-label%3Aplan-item)
+-   [`Bugs to be Verified`](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Abug+-label%3Averified+is%3Aclosed+-label%3A*duplicate+-label%3Ainvalid+) -
     VS Code only
--   [`Verification Needed`](HTTPS://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed) -
+-   [`Verification Needed`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed) -
     VS Code only
 
 ## Inbox tracking and Issue triage
 
 New issues or pull requests submitted by the community are initially triaged by
 an
-[`automatic classification bot`](HTTPS://github.com/microsoft/vscode-github-triage-actions/tree/stable/classifier-deep).
+[`automatic classification bot`](https://github.com/microsoft/vscode-github-triage-actions/tree/stable/classifier-deep).
 Issues that the bot does not correctly triage are then triaged by a team member.
 The team rotates the inbox tracker on a weekly basis.
 
-A [`mirror`](HTTPS://github.com/JacksonKearl/testissues/issues) of the VS Code
+A [`mirror`](https://github.com/JacksonKearl/testissues/issues) of the VS Code
 issue stream is available with details about how the bot classifies issues,
 including feature-area classifications and confidence ratings. Per-category
 confidence thresholds and feature-area ownership data is maintained in
-[`.github/classifier.json`](HTTPS://github.com/microsoft/vscode/blob/master/.github/classifier.json).
+[`.github/classifier.json`](https://github.com/microsoft/vscode/blob/master/.github/classifier.json).
 
 💡 The bot is being run through a GitHub action that runs every 30 minutes. Give
 the bot the opportunity to classify an issue before doing it manually.
@@ -28,7 +28,7 @@ the bot the opportunity to classify an issue before doing it manually.
 ### Inbox Tracking
 
 The inbox tracker is responsible for the
-[`global inbox`](HTTPS://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Atestplan-item+-label%3Aplan-item)
+[`global inbox`](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Atestplan-item+-label%3Aplan-item)
 containing all **open issues and pull requests** that
 
 -   are neither **feature requests** nor **test plan items** nor **plan items**
@@ -36,10 +36,10 @@ containing all **open issues and pull requests** that
 -   have **no owner assignment**.
 
 The **inbox tracker** may perform any step described in our
-[`issue triaging documentation`](HTTPS://github.com/microsoft/vscode/wiki/Issues-Triaging)
+[`issue triaging documentation`](https://github.com/microsoft/vscode/wiki/Issues-Triaging)
 but its main responsibility is to route issues to the actual feature area owner.
 If you're not sure who to assign, try looking at the
-[`working areas`](HTTPS://github.com/microsoft/vscode-internalbacklog/blob/main/assignments/working-areas.md)
+[`working areas`](https://github.com/microsoft/vscode-internalbacklog/blob/main/assignments/working-areas.md)
 document.
 
 Feature area owners track the **feature area inbox** containing all **open
@@ -49,29 +49,29 @@ issues and pull requests** that
 -   are labeled with their feature area label and are not assigned to any
     milestone. This secondary triage may involve any of the steps described in
     our
-    [`issue triaging documentation`](HTTPS://github.com/microsoft/vscode/wiki/Issues-Triaging)
+    [`issue triaging documentation`](https://github.com/microsoft/vscode/wiki/Issues-Triaging)
     and results in a fully triaged or closed issue.
 
 💡 Use
-[`the bot commands`](HTTPS://github.com/microsoft/vscode/blob/master/.github/commands.json)
+[`the bot commands`](https://github.com/microsoft/vscode/blob/master/.github/commands.json)
 (like `/needsMoreInfo`, `/extCpp`, etc) to your advantage. They offer a wide
 range of canned responses from needing more info, to closing as a result of
 specific extensions.
 
 💡 The
-[`github triage extension`](HTTPS://chrome.google.com/webstore/detail/vs-code-triage/omjdggbjophlhakbakjpajfbkdfploho?hl=en&authuser=0)
+[`github triage extension`](https://chrome.google.com/webstore/detail/vs-code-triage/omjdggbjophlhakbakjpajfbkdfploho?hl=en&authuser=0)
 can be used to assist with triaging — it provides a "Command Palette"-style list
 of triaging actions like assignment, labeling, and triggers for various bot
 actions.
 
 💡 The
-[`inbox notebook`](HTTPS://github.com/microsoft/vscode/blob/master/.vscode/notebooks/inbox.github-issues)
+[`inbox notebook`](https://github.com/microsoft/vscode/blob/master/.vscode/notebooks/inbox.github-issues)
 can also assist with triaging.
 
 ### Ongoing Issue Management
 
 The details can be found in our
-[`issue triaging documentation`](HTTPS://github.com/microsoft/vscode/wiki/Issues-Triaging).
+[`issue triaging documentation`](https://github.com/microsoft/vscode/wiki/Issues-Triaging).
 
 ### Planning
 
@@ -94,10 +94,10 @@ Verification is a service that you request from others either implicitly with
 the `bug`-label or explicitly with the `verification-needed`-label. Find issue
 that are to be verified with these queries
 
--   [`bugs to be verified, VS Code`](HTTPS://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3Abug%20-label%3Averified%20is%3Aclosed%20-label%3Aduplicate%20-label%3Ainvalid%20)
--   [`verification needed, VS Code`](HTTPS://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed)
--   [`bugs to be verified, all GitHub projects`](HTTPS://github.com/issues?utf8=âœ“&q=is%3Aissue+is%3Aclosed+-label%3Averified+label%3Abug+repo%3AMicrosoft%2Fvscode)
--   [`verification needed, all GitHub projects`](HTTPS://github.com/issues?utf8=âœ“&q=is%3Aissue+is%3Aclosed+-label%3Averified+label%3Averification-needed)
+-   [`bugs to be verified, VS Code`](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3Abug%20-label%3Averified%20is%3Aclosed%20-label%3Aduplicate%20-label%3Ainvalid%20)
+-   [`verification needed, VS Code`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed)
+-   [`bugs to be verified, all GitHub projects`](https://github.com/issues?utf8=âœ“&q=is%3Aissue+is%3Aclosed+-label%3Averified+label%3Abug+repo%3AMicrosoft%2Fvscode)
+-   [`verification needed, all GitHub projects`](https://github.com/issues?utf8=âœ“&q=is%3Aissue+is%3Aclosed+-label%3Averified+label%3Averification-needed)
 
 Follow the these rules:
 
@@ -143,4 +143,4 @@ repositories need to define the same milestones.
 We use issues for iteration plans. Iteration plans have a label `iteration-plan`
 with `tasks` [ ] for the different items. The individual items are tracked in existing
 issues (bugs, feature requests). If there is no existing issue then a new issue with
-the label `plan-item` is created. All our iteration plans can be found [`here`](HTTPS://github.com/microsoft/vscode/wiki/Iteration-Plans)
+the label `plan-item` is created. All our iteration plans can be found [`here`](https://github.com/microsoft/vscode/wiki/Iteration-Plans)

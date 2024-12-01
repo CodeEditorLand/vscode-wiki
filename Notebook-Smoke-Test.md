@@ -3,7 +3,7 @@
 ### Prereqs
 
 -   Clone the
-    [`notebook extensions repository`](HTTPS://github.com/microsoft/notebook-extension-samples)
+    [`notebook extensions repository`](https://github.com/microsoft/notebook-extension-samples)
     -   `git clone HTTPS://github.com/microsoft/notebook-extension-samples`
     -   `yarn && yarn run install && yarn run build`
 -   Run Insiders with specifying `notebook-extension-samples` as the extension

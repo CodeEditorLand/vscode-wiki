@@ -304,18 +304,18 @@ features enabled.
 
 The sync action is back in the status bar:
 
-![`image`](HTTPS://cloud.githubusercontent.com/assets/22350/11761005/3e9a1b4a-a0b2-11e5-8144-812cbc021e16.png)
+![`image`](https://cloud.githubusercontent.com/assets/22350/11761005/3e9a1b4a-a0b2-11e5-8144-812cbc021e16.png)
 
 If you check out to a branch that doesn't have an upstream link, we assume it is
 **unpublished**. The following UI should show up. Clicking it will publish the
 branch.
 
-![`image`](HTTPS://cloud.githubusercontent.com/assets/22350/11761011/563d6806-a0b2-11e5-9fb4-dadf19755147.png)
+![`image`](https://cloud.githubusercontent.com/assets/22350/11761011/563d6806-a0b2-11e5-9fb4-dadf19755147.png)
 
 If you are in a repository without a **remote** configured, none of the previous
 actions should show up:
 
-![`image`](HTTPS://cloud.githubusercontent.com/assets/22350/11761022/83add9e2-a0b2-11e5-9890-83b88f96437f.png)
+![`image`](https://cloud.githubusercontent.com/assets/22350/11761022/83add9e2-a0b2-11e5-9890-83b88f96437f.png)
 
 ## ES6 JavaScript grammar
 

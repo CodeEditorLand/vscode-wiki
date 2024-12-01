@@ -1,8 +1,8 @@
 # Extension Author Guide for Supporting Virtual Workspaces
 
 We have recently announced the
-[`Remote Repository feature`](HTTPS://code.visualstudio.com/updates/v1_56#_remote-repositories-remotehub)
-in the [`VS Code Insiders Build`](HTTPS://code.visualstudio.com/insiders). It lets
+[`Remote Repository feature`](https://code.visualstudio.com/updates/v1_56#_remote-repositories-remotehub)
+in the [`VS Code Insiders Build`](https://code.visualstudio.com/insiders). It lets
 you browse and edit files and folders directly on GitHub.
 
 **Open Remote Repository...** opens VSCode on a folder or workspace located on a
@@ -37,7 +37,7 @@ require inspection and, possibly, adoption.
 
 Run the **Open Remote Repository...** command from the Command Palette.
 **Notice** this command is currently only available in the
-[`VS Code Insiders`](HTTPS://code.visualstudio.com/insiders/) version. The command
+[`VS Code Insiders`](https://code.visualstudio.com/insiders/) version. The command
 shows a quick pick dialog and you can paste in any GitHub URL, or choose to
 search for a specific repository or pull request.
 
@@ -48,7 +48,7 @@ virtual.
 
 The API support for virtual file system has already been around for quite a
 while. You can check out the
-[`file system provider API`](HTTPS://github.com/microsoft/vscode/blob/dc8bd9cd7e5231745549ac6218266c63271f48cd/src/vs/vscode.d.ts#L7038),
+[`file system provider API`](https://github.com/microsoft/vscode/blob/dc8bd9cd7e5231745549ac6218266c63271f48cd/src/vs/vscode.d.ts#L7038),
 if you are interested. A file system provider is registered for a new URI scheme
 (e.g. `vscode-vfs`) and resources on that file system will be represented by
 URIs using that schema (e.g.
@@ -126,7 +126,7 @@ information on what doesn't work:
 ```
 
 The description is will be shown in the extensions view:
-![`image`](HTTPS://user-images.githubusercontent.com/6461412/119677934-6b755200-be3f-11eb-8db9-d8fbca6f8e67.png)
+![`image`](https://user-images.githubusercontent.com/6461412/119677934-6b755200-be3f-11eb-8db9-d8fbca6f8e67.png)
 
 The extension should then disable the features that are not supported in a
 virtual workspace as described below.
@@ -138,7 +138,7 @@ filled in the `virtualWorkspaces` capability.
 
 However, when testing, we came up list of extensions that we think should be
 disabled in virtual workspaces. The list can be found
-[`here`](HTTPS://github.com/microsoft/vscode/issues/122836). These extensions have
+[`here`](https://github.com/microsoft/vscode/issues/122836). These extensions have
 `"virtualWorkspaces": false` as default.
 
 Of course, extension authors are in a better position to make this decision. The
@@ -151,7 +151,7 @@ and we will eventually retire our list.
 
 The availability of commands and views and many other contributions can be
 controlled through context keys in
-[`when` clauses`](HTTPS://code.visualstudio.com/api/references/when-clause-contexts).
+[`when` clauses`](https://code.visualstudio.com/api/references/when-clause-contexts).
 
 The `virtualWorkspace` context key is set when all workspace folders are located
 on virtual file systems. The example below shows the command `npm.publish` in
@@ -259,7 +259,7 @@ You can see this with the built-in language extensions, such as JSON, which
 consists of a JSON extension and a JSON language feature extension.
 
 This separation has also helps with
-[`untrusted workspaces`](HTTPS://github.com/microsoft/vscode/issues/120251).
+[`untrusted workspaces`](https://github.com/microsoft/vscode/issues/120251).
 
 ### Language selectors
 
@@ -282,5 +282,5 @@ HTTPS://github.com/microsoft/language-server-protocol/issues/1264.
 ## More information and feedback
 
 Please comment in the
-[`Virtual Workspaces Tracking Issue`](HTTPS://github.com/microsoft/vscode/issues/123115)
+[`Virtual Workspaces Tracking Issue`](https://github.com/microsoft/vscode/issues/123115)
 if you have questions and suggestions.

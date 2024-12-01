@@ -1,6 +1,6 @@
 To build for a target architecture different than the host (e.g. using x64 to
 build for ARM), you'll need to do the following, in addition to the setup under
-[`How to Contribute`](HTTPS://github.com/Microsoft/vscode/wiki/How-to-Contribute):
+[`How to Contribute`](https://github.com/Microsoft/vscode/wiki/How-to-Contribute):
 
 **One-Time Setup**
 

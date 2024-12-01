@@ -1,6 +1,6 @@
 # The Visual Studio Code Roadmap 2020
 
-As [`2019`](HTTPS://github.com/Microsoft/vscode/wiki/Roadmap-2019) is coming to an
+As [`2019`](https://github.com/Microsoft/vscode/wiki/Roadmap-2019) is coming to an
 end, now is the time to look towards the future. We typically look out 12-18
 months and we establish topics we want to work on. We don't start with our
 roadmap on a blank sheet. We develop it based on our last roadmap, the findings
@@ -52,7 +52,7 @@ Our roadmap covers the broadly the following themes:
         workspace:
     -   [ ] Load less code on start-up and investigate improving the workbench
             restoration time by expanding on the
-            [`rapid render`](HTTPS://code.visualstudio.com/updates/v1_26#_rapid-render)
+            [`rapid render`](https://code.visualstudio.com/updates/v1_26#_rapid-render)
             approach.
     -   [x] Continuously monitor the size of the VS Code download to ensure it
             downloads in seconds no matter where you are.
@@ -68,9 +68,9 @@ Our roadmap covers the broadly the following themes:
 
 -   [ ] Workbench layout
     -   [ ] Support for detachable workbench parts is our most upvoted
-            [`feature request`](HTTPS://github.com/Microsoft/vscode/issues/10121)
+            [`feature request`](https://github.com/Microsoft/vscode/issues/10121)
             which due to
-            [`architectural issues`](HTTPS://github.com/Microsoft/vscode/issues/10121#issuecomment-345497635)
+            [`architectural issues`](https://github.com/Microsoft/vscode/issues/10121#issuecomment-345497635)
             is challenging to implement. We will explore how we can work around
             this limitation. This investigation will focus on detaching
             terminals (2nd most upvoted feature request) and editors.
@@ -81,7 +81,7 @@ Our roadmap covers the broadly the following themes:
 -   [ ] Investigate how to safely provide richer customizability in the
         workbench
     -   [x] Support
-            [`custom editors`](HTTPS://github.com/Microsoft/vscode/issues/12176).
+            [`custom editors`](https://github.com/Microsoft/vscode/issues/12176).
     -   [x] Investigate custom views based on `WebViews`.
 -   [ ] Support to configure workbench font and font size
 -   [ ] Broaden support to customize the UI, e.g. menu bar, context menus.
@@ -89,7 +89,7 @@ Our roadmap covers the broadly the following themes:
 ## Settings
 
 -   [x] Support
-        [`synchronizing settings and extensions`](HTTPS://github.com/microsoft/vscode/issues/2743)
+        [`synchronizing settings and extensions`](https://github.com/microsoft/vscode/issues/2743)
         across VS Code installations on different machines.
 -   [ ] :runner: In the settings editor, provide high-fidelity support for
         additional settings types, such as colors.
@@ -159,7 +159,7 @@ Our roadmap covers the broadly the following themes:
 We will continue to collaborate deeply with the TypeScript team to deliver the
 richest code editing, navigation, and understanding experiences for both
 TypeScript and JavaScript. see also the
-[`TypeScript roadmap`](HTTPS://github.com/Microsoft/TypeScript/wiki/Roadmap). One
+[`TypeScript roadmap`](https://github.com/Microsoft/TypeScript/wiki/Roadmap). One
 focus item will be to show the errors and warnings for the entire project(s) in
 your workspace.
 
@@ -199,7 +199,7 @@ your workspace.
 ## Install
 
 -   [x] Investigate migrating to the
-        [`MSIX installer`](HTTPS://docs.microsoft.com/en-us/windows/msix/) on
+        [`MSIX installer`](https://docs.microsoft.com/en-us/windows/msix/) on
         Windows.
 
 ## Terminal
@@ -264,31 +264,31 @@ place.
 Our main focus will be on the following extensions:
 
 -   [ ] :runner:
-        [`VS Code Remote`](HTTPS://github.com/microsoft/vscode-remote-release/wiki/Roadmap)
+        [`VS Code Remote`](https://github.com/microsoft/vscode-remote-release/wiki/Roadmap)
 -   [ ] :runner:
-        [`GitHub Pull Request extension`](HTTPS://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+        [`GitHub Pull Request extension`](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
         and related extensions
 -   [ ] :runner:
-        [`Azure Account extension`](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
+        [`Azure Account extension`](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
 -   [ ] :runner:
-        [`Vue extension`](HTTPS://marketplace.visualstudio.com/items?itemName=octref.vetur)
+        [`Vue extension`](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 -   [ ] :runner:
-        [`GitLens extension`](HTTPS://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+        [`GitLens extension`](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
 We will continue to maintain the following extensions:
 
 -   [ ] :runner:
-        [`ES Lint`](HTTPS://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+        [`ES Lint`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 -   [ ] :runner:
-        [`Ruby`](HTTPS://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
+        [`Ruby`](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 -   [ ] :runner:
-        [`Markdown customization extensions`](HTTPS://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview)
+        [`Markdown customization extensions`](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview)
 
 We will investigate into improving the performance of popular extensions that
 not performing as well as users expect
 
--   [` ] [Bracket Pair Colorizer`](HTTPS://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
--   [` ] [VIM`](HTTPS://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+-   [` ] [Bracket Pair Colorizer`](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+-   [` ] [VIM`](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 ## Contributions to Underlying Components and Technologies
 
@@ -298,16 +298,16 @@ examples of technologies in which we are particularly active.
 ### Language Server Protocol
 
 -   [ ] :runner: Continue to refine and improve the
-        [`Language Server Protocol`](HTTPS://microsoft.github.io/language-server-protocol/)
+        [`Language Server Protocol`](https://microsoft.github.io/language-server-protocol/)
         with support from the community.
 -   [ ] :runner: Continue to refine and improve the
-        [`Language Server Index Format`](HTTPS://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md)
+        [`Language Server Index Format`](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md)
         with support from the community.
 
 ### Debug Adaptor Protocol
 
 -   [ ] :runner: Continue to refine and improve the
-        [`Debug Adapter Protocol`](HTTPS://microsoft.github.io/debug-adapter-protocol/)
+        [`Debug Adapter Protocol`](https://microsoft.github.io/debug-adapter-protocol/)
         with support from the community.
 -   [ ] :runner: Expose more UI for DAP features that are currently not surfaced
         in the VS Code debugging UI. This includes moving the loaded scripts UI
@@ -316,13 +316,13 @@ examples of technologies in which we are particularly active.
 ### xterm.js
 
 -   [ ] :runner: Provide ongoing improvements to
-        [`xterm.js`](HTTPS://github.com/xtermjs/xterm.js) for performance,
+        [`xterm.js`](https://github.com/xtermjs/xterm.js) for performance,
         stability, and maintainability
 
 ## Engineering
 
 -   [x] Migrate from `tslint` to `eslint`. Tslint will be
-        [`deprecated`](HTTPS://github.com/palantir/tslint/issues/4534).
+        [`deprecated`](https://github.com/palantir/tslint/issues/4534).
 -   [ ] Improve the built-in issue reporter, e.g., support to paste/attach
         images.
 -   [x] Implement tooling that allows us to detect issues in which emotions fly
@@ -368,6 +368,6 @@ examples of technologies in which we are particularly active.
 These are examples of some of the work we will be focusing on in the next 12-18
 months. We continuously tune the plan based on feedback and we will provide more
 detail in each of our
-[`monthly iteration plans`](HTTPS://github.com/Microsoft/vscode/wiki/Iteration-Plans).
+[`monthly iteration plans`](https://github.com/Microsoft/vscode/wiki/Iteration-Plans).
 We will develop our next roadmap in around 12 months from now. Please follow
 along and let us know what you think!

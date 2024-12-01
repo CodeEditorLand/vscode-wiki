@@ -35,7 +35,7 @@ HTTPS://github.com/DefinitelyTyped/DefinitelyTyped/pull/67287/files.
 7. `@types/vscode` will be published in ~10 minutes.
 8. Make sure a correct version of `@types/vscode` was published, e.g., if you're
    releasing VS Code 1.84, you should see `@types/vscode` version 1.84.0
-   [`here`](HTTPS://www.npmjs.com/package/@types/vscode)
+   [`here`](https://www.npmjs.com/package/@types/vscode)
 
 ## Recovery
 

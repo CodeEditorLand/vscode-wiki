@@ -18,20 +18,20 @@ Take them as an offering and not as some must-do.
 ### Data structures
 
 -   native `Map` and `Set` are sorted by
-    [`insertion order`](HTTPS://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#description)
+    [`insertion order`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#description)
     💡 this is a little-know but can come handy
--   [`ResourceMap`](HTTPS://github.com/microsoft/vscode/blob/8c946e23f45f39fdd982cff1e1fce02a8e3dc719/src/vs/base/common/map.ts#L771)
+-   [`ResourceMap`](https://github.com/microsoft/vscode/blob/8c946e23f45f39fdd982cff1e1fce02a8e3dc719/src/vs/base/common/map.ts#L771)
     and
-    [`ResourceSet`](HTTPS://github.com/microsoft/vscode/blob/8c946e23f45f39fdd982cff1e1fce02a8e3dc719/src/vs/base/common/map.ts#L862)
+    [`ResourceSet`](https://github.com/microsoft/vscode/blob/8c946e23f45f39fdd982cff1e1fce02a8e3dc719/src/vs/base/common/map.ts#L862)
     which are normal maps/sets but keyed by `URI`
--   [`LRUCache`](HTTPS://github.com/microsoft/vscode/blob/8c946e23f45f39fdd982cff1e1fce02a8e3dc719/src/vs/base/common/map.ts#L1313)
+-   [`LRUCache`](https://github.com/microsoft/vscode/blob/8c946e23f45f39fdd982cff1e1fce02a8e3dc719/src/vs/base/common/map.ts#L1313)
     is a map with recency and trimming abilities
--   [`TernarySearchTree`](HTTPS://github.com/microsoft/vscode/blob/8c946e23f45f39fdd982cff1e1fce02a8e3dc719/src/vs/base/common/map.ts#L333)
+-   [`TernarySearchTree`](https://github.com/microsoft/vscode/blob/8c946e23f45f39fdd982cff1e1fce02a8e3dc719/src/vs/base/common/map.ts#L333)
     is map-like with the ability to lookup sub and super-strings (useful for
     path containment)
--   [`SkipList`](HTTPS://github.com/microsoft/vscode/blob/8c946e23f45f39fdd982cff1e1fce02a8e3dc719/src/vs/base/common/skipList.ts#L20)
+-   [`SkipList`](https://github.com/microsoft/vscode/blob/8c946e23f45f39fdd982cff1e1fce02a8e3dc719/src/vs/base/common/skipList.ts#L20)
     is a map which is sorted based on a custom comparator function
--   [`LinkedList`](HTTPS://github.com/microsoft/vscode/blob/8c946e23f45f39fdd982cff1e1fce02a8e3dc719/src/vs/base/common/linkedList.ts#L21)
+-   [`LinkedList`](https://github.com/microsoft/vscode/blob/8c946e23f45f39fdd982cff1e1fce02a8e3dc719/src/vs/base/common/linkedList.ts#L21)
     like arrays but with faster removal/insertion
 
 ### String/array utils
@@ -49,16 +49,16 @@ enforce readonly-ness by design and hence saving `Array.slice`-calls
 
 We have utils to delay certain operations or values
 
--   [`Lazy<T>`](HTTPS://github.com/microsoft/vscode/blob/bf8adecc347d4228bbc9d53fd44ece304b398583/src/vs/base/common/lazy.ts#L20)
+-   [`Lazy<T>`](https://github.com/microsoft/vscode/blob/bf8adecc347d4228bbc9d53fd44ece304b398583/src/vs/base/common/lazy.ts#L20)
     a lazy value is computed only when accessed for the first time
--   [`IdleValue<T>`](HTTPS://github.com/microsoft/vscode/blob/bf8adecc347d4228bbc9d53fd44ece304b398583/src/vs/base/common/async.ts#L1167)
+-   [`IdleValue<T>`](https://github.com/microsoft/vscode/blob/bf8adecc347d4228bbc9d53fd44ece304b398583/src/vs/base/common/async.ts#L1167)
     is similar to `Lazy` but uses browser idle times to eagerly compute its
     value. Implements the "idle until urgent" pattern, see:
     HTTPS://philipwalton.com/articles/idle-until-urgent/
--   [`runWhenIdle`](HTTPS://github.com/microsoft/vscode/blob/bf8adecc347d4228bbc9d53fd44ece304b398583/src/vs/base/common/async.ts#L1116)
+-   [`runWhenIdle`](https://github.com/microsoft/vscode/blob/bf8adecc347d4228bbc9d53fd44ece304b398583/src/vs/base/common/async.ts#L1116)
     is our wrapper around browsers
-    [`window.requestIdleCallback`](HTTPS://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback)-function
--   [`scheduleAtNextAnimationFrame`](HTTPS://github.com/microsoft/vscode/blob/bf8adecc347d4228bbc9d53fd44ece304b398583/src/vs/base/browser/dom.ts#L139)
+    [`window.requestIdleCallback`](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback)-function
+-   [`scheduleAtNextAnimationFrame`](https://github.com/microsoft/vscode/blob/bf8adecc347d4228bbc9d53fd44ece304b398583/src/vs/base/browser/dom.ts#L139)
     and
-    [`runAtThisOrScheduleAtNextAnimationFrame`](HTTPS://github.com/microsoft/vscode/blob/bf8adecc347d4228bbc9d53fd44ece304b398583/src/vs/base/browser/dom.ts#L132)
+    [`runAtThisOrScheduleAtNextAnimationFrame`](https://github.com/microsoft/vscode/blob/bf8adecc347d4228bbc9d53fd44ece304b398583/src/vs/base/browser/dom.ts#L132)
     allows to join this or the next browser animation frame

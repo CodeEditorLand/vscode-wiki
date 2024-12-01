@@ -7,7 +7,7 @@ We love getting feedback on the pre-release and you can help us in many ways:
 
 -   test new features as described in the [[December Test Plan]].
 -   verify the bugs you have filed and that are targeting the December milestone
-    [`bug fixes`](HTTPS://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aclosed+label%3Abug+milestone%3A%22Dec+2015%22).
+    [`bug fixes`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aclosed+label%3Abug+milestone%3A%22Dec+2015%22).
 
 ## Reporting Issues
 
@@ -29,15 +29,15 @@ The updated version of Code is 0.10.4, once updated you will see this in the
 ### Getting the update for Windows and Mac OS X
 
 Follow
-[`these steps`](HTTPS://code.visualstudio.com/Docs/supporting/FAQ#_how-can-i-test-prerelease-versions-of-vs-code).
+[`these steps`](https://code.visualstudio.com/Docs/supporting/FAQ#_how-can-i-test-prerelease-versions-of-vs-code).
 
 ### Getting the update on Linux
 
 On Linux you must manually update (no support for auto-update):
 
 1. Download Code from this location
-   [`Linux 64`](HTTPS://az764295.vo.msecnd.net/public/0.10.4/VSCode-linux64.zip),
-   [`Linux 32`](HTTPS://az764295.vo.msecnd.net/public/0.10.4/VSCode-linux32.zip).
+   [`Linux 64`](https://az764295.vo.msecnd.net/public/0.10.4/VSCode-linux64.zip),
+   [`Linux 32`](https://az764295.vo.msecnd.net/public/0.10.4/VSCode-linux32.zip).
 2. Open the Zip and run Code.
 3. Code will require a manual update each time we release.
 

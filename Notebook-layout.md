@@ -4,7 +4,7 @@ renderer but its experience is different from traditional list views like File
 Explorer and Settings Editor. Making the notebook cell list view work with good
 performance and smooth scrolling is not trivial, most of our improvements are
 tracked in the
-[`doc`](HTTPS://github.com/microsoft/vscode/blob/main/src/vs/workbench/contrib/notebook/browser/docs/notebook.layout.md).
+[`doc`](https://github.com/microsoft/vscode/blob/main/src/vs/workbench/contrib/notebook/browser/docs/notebook.layout.md).
 The following sections here can help you to report layout issues.
 
 ## Record flaky layout issue with Replay
