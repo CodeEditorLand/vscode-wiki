@@ -152,7 +152,7 @@ the next reboot:
 Create a dummy commit on a sample local repository. You should see a prompt for
 your key's passphrase:
 
-<img width="593" alt="Screenshot 2021-04-07 at 14 13 12" src="HTTPS://user-images.githubusercontent.com/22350/113864893-4d08a980-9760-11eb-9425-3e8ef1762469.png">
+<img width="593" alt="Screenshot 2021-04-07 at 14 13 12" src="https://user-images.githubusercontent.com/22350/113864893-4d08a980-9760-11eb-9425-3e8ef1762469.png">
 
 In order to avoid typing the passphrase on every commit, just select
 `Save in Keychain`. That should've been the last time you typed the passphrase.

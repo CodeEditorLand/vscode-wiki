@@ -1,7 +1,7 @@
 # Speech extension for Visual Studio Code
 
 <p align="center">
-    <img src="HTTPS://github.com/microsoft/vscode/assets/900690/38106cff-2a99-4715-934c-cb1711bbf72c" alt="Logo">
+    <img src="https://github.com/microsoft/vscode/assets/900690/38106cff-2a99-4715-934c-cb1711bbf72c" alt="Logo">
 </p>
 
 The

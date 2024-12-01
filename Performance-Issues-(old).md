@@ -92,7 +92,7 @@ help us by providing performance profiles that we can analyze:
     profile:
     -   Execute "F1 > Toggle Developer Tools." In the overflow menu of the
         developer tools
-        <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="HTTPS://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
+        <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
     -   Select 'More Tools > JavaScript Profiler'. In there select start.
     -   Let it profile for 30 to 60 seconds, stop it.
     -   When the performance issue happens on startup, start the profiler and

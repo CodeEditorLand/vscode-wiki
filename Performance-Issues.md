@@ -66,7 +66,7 @@ your installed extensions by disabling some, reloading the window, and asking
 you whether the issue that you saw still occurs, until a single extension has
 been identified.
 
-<img width="800" alt="image" src="HTTPS://user-images.githubusercontent.com/30305945/235482512-c65d3071-8eff-4df9-8420-8f8b8b43a29a.png">
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/30305945/235482512-c65d3071-8eff-4df9-8420-8f8b8b43a29a.png">
 
 Alternatively, you can manually disable extensions in the Extensions Viewlet and
 restart/reload.
@@ -109,7 +109,7 @@ To analyze the performance yourself, you have two options:
 -   Open the file in VS Code with our built-in profile viewer. Install the Flame
     Chart extension when prompted, if desired.
 
-<img width="600" alt="Screenshot 2023-12-18 at 4 31 02 PM" src="HTTPS://github.com/microsoft/vscode/assets/323878/28f5b9a3-5dce-4795-911a-32c2e72672df">
+<img width="600" alt="Screenshot 2023-12-18 at 4 31 02 PM" src="https://github.com/microsoft/vscode/assets/323878/28f5b9a3-5dce-4795-911a-32c2e72672df">
 
 #### Open the trace in Electron/Chrome/Edge Developer Tools
 
@@ -164,7 +164,7 @@ narrow down on a slow-down. So, please create a CPU profile of the VS Code core
 
 -   Execute "<kbd>F1</kbd> > Toggle Developer Tools." In the overflow menu of
     the developer tools
-    <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="HTTPS://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
+    <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
 
 -   Select 'More Tools > JavaScript Profiler'. In there select start.
 -   Let it profile for 30 to 60 seconds, stop it.
@@ -201,7 +201,7 @@ narrow down on a slow-down. So, please create a CPU profile of the VS Code core
 
 -   Execute "<kbd>F1</kbd> > Toggle Shared Process." In the overflow menu of the
     developer tools
-    <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="HTTPS://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
+    <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
 
 -   Select 'More Tools > JavaScript Profiler'. In there select start.
 -   Let it profile for 30 to 60 seconds, stop it.
@@ -243,7 +243,7 @@ When VS Code feels slow to start, you can check the startup timers. Hit
 <kbd>F1</kbd> and select "Startup Performance." This will open an editor with
 all starting performance details
 
-<img width="1038" alt="Screenshot 2023-05-03 at 16 44 42" src="HTTPS://user-images.githubusercontent.com/1794099/235951322-f85587d0-6967-41cf-a8b3-385d4248f1d2.png">
+<img width="1038" alt="Screenshot 2023-05-03 at 16 44 42" src="https://user-images.githubusercontent.com/1794099/235951322-f85587d0-6967-41cf-a8b3-385d4248f1d2.png">
 
 Please share these numbers with us as they often allows us to understand what is
 slow.

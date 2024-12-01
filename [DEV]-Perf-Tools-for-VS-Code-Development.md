@@ -21,7 +21,7 @@ durations are derived from well-known perf-markers. Simplest is to look them up
 in source
 [`here`](HTTPS://github.com/microsoft/vscode/blob/main/src/vs/workbench/services/timer/browser/timerService.ts#L666)
 
-<img width="1202" alt="Screenshot 2022-09-15 at 14 27 37" src="HTTPS://user-images.githubusercontent.com/1794099/190404112-326503e4-f888-4e3c-947d-6861d2d1072f.png">
+<img width="1202" alt="Screenshot 2022-09-15 at 14 27 37" src="https://user-images.githubusercontent.com/1794099/190404112-326503e4-f888-4e3c-947d-6861d2d1072f.png">
 
 ### Performance Marks
 
@@ -62,11 +62,11 @@ Performance marks can be used in the following ways
     include _name_, the absolute _timestamp_ (unix epoch), the _delta_ from the
     previous marks, and the _total_ time since the time origin
 
-<img width="578" alt="Screenshot 2022-09-14 at 09 07 21" src="HTTPS://user-images.githubusercontent.com/1794099/190085435-2c60c873-49b8-4776-ab6e-f3aa747abb99.png">
+<img width="578" alt="Screenshot 2022-09-14 at 09 07 21" src="https://user-images.githubusercontent.com/1794099/190085435-2c60c873-49b8-4776-ab6e-f3aa747abb99.png">
 
 -   Marks form the renderer are visible in the Performance-tab when recording
     while reload, like so
-    <img width="471" alt="Screenshot 2022-09-14 at 09 04 30" src="HTTPS://user-images.githubusercontent.com/1794099/190084419-c04cf172-7ba1-4127-bbc0-130005f14ddb.png">
+    <img width="471" alt="Screenshot 2022-09-14 at 09 04 30" src="https://user-images.githubusercontent.com/1794099/190084419-c04cf172-7ba1-4127-bbc0-130005f14ddb.png">
 
 ### Eventing
 
@@ -198,4 +198,4 @@ non-standard scenarios you can visit
 
 HTTPS://msit.powerbi.com/groups/2bb9c256-c8ed-47a3-b1be-ebf0c050fb85/reports/2f5bed71-2607-4e0c-8a83-d0f9de023342/ReportSection2a538e7da53fa84953d6?experience=power-bi
 
-<img width="1848" alt="Screenshot 2023-05-24 at 10 36 50" src="HTTPS://github.com/microsoft/vscode/assets/1794099/bd5b63eb-5e5d-4665-9915-b48040f6c316">
+<img width="1848" alt="Screenshot 2023-05-24 at 10 36 50" src="https://github.com/microsoft/vscode/assets/1794099/bd5b63eb-5e5d-4665-9915-b48040f6c316">

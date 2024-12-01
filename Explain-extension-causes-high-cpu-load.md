@@ -37,7 +37,7 @@ Sometimes it's not code execution but code loading (which is also blocking)
 which causes unresponsive extension host. Profile then are harder to read and
 often look like this:
 
-<img width="813" alt="screenshot 2019-01-10 at 10 29 45" src="HTTPS://user-images.githubusercontent.com/1794099/50959220-bc7c8980-14c2-11e9-973b-2e2ec3ff09f7.png">
+<img width="813" alt="screenshot 2019-01-10 at 10 29 45" src="https://user-images.githubusercontent.com/1794099/50959220-bc7c8980-14c2-11e9-973b-2e2ec3ff09f7.png">
 
 The problem is that there are too many, often little, files that all need to be
 read and loaded. Considering bundling your extension, e.g with

@@ -290,7 +290,7 @@ issue.
 When we refer to "up-voting" a feature request, we specifically mean adding a
 GitHub `+1`/"👍" reaction to the issue description. In the GitHub UI this looks
 like so:
-<img width="945" alt="adding a 👍 reaction to a feature request in the github UI" src="HTTPS://user-images.githubusercontent.com/8586769/154747667-737a6d6e-9657-4e01-885b-38150c893971.png">
+<img width="945" alt="adding a 👍 reaction to a feature request in the github UI" src="https://user-images.githubusercontent.com/8586769/154747667-737a6d6e-9657-4e01-885b-38150c893971.png">
 
 ### Won't fix Bugs
 
