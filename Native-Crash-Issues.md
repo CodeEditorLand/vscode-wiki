@@ -23,30 +23,8 @@ A global install of electron-minidump is required for the following steps.
 One can install electron-minidump globally using
 `npm install -g electron-minidump`. **A macOS or Linux device is required**.
 
-1. Run `electron-minidump crash-file.dmp > symbolicated-output.log` to generate
-   or refresh the cache for electron-minidump. Check the symbolicated output to
-   see which symbols are required, if any. For example, if the top of the crash
-   output backtrace says "Electron Framework" but doesn't provide a method name
-   after, then Electron Framework symbols are required.
-2. Get the appropriate symbol files. Most likely, the crash comes from an
-   Insiders or Stable version of Code. Those versions use an internal Electron,
-   and symbol files for the internal Electron along with Insiders and Stable are
-   available at
-   [`microsoft/vscode-electron-prebuilt`](https://github.com/microsoft/vscode-electron-prebuilt/releases).
-   Meanwhile, Code-OSS uses the OSS version of Electron, which has symbol files
-   available at
-   [`electron/electron`](https://github.com/electron/electron/releases).
-3. Unzip the downloaded symbol zip file, and after verifying folder hashes, copy
-   over individual `.sym` files as needed to the correct subdirectory within the
-   electron-minidump breakpad_symbols directory, which can be found at
-   `"$(npm root -g)/electron-minidump/cache/breakpad_symbols"`.
-    - For example, let's say I unzip `insiders-symbols-v19.1.8-darwin-x64.zip`
-      to `~/insiders-symbols/`, and that in the unzipped directory, there is a
-      folder `Electron Framework` with a subfolder starting with the hash
-      `4C4C444`. After confirming in
-      `"$(npm root -g)/electron-minidump/cache/breakpad_symbols"` that there is
-      also an Electron Framework directory there with an empty subdirectory
-      starting with the same hash, I can run
-      `cp "~/insiders-symbols/Electron Framework/<hash>/Electron Framework.sym" "$(npm root -g)/electron-minidump/cache/breakpad_symbols/Electron Framework/<hash>"`.
-4. Run `electron-minidump crash-file.dmp > symbolicated-output.log` again. The
-   crash output backtrace should now have method names attached.
+1. Run `electron-minidump crash-file.dmp > symbolicated-output.log` to generate or refresh the cache for electron-minidump. Check the symbolicated output to see which symbols are required, if any. For example, if the top of the crash output backtrace says "Electron Framework" but doesn't provide a method name after, then Electron Framework symbols are required.
+2. Get the appropriate symbol files. Most likely, the crash comes from an Insiders or Stable version of Code. Those versions use an internal Electron, and symbol files for the internal Electron along with Insiders and Stable are available at [microsoft/vscode-electron-prebuilt](https://github.com/microsoft/vscode-electron-prebuilt/releases). Meanwhile, Code-OSS uses the OSS version of Electron, which has symbol files available at [electron/electron](https://github.com/electron/electron/releases).
+3. Unzip the downloaded symbol zip file, and after verifying folder hashes, copy over individual `.sym` files as needed to the correct subdirectory within the electron-minidump breakpad_symbols directory, which can be found at `"$(npm root -g)/electron-minidump/cache/breakpad_symbols"`.
+    * For example, let's say I unzip `insiders-symbols-v19.1.8-darwin-x64.zip` to `~/insiders-symbols/`, and that in the unzipped directory, there is a folder `Electron Framework` with a subfolder starting with the hash `4C4C444`. After confirming in `"$(npm root -g)/electron-minidump/cache/breakpad_symbols"` that there is also an Electron Framework directory there with an empty subdirectory starting with the same hash, I can run `cp "~/insiders-symbols/Electron Framework/<hash>/Electron Framework.sym" "$(npm root -g)/electron-minidump/cache/breakpad_symbols/Electron Framework/<hash>"`.
+4. Run `electron-minidump crash-file.dmp > symbolicated-output.log` again. The crash output backtrace should now have method names attached.

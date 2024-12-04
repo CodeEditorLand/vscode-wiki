@@ -12,23 +12,19 @@ When we execute on our roadmap, we keep learning and our assessment of some of
 the topics listed changes. As a result, we may add or drop topics as we go.
 After around 12 months we come together to develop the next roadmap.
 
-We describe some initiatives as "investigations" or "explorations" which means
-our goal in the next few months is to better understand the problem and
-potential solutions before scheduling actual feature work. Once an investigation
-is done, we will update our plans, either deferring the initiative or committing
-to it.
+We describe some initiatives as "investigations" or "explorations" which means our goal in the next few months is to better understand the problem and potential solutions before scheduling actual feature work. Once an investigation is done, we will update our plans, either deferring the initiative or committing to it.
 
 As always, we listen to your feedback and adapt our plans if needed.
 
 Legend of annotations:
 
-| Mark         | Description      |
-| ------------ | ---------------- |
-| bullet       | work not started |
-| check mark   | work completed   |
-| :runner:     | on-going work    |
-| :muscle:     | stretch goal     |
-| :red_circle: | missing link     |
+| Mark          | Description      |
+| ------------- | ---------------- |
+| bullet        | work not started |
+| check mark    | work completed   |
+| :runner:      | on-going work    |
+| :muscle:      | stretch goal     |
+| :red_circle:  | missing link     |
 
 ### Values
 
@@ -451,9 +447,5 @@ We have a dedicated
 
 ## Summary
 
-These are examples of some of the work we will be focusing on in the next 12-18
-months. We continuously tune the plan based on feedback and we will provide more
-detail in each of our
-[`monthly iteration plans`](https://github.com/Microsoft/vscode/wiki/Iteration-Plans).
-We will develop our next roadmap in around 12 months from now. Please follow
-along and let us know what you think!
+These are examples of some of the work we will be focusing on in the next 12-18 months. We continuously tune the plan based on feedback and we will provide more detail in each of our [monthly iteration plans](https://github.com/Microsoft/vscode/wiki/Iteration-Plans). We will develop our next roadmap in around 12 months from now. Please follow along and let us know what you think!
+

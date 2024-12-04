@@ -105,18 +105,18 @@ the needed information within 7 days the bot closes the issue.
 Each issue must have a **type** label. Most type labels are grey, some are
 yellow. Bugs are grey with a touch of red.
 
-| Type                                                                                                                                                           | Description                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| [`needs more info`](https://github.com/microsoft/vscode/labels/needs%20more%20info)                                                                            | not possible to assign a type label due to missing information; see [above`](#requesting-information) |
-| [`bug`](https://github.com/microsoft/vscode/labels/bug)                                                                                                        | the implementation of a feature is not correct                                                       |
-| [`feature-request`](https://github.com/microsoft/vscode/labels/feature-request)                                                                                | request for a new feature                                                                            |
-| [`under-discussion`](https://github.com/microsoft/vscode/labels/under-discussion)                                                                              | not decided whether the issue is a bug or feature                                                    |
-| [`debt`](https://github.com/microsoft/vscode/labels/debt)                                                                                                      | improve the implementation/architecture                                                              |
-| [`*question`](https://github.com/microsoft/vscode/labels/%2Aquestion)                                                                                          | we should direct questions to StackOverflow                                                          |
-| [`upstream`](https://github.com/microsoft/vscode/labels/upstream), [`upstream-issue-linked`](https://github.com/microsoft/vscode/labels/upstream-issue-linked) | an issue used to track an issue in an upstream component                                             |
-| [`electron`](https://github.com/microsoft/vscode/labels/electron)                                                                                              | an issue with electron                                                                               |
-| [`engineering`](https://github.com/microsoft/vscode/labels/engineering)                                                                                        | issues related to our engineering system or our processes                                            |
-| [`polish`](https://github.com/microsoft/vscode/labels/polish)                                                                                                  | a feature could be improved, but not necessarily a bug                                               |
+|Type|Description|
+|---|---|
+|[`needs more info`](https://github.com/microsoft/vscode/labels/needs%20more%20info) | not possible to assign a type label due to missing information; see [above](#requesting-information)|
+|[`bug`](https://github.com/microsoft/vscode/labels/bug) | the implementation of a feature is not correct|
+|[`feature-request`](https://github.com/microsoft/vscode/labels/feature-request) | request for a new feature|
+|[`under-discussion`](https://github.com/microsoft/vscode/labels/under-discussion) | not decided whether the issue is a bug or feature|
+|[`debt`](https://github.com/microsoft/vscode/labels/debt) | improve the implementation/architecture|
+|[`*question`](https://github.com/microsoft/vscode/labels/%2Aquestion) | we should direct questions to StackOverflow|
+|[`upstream`](https://github.com/microsoft/vscode/labels/upstream), [`upstream-issue-linked`](https://github.com/microsoft/vscode/labels/upstream-issue-linked) | an issue used to track an issue in an upstream component|
+|[`electron`](https://github.com/microsoft/vscode/labels/electron) | an issue with electron|
+|[`engineering`](https://github.com/microsoft/vscode/labels/engineering) | issues related to our engineering system or our processes|
+|[`polish`](https://github.com/microsoft/vscode/labels/polish) | a feature could be improved, but not necessarily a bug|
 
 We also use the following **type** labels, although they don't directly play a
 role in the triaging process as they are usually assigned to issues created by
@@ -170,10 +170,7 @@ In addition to milestones representing our iterations and releases such as
 
 ## Asking for Help
 
-We label **`Backlog`** issues, particularly feature requests, that we encourage
-the community to take up with `help-wanted`. If issues are suitable for
-beginners we may add the `good-first-issue` label and we add code pointers that
-help beginners to get started with a PR.
+We label **`Backlog`** issues, particularly feature requests, that we encourage the community to take up with `help-wanted`. If issues are suitable for beginners we may add the `good-first-issue` label and we add code pointers that help beginners to get started with a PR.
 
 Sometime, we get issues that we can't or don't have the time to reproduce due to
 the complexity or time requirements of the setup but that we indeed suspect to
@@ -188,22 +185,7 @@ milestone assigned that is not **`Backlog Candidates`**.
 
 ### Managing Feature Requests
 
-Feature requests like all issues are a means of communication between us and our
-community as well as among the members of the community. Thus, in principle, we
-could keep all feature requests open no matter what will happen to the feature
-they describe. Unfortunately, this makes it hard for you to understand what has
-realistic chances to ever make it into the repository. We therefore close
-feature requests we cannot address with `out-of-scope` while we assign feature
-requests we don't plan to address but want to give you time to weigh in to the
-**`Backlog Candidates`** milestone.
-
-If you are the author of a feature request you might not like that we close or
-don't plan to address your request. It might even feel like a slap in your face.
-We understand that. All of us have been there—in this project or others we have
-contributed to. So, be assured, we love all of your input. Don't take personal
-offense when we close or assign the **`Backlog Candidates`** milestone to your
-issue :peace_symbol:. If you feel your feature request deserves to stay open,
-improve your use case and ping us or gather more up-votes.
+If you are the author of a feature request you might not like that we close or don't plan to address your request. It might even feel like a slap in your face. We understand that. All of us have been there—in this project or others we have contributed to. So, be assured, we love all of your input. Don't take personal offense when we close or assign the **`Backlog Candidates`** milestone to your issue :peace_symbol:. If you feel your feature request deserves to stay open, improve your use case and ping us or gather more up-votes.
 
 This is our decision making tree. More details below.
 
@@ -287,10 +269,10 @@ issue.
 
 ### Up-voting a Feature Request
 
-When we refer to "up-voting" a feature request, we specifically mean adding a
-GitHub `+1`/"👍" reaction to the issue description. In the GitHub UI this looks
-like so:
+When we refer to "up-voting" a feature request, we specifically mean adding a GitHub `+1`/"👍" reaction to the issue description. In the GitHub UI this looks like so:
 <img width="945" alt="adding a 👍 reaction to a feature request in the github UI" src="https://user-images.githubusercontent.com/8586769/154747667-737a6d6e-9657-4e01-885b-38150c893971.png">
+
+
 
 ### Won't fix Bugs
 

@@ -24,8 +24,7 @@ build for ARM), you'll need to do the following, in addition to the setup under
 
 **Build**
 
-Because cross-compiling isn't officially supported by the Visual Studio Code
-team, some workarounds are required to make the app build correctly:
+Because cross-compiling isn't officially supported by the Visual Studio Code team, some workarounds are required to make the app build correctly:
 
 1. Point to the target toolchain on the build host:
 
@@ -38,16 +37,15 @@ team, some workarounds are required to make the app build correctly:
     chroot/rootfs_
 
 1. Tell `npm` you want to cross-compile native modules for ARM:
+   
+   ```bash
+   export npm_config_arch=arm
+   ```
 
-    ```bash
-    export npm_config_arch=arm
-    ```
+1. Build VS Code and create a .deb file (for easier installation on the target device) as usual:
 
-1. Build VS Code and create a .deb file (for easier installation on the target
-   device) as usual:
-
-    ```bash
-    npm i
-    npm run gulp vscode-linux-arm-min
-    npm run gulp vscode-linux-arm-build-deb
-    ```
+   ```bash
+   npm i
+   npm run gulp vscode-linux-arm-min
+   npm run gulp vscode-linux-arm-build-deb
+   ```

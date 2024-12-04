@@ -20,21 +20,7 @@ Besides `.gitignore`, we also look at the `.ignore`, `.rgignore`, and
 > **Tip**: You can set `"search.useIgnoreFiles": false` to disable using the
 > `.gitignore` file for search
 
-An easy way to validate whether exclude setttings or ignore files are affecting
-your search is to turn off the "Use Exclude Settings and Ignore Files" button in
-the search viewlet. This is the gear button in the lower right corner:
-
-![`Use Exclude Settings and Ignore Files button`](https://user-images.githubusercontent.com/8586769/132767680-dd9048dc-beef-4849-a5cd-2cfadcd01e19.png)
-
-Another thing to watch for is that **it's possible to add a file covered by a
-`.gitignore` file to git**, and some tools like `git grep` will still search
-these files. Ripgrep is looking at the `.gitignore` file but doesn't know
-whether a file has been added to git. So if a file is covered by the
-`.gitignore` file, it won't be searched, whether or not it's in git.
-
-VS Code also supports searching only in the files that are currently opened as
-tabs, this mode is controlled by the book icon in the "files to include" input,
-and a message is shown when this is enabled:
+An easy way to validate whether exclude setttings or ignore files are affecting your search is to turn off the "Use Exclude Settings and Ignore Files" button in the search viewlet. This is the gear button in the lower right corner:
 
 ![`The book icon controlling whether only open editors are searched`](https://user-images.githubusercontent.com/8586769/132784916-880415ce-ff7c-4e13-a50c-58d5ee7bfa49.png)
 
@@ -48,11 +34,13 @@ endings** well. Files that originated on older OS's may use these, and may have
 missing or inconsistent search results. There is an
 [`open issue`](https://github.com/Microsoft/vscode/issues/35797) for this.
 
-When looking at issues with missing results, remember that **search in open
-files** is implemented by the editor. Search in all other files is implemented
-by ripgrep. Some issues that look like search is working only in a few random
-files can be explained by a problem that only affects the ripgrep side of the
-search.
+![The book icon controlling whether only open editors are searched](https://user-images.githubusercontent.com/8586769/132784916-880415ce-ff7c-4e13-a50c-58d5ee7bfa49.png)
+
+If your workspace has files with a **non-UTF-8 encoding**, you will need to set the `files.encoding` setting to the correct encoding to search in those files. Note that the `files.autoGuessEncoding` works for the editor, but isn't supported for search.
+
+This is less common, but VS Code doesn't handle files with **CR-only line endings** well. Files that originated on older OS's may use these, and may have missing or inconsistent search results. There is an [open issue](https://github.com/Microsoft/vscode/issues/35797) for this.
+
+When looking at issues with missing results, remember that **search in open files** is implemented by the editor. Search in all other files is implemented by ripgrep. Some issues that look like search is working only in a few random files can be explained by a problem that only affects the ripgrep side of the search.
 
 ### `ENAMETOOLONG` error
 
@@ -95,10 +83,7 @@ or the "files to include/exclude" text boxes to narrow down your search to the
 parts you care about. Make sure the "Use Exclude Settings and Ignore Files"
 button is toggled on so your exclude settings are respected.
 
-On Windows, the **Windows Defender** antivirus tool can sometimes kick in during
-a search and slow down searching. Look for a process named using high CPU named
-`MsMpEng.exe` in the Task Manager to tell whether Defender is active. Other
-antivirus programs can cause strange behavior as well.
+On Windows, the **Windows Defender** antivirus tool can sometimes kick in during a search and slow down searching. Look for a process named using high CPU named `MsMpEng.exe` in the Task Manager to tell whether Defender is active. Other antivirus programs can cause strange behavior as well.
 
 You can start VS Code from the command line with the `--status` flag, or use the
 Process Explorer (Help > Open Process Explorer) to see running processes owned
@@ -121,12 +106,7 @@ above and include as many details as possible to help us diagnose the issue.
 
 **Collecting search logs**
 
-Some details are logged for each search. To see these logs, run the command
-`"Developer: Set Log Level..."`, select "Trace", and run the search again. Then
-in the output pane, see the logs in the channels named `Log (Window)` and
-`Log (Extension Host)` (in a remote window, `Log (Remote Extension Host)`. The
-logs show VS Code's internal query object, the arguments with which ripgrep was
-invoked, and any errors produced by ripgrep.
+Some details are logged for each search. To see these logs, run the command `"Developer: Set Log Level..."`, select "Trace", and run the search again. Then in the output pane, see the logs in the channels named `Log (Window)` and `Log (Extension Host)` (in a remote window, `Log (Remote Extension Host)`. The logs show VS Code's internal query object, the arguments with which ripgrep was invoked, and any errors produced by ripgrep.
 
 ![`screen shot 2018-04-30 at 2 15 35 pm`](https://user-images.githubusercontent.com/323878/39452722-1e2a6f48-4c88-11e8-84f8-5afad938d357.png)
 

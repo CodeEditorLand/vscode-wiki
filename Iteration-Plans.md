@@ -169,9 +169,8 @@
 -   [`Endgame`](https://github.com/microsoft/vscode/issues/119494)
 
 ### February 2021
-
--   [`Iteration Plan`](https://github.com/microsoft/vscode/issues/116000)
--   [`Endgame`](https://github.com/microsoft/vscode/issues/117239)
+* [Iteration Plan](https://github.com/microsoft/vscode/issues/116000)
+* [Endgame](https://github.com/microsoft/vscode/issues/117239)
 
 ### December 2020 / January 2021
 

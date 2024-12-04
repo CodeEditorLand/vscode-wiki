@@ -58,13 +58,7 @@ or from the `...` menu in the Extensions Viewlet:
 
 ![`image`](https://user-images.githubusercontent.com/172399/34978338-33e7bf98-fa9e-11e7-9c79-1138936c5c34.png)
 
-If you cannot reproduce the issue when **all** extensions are disabled, then can
-you narrow down the extension by selectively disabling extensions? You can
-identify the extension which causes a performance issue by executing
-"<kbd>F1</kbd> > Help: Start Extension Bisect". This will run binary search on
-your installed extensions by disabling some, reloading the window, and asking
-you whether the issue that you saw still occurs, until a single extension has
-been identified.
+If you cannot reproduce the issue when **all** extensions are disabled, then can you narrow down the extension by selectively disabling extensions? You can identify the extension which causes a performance issue by executing "<kbd>F1</kbd> > Help: Start Extension Bisect". This will run binary search on your installed extensions by disabling some, reloading the window, and asking you whether the issue that you saw still occurs, until a single extension has been identified.
 
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/30305945/235482512-c65d3071-8eff-4df9-8420-8f8b8b43a29a.png">
 
@@ -83,8 +77,9 @@ executing "<kbd>F1</kbd> > Developer: Show Running Extensions" and use the
 
 ### Profile the Running Extensions
 
-You can create a CPU profile and share it in the issue with the extension author
-or us. To create a CPU profile:
+You can create a CPU profile and share it in the issue with the extension author or us. To create a CPU profile:
+- Execute "<kbd>F1</kbd> > Developer: Show Running Extensions." This command opens an editor with all the running extensions.
+- To start recording a profile click the run control in the editor's title bar:
 
 -   Execute "<kbd>F1</kbd> > Developer: Show Running Extensions." This command
     opens an editor with all the running extensions.
@@ -92,14 +87,6 @@ or us. To create a CPU profile:
     bar:
 
 ![`image`](https://user-images.githubusercontent.com/172399/33882668-212c793c-df39-11e7-9844-6e2f4abf194f.png)
-
--   Perform some steps in VS Code that expose the slowdown
--   Stop the recording using the same control.
--   Save the extension host profile:
-
-![`image`](https://user-images.githubusercontent.com/172399/33882757-831a321a-df39-11e7-899e-032ab9174fab.png)
-
--   Attach the profile to a Github issue.
 
 To analyze the performance yourself, you have two options:
 
@@ -130,10 +117,9 @@ If you can reproduce the problem with extensions disabled, then use
 This command collects status about your running VS Code and the workspace you
 have opened. You can attach this information when reporting a performance issue.
 
-![`image`](https://github.com/Microsoft/vscode-docs/blob/main/release-notes/images/1_19/status.png)
+![image](https://github.com/Microsoft/vscode-docs/blob/main/release-notes/images/1_19/status.png)
 
-The output includes information about the environment, all running VS Code
-processes, and the counts of some typical files in the workspace.
+The output includes information about the environment, all running VS Code processes, and the counts of some typical files in the workspace.
 
 <a name="renderer-process"/>
 
@@ -162,15 +148,10 @@ Very detailed information is captured in CPU profiles and that helps us best to
 narrow down on a slow-down. So, please create a CPU profile of the VS Code core
 (_renderer_ process) and attach it to the issue. To create a profile:
 
--   Execute "<kbd>F1</kbd> > Toggle Developer Tools." In the overflow menu of
-    the developer tools
-    <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
-
--   Select 'More Tools > JavaScript Profiler'. In there select start.
--   Let it profile for 30 to 60 seconds, stop it.
--   When the performance issue happens on startup, start the profiler and then
-    reload the window using "<kbd>F1</kbd> > Reload Window."
--   Save the profile to a file and attach the file to your issue.
+  - Select 'More Tools > JavaScript Profiler'. In there select start.
+  - Let it profile for 30 to 60 seconds, stop it.
+  - When the performance issue happens on startup, start the profiler and then reload the window using "<kbd>F1</kbd> > Reload Window."
+  - Save the profile to a file and attach the file to your issue.
 
 <a name="shared-process"/>
 
@@ -227,14 +208,6 @@ performance profile. Do the following
 If VS Code is slow to start then please create a startup CPU profile. Do the
 following
 
--   Make sure to only have one window open
--   Quit VS Code (<kbd>CMD+Q</kbd> for Mac, closing the last window on
-    Linux/Windows)
--   Start VS Code from the command line like so `code --prof-startup`
--   VS Code will start and create two profile-files in your home-directory.
-    Please attach these files to your issue or create a new issue with these two
-    files
-
 <a name="startup-timer"/>
 
 ### Read the Startup Timers
@@ -245,5 +218,4 @@ all starting performance details
 
 <img width="1038" alt="Screenshot 2023-05-03 at 16 44 42" src="https://user-images.githubusercontent.com/1794099/235951322-f85587d0-6967-41cf-a8b3-385d4248f1d2.png">
 
-Please share these numbers with us as they often allows us to understand what is
-slow.
+Please share these numbers with us as they often allows us to understand what is slow.

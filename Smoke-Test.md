@@ -3,7 +3,7 @@ that we execute before we release VS Code to the public on all platforms.
 
 ## Automated Smoke Test
 
-HTTPS://github.com/Microsoft/vscode/blob/main/test/smoke/README.md
+https://github.com/Microsoft/vscode/blob/main/test/smoke/README.md
 
 ## Manual Smoke Test
 
@@ -199,8 +199,6 @@ never started Code before.
 -   Check high contrast theme
 
 #### Localization (Electron only)
-
--   Install the German Language Pack extension:
-    `ms-ceintl.vscode-language-pack-de`
--   Start code from the command line with `--locale=DE`
--   Verify all menus and viewlets are in German (or your language of choice)
+* Install the German Language Pack extension: `ms-ceintl.vscode-language-pack-de`
+* Start code from the command line with `--locale=DE`
+* Verify all menus and viewlets are in German (or your language of choice)

@@ -1,8 +1,6 @@
 ## Intro
 
-These are VS Code coding guidelines. Please also review our
-[`Source Code Organisation`](https://github.com/microsoft/vscode/wiki/Source-Code-Organization)
-page.
+These are VS Code coding guidelines. Please also review our [Source Code Organisation](https://github.com/microsoft/vscode/wiki/Source-Code-Organization) page.
 
 ## Indentation
 
@@ -28,11 +26,9 @@ We use tabs, not spaces.
     `classes`
 
 ## Strings
-
--   Use "double quotes" for strings shown to the user that need to be
-    externalized (localized)
--   Use 'single quotes' otherwise
--   All strings visible to the user need to be externalized
+* Use "double quotes" for strings shown to the user that need to be externalized (localized)
+* Use 'single quotes' otherwise
+* All strings visible to the user need to be externalized
 
 ## Style
 

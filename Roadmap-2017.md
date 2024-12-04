@@ -31,12 +31,13 @@ the initiative or committing to it.
 
 Legend of annotations:
 
-| Mark          | Description      |
-| ------------- | ---------------- |
+| Mark | Description |
+| ------------- | ------------- |
 | <li>[ ] </li> | work not started |
-| <li>[x] </li> | work completed   |
-| :runner:      | on-going work    |
-| :muscle:      | stretch goal     |
+| <li>[x] </li> | work completed |
+| :runner: | on-going work |
+| :muscle: | stretch goal |
+
 
 ## Happy Coding with VS Code
 

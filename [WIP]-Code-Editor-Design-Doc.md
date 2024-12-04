@@ -61,17 +61,13 @@ Above is what users usually see while working on source code files. This
 particular view is a CodeEditorWidget and it consists of multiple view parts,
 including but not limited to:
 
-1. _Line Numbers_
-2. _Overlay Widget_: The Find widget is an Overlay Widget, which renders on top
-   of the text.
-3. _ViewLine_. Each line of text is a ViewLine.
-4. _Decorations_: Word highlights are Decorations
-5. _Content Widget_: The Suggestion Widget is a Content Widget which renders
-   inline with the text and can be easily placed **near** an editor position.
-6. _View Zone_: The Find All Reference is a View Zone which is a full horizontal
-   rectangle that **pushes** text down. The editor reserves space for view zones
-   when rendering, that's why the line before the widget is no.88 and the one
-   after is no.89.
+
+1. *Line Numbers*
+2. *Overlay Widget*: The Find widget is an Overlay Widget, which renders on top of the text.
+3. *ViewLine*. Each line of text is a ViewLine.
+4. *Decorations*: Word highlights are Decorations
+5. *Content Widget*: The Suggestion Widget is a Content Widget which renders inline with the text and can be easily placed **near** an editor position.
+6. *View Zone*: The Find All Reference is a View Zone which is a full horizontal rectangle that **pushes** text down. The editor reserves space for view zones when rendering, that's why the line before the widget is no.88 and the one after is no.89.
 7. ...
 
 For the sake of performance and memory, our rendering process will only render

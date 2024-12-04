@@ -33,12 +33,13 @@ the initiative or committing to it.
 
 Legend of annotations:
 
-| Mark          | Description      |
-| ------------- | ---------------- |
+| Mark | Description |
+| ------------- | ------------- |
 | <li>[ ] </li> | work not started |
-| <li>[x] </li> | work completed   |
-| :runner:      | on-going work    |
-| :muscle:      | stretch goal     |
+| <li>[x] </li> | work completed |
+| :runner: | on-going work |
+| :muscle: | stretch goal |
+
 
 ## Happy Coding with VS Code
 
@@ -213,8 +214,4 @@ environment.
 
 ## Summary
 
-These are examples of just some of the work we will be focusing on in the next 6
-to 12 months. We continuously tune the plan based on feedback and we will
-provide more detail in each of our
-[`monthly iteration plans`](https://github.com/Microsoft/vscode/wiki/Iteration-Plans).
-Please follow along and let us know what you think!
+These are examples of just some of the work we will be focusing on in the next 6 to 12 months. We continuously tune the plan based on feedback and we will provide more detail in each of our [monthly iteration plans](https://github.com/Microsoft/vscode/wiki/Iteration-Plans). Please follow along and let us know what you think!

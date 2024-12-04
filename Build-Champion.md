@@ -1,5 +1,4 @@
-This page describes the Build Champion role. This is a weekly rotating role
-within the team.
+This page describes the Build Champion role. This is a weekly rotating role within the team.
 
 ## Responsibilities
 
@@ -152,7 +151,7 @@ feature/test.
 
 ### Useful links
 
--   [`Error telemetry website`](https://errors.code.visualstudio.com/)
--   [`ADO VS Code build`](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
--   [`ADO VS Code build analytics`](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111&view=ms.vss-pipelineanalytics-web.new-build-definition-pipeline-analytics-view-cardmetrics)
--   [`Dealing with test flakiness wiki page`](https://github.com/microsoft/vscode/wiki/Dealing-with-Test-Flakiness)
+- [Error telemetry website](https://errors.code.visualstudio.com/)
+- [ADO VS Code build](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
+- [ADO VS Code build analytics](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111&view=ms.vss-pipelineanalytics-web.new-build-definition-pipeline-analytics-view-cardmetrics)
+- [Dealing with test flakiness wiki page](https://github.com/microsoft/vscode/wiki/Dealing-with-Test-Flakiness)

@@ -96,12 +96,11 @@ preparing of the "API-shaped" data. Also, synchronous APIs are more ergonomic
 and for extension authors easier to reason about (after every await the world
 could have changed)
 
-## Data Driven
+_Note:_ Providing synchronous data comes with some additional engineering cost and will consume extra memory. However, it guarantees fast (zero-cost) data reading. Extensions might read a property in a tight loop and doing millions of RPC calls comes at a cost, esp. when it is not just the call but also the preparing of the "API-shaped" data. Also, synchronous APIs are more ergonomic and for extension authors easier to reason about (after every await the world could have changed)
 
-Whenever possible, you should define a data model and define
-provider-interfaces. This puts VS Code into control as we can decide when to ask
-those providers, how to deal with multiple providers etc. The
-`ReferenceProvider` interface is a good sample for this.
+Data Driven
+-
+Whenever possible, you should define a data model and define provider-interfaces. This puts VS Code into control as we can decide when to ask those providers, how to deal with multiple providers etc. The `ReferenceProvider` interface is a good sample for this.
 
 ## Enrich Data Incrementally
 
@@ -141,9 +140,9 @@ things into a promise or if a certain condition isn’t met simple return, etc.
 
 ## Validate Data
 
-Although providers can return ‘relaxed’ data, you need to verify it. The same is
-true for arguments etc. Throw validation errors when possible, drop data object
-when invalid.
+Undefined is False
+-
+The default value of an optional, boolean property is `false`. This is for consistency with JS where undefined never evaluates to `true`
 
 ## Copy Data
 
@@ -197,27 +196,7 @@ When document string-datatypes that end up in the UI, use the phrase
     -   This can sometimes hit you on spreads or iterating through objects, so
         just something to be aware of
 
--   For readonly properties on interfaces that VS Code exposes to extensions
-    (this include managed objects, as well as the objects passed to events):
-    -   Use `| undefined` as this makes it clear the property exists but has the
-        value `undefined`.
--   For readonly properties on options bag type objects passed from extensions
-    to VS Code:
-
-    -   Use `?` when it is ok to omit the property
-    -   Use `| undefined` when you want the user to have to pass in the property
-        but `undefined` signals that you will fall back to some default
-    -   Try to avoid `?` + `| undefined` in most cases. Instead use `?`. Using
-        both `?` + `| undefined` isn't wrong, but it's often more clear to treat
-        omitting the property as falling back to the default rather than passing
-        in `undefined`
-
--   For unmanaged, writable objects:
-    -   If using `?`, always also add `| undefined` unless want to allow the
-        property to be omitted during initialization, but never allow users to
-        explicitly set it to `undefined` afterwards. I don't think we have many
-        cases where this will be needed
-        -   In these cases, you may want to try changing the api to avoid this
-            potential confusion
-    -   If adding a new property to an unmanaged object, use `?` as this ensures
-        the type is backwards compatible with the old version
+- For unmanaged, writable objects:
+     - If using `?`, always also add `| undefined` unless want to allow the property to be omitted during initialization, but never allow users to explicitly set it to `undefined` afterwards. I don't think we have many cases where this will be needed
+          - In these cases, you may want to try changing the api to avoid this potential confusion
+     - If adding a new property to an unmanaged object, use `?` as this ensures the type is backwards compatible with the old version

@@ -1,101 +1,48 @@
 # Contributing to Visual Studio Code
 
-There are many ways to contribute to the Visual Studio Code project: logging
-bugs, submitting pull requests, reporting issues, and creating suggestions.
-
-After cloning and building the repo, check out the
-[`issues list`](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue).
-Issues labeled
-[`help wanted`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
-are good issues to submit a PR for. Issues labeled
-[`good first issue`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-are great candidates to pick up if you are in the code for the first time. If
-you are contributing significant changes, or if the issue is already assigned to
-a specific month milestone, please discuss with the assignee of the issue first
-before starting to work on the issue.
+After cloning and building the repo, check out the [issues list](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue). Issues labeled [`help wanted`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) are good issues to submit a PR for. Issues labeled [`good first issue`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) are great candidates to pick up if you are in the code for the first time. If you are contributing significant changes, or if the issue is already assigned to a specific month milestone, please discuss with the assignee of the issue first before starting to work on the issue.
 
 ## Prerequisites
 
-In order to download necessary tools, clone the repository, and install
-dependencies via `npm i`, you need network access.
+In order to download necessary tools, clone the repository, and install dependencies via `npm i`, you need network access.
 
 You'll need the following tools:
 
--   [`Git`](https://git-scm.com)
--   [`Node.JS`](https://nodejs.org/en/), **x64**, version `>=18.15.x and <19`
--   [`Python`](https://www.python.org/downloads/) (required for node-gyp; check
-    the [`node-gyp readme`](https://github.com/nodejs/node-gyp#installation) for
-    the currently supported Python versions)
-    -   **Note:** Python will be automatically installed for Windows users
-        through installing `windows-build-tools` npm module (see below)
--   A C/C++ compiler tool chain for your platform:
-    -   **Windows 10/11**
-        -   Install the Windows Build Tools:
-            -   if you install Node on your system using the Node installer from
-                the [`Node.JS`](https://nodejs.org/en/download/) page then ensure
-                that you have installed the 'Tools for Native Modules'.
-                Everything should work out of the box then.
-            -   if you use a node version manager like
-                [`nvm`](https://github.com/coreybutler/nvm-windows) or
-                [`nvs`](https://github.com/jasongin/nvs) then follow these steps:
-                -   Install the current version of Python using the
-                    [`Microsoft Store Package`](https://docs.python.org/3/using/windows.html#the-microsoft-store-package).
-                -   Install the Visual C++ Build Environment by either
-                    installing the
-                    [`Visual Studio Build Tools`](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools)
-                    or the
-                    [`Visual Studio Community Edition`](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community).
-                    The minimum workload to install is 'Desktop Development with
-                    C++'.
-                -   open a command prompt and run
-                    `npm config set msvs_version {visual studio version}`. (If
-                    you are using Visual Studio 2019 then you need to run
-                    `npm config set msvs_version 2019`)
-        -   **Warning:** Make sure your profile path only contains ASCII
-            letters, e.g. _John_, otherwise, it can lead to
-            [`node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
-        -   **Note**: Building and debugging via the Windows subsystem for Linux
-            (WSL) is currently not supported.
-    -   **Windows WSL2**:
-        HTTPS://github.com/microsoft/vscode/wiki/Selfhosting-on-Windows-WSL
-    -   **macOS**
-        -   [`Xcode`](https://developer.apple.com/xcode/resources/) and the
-            Command Line Tools, which will install `gcc` and the related
-            toolchain containing `make`
-            -   Run `xcode-select --install` to install the Command Line Tools
-    -   **Linux**
-        -   On Debian-based Linux:
-            `sudo apt-get install build-essential g++ libx11-dev libxkbfile-dev libsecret-1-dev libkrb5-dev python-is-python3`
-        -   On Red Hat-based Linux:
-            `sudo yum groupinstall "Development Tools" && sudo yum install libX11-devel.x86_64 libxkbfile-devel.x86_64 libsecret-devel krb5-devel # or .i686`.
-        -   Others:
-            -   `make`
-            -   [`pkg-config`](https://www.freedesktop.org/wiki/Software/pkg-config/)
-            -   [`GCC`](https://gcc.gnu.org) or another compile toolchain
-        -   Building deb and rpm packages requires `fakeroot` and `rpm`; run:
-            `sudo apt-get install fakeroot rpm`
+- [Git](https://git-scm.com)
+- [Node.JS](https://nodejs.org/en/), **x64**, version `>=18.15.x and <19`
+- [Python](https://www.python.org/downloads/) (required for node-gyp; check the [node-gyp readme](https://github.com/nodejs/node-gyp#installation) for the currently supported Python versions)
+  - **Note:** Python will be automatically installed for Windows users through installing `windows-build-tools` npm module (see below)
+- A C/C++ compiler tool chain for your platform:
+  - **Windows 10/11**
+    - Install the Windows Build Tools:
+      - if you install Node on your system using the Node installer from the [Node.JS](https://nodejs.org/en/download/) page then ensure that you have installed the 'Tools for Native Modules'. Everything should work out of the box then.
+      - if you use a node version manager like [nvm](https://github.com/coreybutler/nvm-windows) or [nvs](https://github.com/jasongin/nvs) then follow these steps:
+        - Install the current version of Python using the [Microsoft Store Package](https://docs.python.org/3/using/windows.html#the-microsoft-store-package).
+        - Install the Visual C++ Build Environment by either installing the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) or the [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community). The minimum workload to install is 'Desktop Development with C++'.
+        - open a command prompt and run `npm config set msvs_version {visual studio version}`. (If you are using Visual Studio 2019 then you need to run `npm config set msvs_version 2019`)
+    - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise, it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
+    - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
+  - **Windows WSL2**: https://github.com/microsoft/vscode/wiki/Selfhosting-on-Windows-WSL
+  - **macOS**
+    - [Xcode](https://developer.apple.com/xcode/resources/) and the Command Line Tools, which will install `gcc` and the related toolchain containing `make`
+      - Run `xcode-select --install` to install the Command Line Tools
+  - **Linux**
+    * On Debian-based Linux: `sudo apt-get install build-essential g++ libx11-dev libxkbfile-dev libsecret-1-dev libkrb5-dev python-is-python3`
+    * On Red Hat-based Linux: `sudo yum groupinstall "Development Tools" && sudo yum install libX11-devel.x86_64 libxkbfile-devel.x86_64 libsecret-devel krb5-devel # or .i686`.
+    * Others:
+      * `make`
+      * [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/)
+      * [GCC](https://gcc.gnu.org) or another compile toolchain
+    * Building deb and rpm packages requires `fakeroot` and `rpm`; run: `sudo apt-get install fakeroot rpm`
 
 ### Troubleshooting
+In case of issues, try deleting the contents of `~/.node-gyp` (alternatively `~/.cache/node-gyp` for Linux, `~/Library/Caches/node-gyp/` for macOS, or `%USERPROFILE%\AppData\Local\node-gyp` for Windows) first and then run `npm cache clean -f` and then try again.
 
-In case of issues, try deleting the contents of `~/.node-gyp` (alternatively
-`~/.cache/node-gyp` for Linux, `~/Library/Caches/node-gyp/` for macOS, or
-`%USERPROFILE%\AppData\Local\node-gyp` for Windows) first and then run
-`npm cache clean -f` and then try again.
+> If you are on Windows or Linux 64 bit systems and would like to compile to 32 bit, you'll need to set the `npm_config_arch` environment variable to `ia32` before running `npm i`. This will compile all native node modules for a 32 bit architecture. Similarly, when cross-compiling for ARM, set `npm_config_arch` to `arm`.
 
-> If you are on Windows or Linux 64 bit systems and would like to compile to 32
-> bit, you'll need to set the `npm_config_arch` environment variable to `ia32`
-> before running `npm i`. This will compile all native node modules for a 32 bit
-> architecture. Similarly, when cross-compiling for ARM, set `npm_config_arch`
-> to `arm`.
+> **Note:** For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
 
-> **Note:** For more information on how to install NPM modules globally on UNIX
-> systems without resorting to `sudo`, refer to
-> [`this guide`](HTTP://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
-
-> If you have Visual Studio 2019 installed, you may face issues when using the
-> default version of node-gyp. If you have Visual Studio 2019 installed, you may
-> need to follow the solutions
-> [`here`](https://github.com/nodejs/node-gyp/issues/1747).
+> If you have Visual Studio 2019 installed, you may face issues when using the default version of node-gyp. If you have Visual Studio 2019 installed, you may need to follow the solutions [here](https://github.com/nodejs/node-gyp/issues/1747).
 
 #### Missing spectre mitigated libraries on Windows
 
@@ -148,9 +95,7 @@ Otherwise, if you're a member of the VS Code team, follow the
 If you want to understand how VS Code works or want to debug an issue, you'll
 want to get the source, build it, and run the tool locally.
 
-> NOTE: If you need to debug the 32bit version of VS Code on 64bit Windows,
-> follow
-> [`the guide on how to do that`](https://github.com/microsoft/vscode/wiki/Build-and-run-32bit-Code---OSS-on-Windows).
+> NOTE: If you need to debug the 32bit version of VS Code on 64bit Windows, follow [the guide on how to do that](https://github.com/microsoft/vscode/wiki/Build-and-run-32bit-Code---OSS-on-Windows).
 
 ### Getting the sources
 
@@ -167,7 +112,7 @@ official code repo) with your fork.
 ```
 cd vscode
 git checkout main
-git pull HTTPS://github.com/microsoft/vscode.git main
+git pull https://github.com/microsoft/vscode.git main
 ```
 
 Manage any merge conflicts, commit them, and then push them to your fork.
@@ -214,8 +159,7 @@ incrementally, giving you a fast, iterative coding experience.
     this follow instructions in the
     [`Common Questions`](https://code.visualstudio.com/docs/setup/linux#_common-questions).
 
-If the build step fails, or if the built version fails to run (see next
-section), run `git clean -xfd` in your `vscode` folder, then re-run `npm i`.
+If the build step fails, or if the built version fails to run (see next section), run `git clean -xfd` in your `vscode` folder, then re-run `npm i`.
 
 #### Errors and Warnings
 
@@ -232,13 +176,9 @@ palette. We like to assign the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>R</kbd>
 
 ### Run
 
-To test the changes, you launch a development version of VS Code on the
-workspace `vscode`, which you are currently editing.
+To test the changes, you launch a development version of VS Code on the workspace `vscode`, which you are currently editing.
 
-To test changes with a remote, use the "TestResolver" in your Code - OSS window
-which creates a fake remote window. Search Command Palette for `TestResolver`.
-More information is at
-HTTPS://github.com/microsoft/vscode/issues/162874#issuecomment-1271774905.
+To test changes with a remote, use the "TestResolver" in your Code - OSS window which creates a fake remote window. Search Command Palette for `TestResolver`. More information is at https://github.com/microsoft/vscode/issues/162874#issuecomment-1271774905.
 
 #### Desktop
 
@@ -301,6 +241,7 @@ following icon in the Dock or Taskbar:
 
 [![VS Code default icon](https://i.imgur.com/D2CeX0y.png)](https://i.imgur.com/D2CeX0y.png)
 
+
 ### Debugging
 
 VS Code has a multi-process architecture and your code is executed in different
@@ -311,6 +252,8 @@ running in the **render** you can either use VS Code or the Chrome Developer
 Tools.
 
 #### Using VS Code
+* Open the `vscode` repository folder
+* Choose the `VS Code` launch configuration from the launch dropdown in the Debug viewlet and press <kbd>F5</kbd>.
 
 -   Open the `vscode` repository folder
 -   Choose the `VS Code` launch configuration from the launch dropdown in the
@@ -330,32 +273,7 @@ extensions (including those packaged with VS Code) which run in the extension
 host process, you can use VS Code itself. Switch to the Debug viewlet, choose
 the `Attach to Extension Host` configuration, and press <kbd>F5</kbd>.
 
-The **search** process can be debugged, but must first be started. Before
-attempting to attach, start a search by pressing <kbd>Ctrl</kbd>+<kbd>P</kbd>
-(<kbd>CMD</kbd>+<kbd>P</kbd> on macOS), otherwise, attaching will fail and time
-out.
-
-### Automated Testing
-
-Run the unit tests directly from a terminal by running `./scripts/test.sh` from
-the `vscode` folder (`scripts\test` on Windows). The
-[`test README`](https://github.com/Microsoft/vscode/blob/main/test/README.md) has
-complete details on how to run and debug tests, as well as how to produce
-coverage reports.
-
-We also have automated UI tests. The
-[`smoke test README`](https://github.com/Microsoft/vscode/blob/main/test/smoke/README.md)
-has all the details.
-
-### Unit Testing
-
-Run the tests directly from a terminal by running `./scripts/test.sh` from the
-`vscode` folder (`scripts\test` on Windows). The
-[`test README`](https://github.com/Microsoft/vscode/blob/main/test/README.md) has
-complete details on how to run and debug tests, as well as how to produce
-coverage reports.
-
-### Linting
+The **search** process can be debugged, but must first be started. Before attempting to attach, start a search by pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> on macOS), otherwise, attaching will fail and time out.
 
 We use [`eslint`](https://eslint.org/) for linting our sources. You can run eslint
 across the sources by calling `npm run eslint` from a terminal or command
@@ -363,8 +281,15 @@ prompt. You can also run `npm run eslint` as a VS Code task by pressing
 <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> on macOS) and entering
 `task eslint`.
 
-To lint the source as you make changes you can install the
-[`eslint extension`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+We also have automated UI tests. The [smoke test README](https://github.com/Microsoft/vscode/blob/main/test/smoke/README.md) has all the details.
+
+### Unit Testing
+Run the tests directly from a terminal by running `./scripts/test.sh` from the `vscode` folder (`scripts\test` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/main/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
+
+### Linting
+We use [eslint](https://eslint.org/) for linting our sources. You can run eslint across the sources by calling `npm run eslint` from a terminal or command prompt. You can also run `npm run eslint` as a VS Code task by pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> on macOS) and entering `task eslint`.
+
+To lint the source as you make changes you can install the [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
 ### Extensions
 
@@ -400,20 +325,9 @@ as small as possible. Avoid pure formatting changes to code that has not been
 modified otherwise. Pull requests should contain tests whenever possible.
 
 ### Introducing usage of new Electron API with a PR
-
-A pull request that depends on Electron API that VS Code is currently not using
-comes with a certain risk and may be rejected. Whenever we update Electron,
-there is a chance that less popular Electron APIs break and it is very hard to
-find out upfront. Once a PR lands in VS Code, the role of maintaining the
-feature moves to the team and as such we have to follow up with upstream
-components to ensure the feature is still supported. As such, as a rule of
-thumb:
-
--   avoid Electron APIs and use web standards instead (this also ensures that
-    your feature is supported in our web client)
--   if you must use Electron APIs, we require a unit test at
-    HTTPS://github.com/electron/electron so that we protect against future
-    breakage.
+A pull request that depends on Electron API that VS Code is currently not using comes with a certain risk and may be rejected. Whenever we update Electron, there is a chance that less popular Electron APIs break and it is very hard to find out upfront. Once a PR lands in VS Code, the role of maintaining the feature moves to the team and as such we have to follow up with upstream components to ensure the feature is still supported. As such, as a rule of thumb:
+* avoid Electron APIs and use web standards instead (this also ensures that your feature is supported in our web client)
+* if you must use Electron APIs, we require a unit test at https://github.com/electron/electron so that we protect against future breakage.
 
 ### Where to Contribute
 
@@ -457,8 +371,7 @@ errors in source code are **not** recommended.
 
 ## Packaging
 
-VS Code can be packaged for the following platforms:
-`win32-ia32 | win32-x64 | darwin-x64 | darwin-arm64 | linux-ia32 | linux-x64 | linux-arm`
+VS Code can be packaged for the following platforms: `win32-ia32 | win32-x64 | darwin-x64 | darwin-arm64 | linux-ia32 | linux-x64 | linux-arm`
 
 These `gulp` tasks are available:
 
@@ -466,11 +379,9 @@ These `gulp` tasks are available:
 -   `vscode-[platform]-min`: Builds a packaged and minified version for
     `[platform]`.
 
-👉 **Tip!** Run `gulp` via `npm` to avoid potential out of memory issues, for
-example `npm run gulp vscode-linux-x64`
+👉 **Tip!** Run `gulp` via `npm` to avoid potential out of memory issues, for example `npm run gulp vscode-linux-x64`
 
-See also:
-[`Cross-Compiling for Debian-based Linux`](https://github.com/Microsoft/vscode/wiki/Cross-Compiling-for-Debian-Based-Linux)
+See also: [Cross-Compiling for Debian-based Linux](https://github.com/Microsoft/vscode/wiki/Cross-Compiling-for-Debian-Based-Linux)
 
 ## Suggestions
 
@@ -480,10 +391,7 @@ more effective, we're asking that these include more information to help define
 them more clearly.
 
 ## Translations
-
-We accept feedback on translations in language packs via GitHub issues in our
-[`localization repo`](https://github.com/Microsoft/vscode-loc/issues) that
-contains our currently supported language packs.
+We accept feedback on translations in language packs via GitHub issues in our [localization repo](https://github.com/Microsoft/vscode-loc/issues) that contains our currently supported language packs.
 
 ## Discussion Etiquette
 

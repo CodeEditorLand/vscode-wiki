@@ -1,13 +1,7 @@
 We are using `@types/vscode` for publishing `vscode.d.ts`. See
 HTTPS://github.com/Microsoft/vscode/issues/70175 for details.
 
-> **Note:** The steps in the bottom section refer to a CI task that is currently
-> broken. @roblourens is trying to fix it. Until then, we will submit the PR to
-> update the types manually. Just do this carefully- once published, we cannot
-> unpublish a `@types/vscode` version.
-
-Example of PR when releasing 1.84 -
-HTTPS://github.com/DefinitelyTyped/DefinitelyTyped/pull/67287/files.
+> **Note:** The steps in the bottom section refer to a CI task that is currently broken. @roblourens is trying to fix it. Until then, we will submit the PR to update the types manually. Just do this carefully- once published, we cannot unpublish a `@types/vscode` version.
 
 1. Create your own fork of HTTPS://github.com/DefinitelyTyped/DefinitelyTyped,
    and create a PR branch
@@ -39,14 +33,6 @@ HTTPS://github.com/DefinitelyTyped/DefinitelyTyped/pull/67287/files.
 
 ## Recovery
 
--   We don't easily have the ability to publish a patch release for a previous
-    minor release - e.g. once 1.75.0 is published, we can't publish a 1.74.1. In
-    theory we could merge a PR to change the version in main back to 1.74, which
-    would publish a 1.74 patch release, then merge another PR to move it back to
-    1.75, which would publish an unnecessary 1.75.1. But if you need to do this,
-    check with a DefinitelyTyped maintainer that this will actually work as
-    expected.
--   Per npm rules, we can't unpublish packages since `@types/vscode` has
-    dependent packages.
--   However, we can mark packages as deprecated with a warning that is shown
-    when it is installed.
+- We don't easily have the ability to publish a patch release for a previous minor release - e.g. once 1.75.0 is published, we can't publish a 1.74.1. In theory we could merge a PR to change the version in main back to 1.74, which would publish a 1.74 patch release, then merge another PR to move it back to 1.75, which would publish an unnecessary 1.75.1. But if you need to do this, check with a DefinitelyTyped maintainer that this will actually work as expected.
+- Per npm rules, we can't unpublish packages since `@types/vscode` has dependent packages.
+- However, we can mark packages as deprecated with a warning that is shown when it is installed.

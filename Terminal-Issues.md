@@ -39,18 +39,13 @@ Make sure you read over the
 
 Here are some long standing known issues in the terminal:
 
--   Various emulation issues on Windows
-    [`#45693`](https://github.com/Microsoft/vscode/issues/45693)
--   Terminal does not show any text on Windows 7
-    [`#43169`](https://github.com/Microsoft/vscode/issues/43169)
-    -   Try turning off compatibility mode
--   Characters like underscore are being cut off
-    [`#35901`](https://github.com/Microsoft/vscode/issues/35901)
-    -   Try changing the `terminal.integrated.fontFamily`
--   Emojis are printed as double width but are single width
-    [`xtermjs/xterm.js#1059`](https://github.com/xtermjs/xterm.js/issues/1059)
--   Non-English characters duplicated on Windows
-    [`#132715`](https://github.com/microsoft/vscode/issues/132715)
+- Various emulation issues on Windows [#45693](https://github.com/Microsoft/vscode/issues/45693)
+- Terminal does not show any text on Windows 7 [#43169](https://github.com/Microsoft/vscode/issues/43169)
+  - Try turning off compatibility mode
+- Characters like underscore are being cut off [#35901](https://github.com/Microsoft/vscode/issues/35901)
+  - Try changing the `terminal.integrated.fontFamily`
+- Emojis are printed as double width but are single width [xtermjs/xterm.js#1059](https://github.com/xtermjs/xterm.js/issues/1059)
+- Non-English characters duplicated on Windows [#132715](https://github.com/microsoft/vscode/issues/132715)
 
 ### Which issues go in which repos
 
@@ -73,14 +68,9 @@ point something is failing. Follow these steps to get the logs:
 1. Close all VS Code windows
 2. Launch VS Code from the terminal using `code --log trace`
 3. At this point you should reproduce the terminal issue you're having
-4. Run the command "Developer: Open Log File..." (<kbd>F1</kbd> opened command
-   palette) and select `Terminal` (frontend logs like input) or `Pty Host`
-   (backend logs like communication with shell) to get an editor containing the
-   logs for the terminal.
+4. Run the command "Developer: Open Log File..." (<kbd>F1</kbd> opened command palette) and select `Terminal` (frontend logs like input) or `Pty Host` (backend logs like communication with shell) to get an editor containing the logs for the terminal.
 
-If for some reason you're unable to restart VS Code like you're running in a
-remote, you can change the log level via the command palette (<kbd>F1</kbd>
-`Developer: Set Log Level...`).
+If for some reason you're unable to restart VS Code like you're running in a remote, you can change the log level via the command palette (<kbd>F1</kbd> `Developer: Set Log Level...`).
 
 ### Using showkey to investigate keybinding issues
 
@@ -107,23 +97,17 @@ moving parts. A blank screen could mean that the terminal was never created
 properly and the terminal is fine, or maybe that the renderer is broken. Here
 are good steps to help find the root cause of rendering problems:
 
--   Zoom in and out (ctrl/cmd++, ctrl/cmd+-) will force the renderer to redraw
-    everything
--   The terminal features webgl, 2d canvas and dom-based renderers. Changing the
-    renderer type can identify issues with a particular renderer, you can turn
-    off the canvas renderers with this setting:
-    ```
-    "terminal.integrated.gpuAcceleration": "off"
-    ```
+- Zoom in and out (ctrl/cmd++, ctrl/cmd+-) will force the renderer to redraw everything
+- The terminal features webgl, 2d canvas and dom-based renderers. Changing the renderer type can identify issues with a particular renderer, you can turn off the canvas renderers with this setting:
+   ```
+   "terminal.integrated.gpuAcceleration": "off"
+   ```
 
 Known rendering problems:
 
--   Corrupt texture showing after resuming OS from sleep
-    [`#69665`](https://github.com/microsoft/vscode/issues/69665)
--   Underscore and similar chars not showing up
-    [`#35901`](https://github.com/microsoft/vscode/issues/35901)
--   Characters become small or large after changing monitor DPI
-    [`xtermjs/xterm.js#2137`](https://github.com/xtermjs/xterm.js/issues/2137)
+- Corrupt texture showing after resuming OS from sleep [#69665](https://github.com/microsoft/vscode/issues/69665)
+- Underscore and similar chars not showing up [#35901](https://github.com/microsoft/vscode/issues/35901)
+- Characters become small or large after changing monitor DPI [xtermjs/xterm.js#2137](https://github.com/xtermjs/xterm.js/issues/2137)
 
 ### Text wrapping problems
 
@@ -152,7 +136,4 @@ Windows. Another side effect of this is our old backend "winpty" is now
 deprecated and we don't plan on improving it as the "fix" for problems in winpty
 is to move to the maintained official Microsoft backend conpty.
 
-Whether we can action the issue is the main reason we close issues off but we
-may also close an issue as designed or out of scope. You can visit
-[`issue grooming`](https://github.com/microsoft/vscode/wiki/Issue-Grooming) for
-more info on how we manage and triage issues.
+Whether we can action the issue is the main reason we close issues off but we may also close an issue as designed or out of scope. You can visit [issue grooming](https://github.com/microsoft/vscode/wiki/Issue-Grooming) for more info on how we manage and triage issues.

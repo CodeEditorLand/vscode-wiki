@@ -39,9 +39,7 @@ Currently semantic highlighting is only offered by TypeScript, JavaScript as
 well as JavaScript in HTML. More languages will adopt. The semantic token
 provider API is now available for all since 1.44.
 
-If you are a language extension author and want to implement a semantic token
-provider, please check out the
-[`sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/semantic-tokens-sample).
+If you are a language extension author and want to implement a semantic token provider, please check out the [sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/semantic-tokens-sample).
 
 ### Which themes offer semantic highlighting
 

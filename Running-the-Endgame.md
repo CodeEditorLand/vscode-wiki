@@ -41,22 +41,15 @@ after is to update the release and endgame dates.
 
 ## Recovery Release
 
-We release one or more recovery builds with a handful of critical fixes and
-translation updates a few days after a release. The candidate fixes are reviewed
-by the development team and are assigned to a recovery milestone. We want to be
-restrictive about the included candidates. The mindset is "we will lose users if
-we do not include the fix". Here are some examples:
-
--   data loss
--   a regression that users complain loudly about in issues or Twitter
--   a significant performance regression
--   an issue that impacts many users as indicated by telemetry data
--   an embarrassing UI glitch
--   critical security fixes (see Patch Tuesday Release Endgame Template below)
--   an issue that impacts extensions or is an API regression
+We release one or more recovery builds with a handful of critical fixes and translation updates a few days after a release. The candidate fixes are reviewed by the development team and are assigned to a recovery milestone. We want to be restrictive about the included candidates. The mindset is "we will lose users if we do not include the fix". Here are some examples:
+- data loss
+- a regression that users complain loudly about in issues or Twitter
+- a significant performance regression
+- an issue that impacts many users as indicated by telemetry data
+- an embarrassing UI glitch
+- critical security fixes (see Patch Tuesday Release Endgame Template below)
+- an issue that impacts extensions or is an API regression
 
 ### Recovery Endgame Plan
 
-Create the Endgame plan using the
-[`template`](https://insiders.vscode.dev/github/microsoft/vscode-internalbacklog/blob/main/templates/endgame-recovery-plan.md)
-and update the placeholders with appropriate data.
+Create the Endgame plan using the [template](https://insiders.vscode.dev/github/microsoft/vscode-internalbacklog/blob/main/templates/endgame-recovery-plan.md) and update the placeholders with appropriate data.

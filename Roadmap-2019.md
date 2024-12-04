@@ -16,12 +16,13 @@ As always, we will listen to your feedback and adapt our plans if needed.
 
 Legend of annotations:
 
-| Mark          | Description      |
-| ------------- | ---------------- |
+| Mark | Description |
+| ------------- | ------------- |
 | <li>[ ] </li> | work not started |
-| <li>[x] </li> | work completed   |
-| :runner:      | on-going work    |
-| :muscle:      | stretch goal     |
+| <li>[x] </li> | work completed |
+| :runner: | on-going work |
+| :muscle: | stretch goal |
+
 
 ## Themes
 

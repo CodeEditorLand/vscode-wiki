@@ -7,6 +7,7 @@ tasks.
 
 ![`image`](https://user-images.githubusercontent.com/22350/77914929-f2a85380-7296-11ea-96ca-7a6988c17234.png)
 
+
 ## Setting up WSL with GUI
 
 ### In Windows 11 builds [`that support wslg`](https://github.com/microsoft/wslg#pre-requisites):
@@ -31,18 +32,14 @@ tasks.
 
 6. In WSL, add the following to the end of `~/.bashrc` or equivalent:
 
-```
-if [ -z $DISPLAY ]; then
-  export DISPLAY="$(tail -1 /etc/resolv.conf | cut -d' ' -f2):0"
-fi
-```
+  ```
+  if [ -z $DISPLAY ]; then
+    export DISPLAY="$(tail -1 /etc/resolv.conf | cut -d' ' -f2):0"
+  fi
+  ```
 
-2. To test everything, open a new WSL shell and
-   `sudo apt install x11-apps && xcalc`. You should see an XCalc window pop up.
-   👍
-    > You may see errors like `Error: Can't open display: 172.20.192.1:0"`: open
-    > Windows Defender Firewall with Advanced Security, check inbound rules and
-    > make sure that VcXsrv windows server doesn't block private connections.
+2. To test everything, open a new WSL shell and `sudo apt install x11-apps && xcalc`. You should see an XCalc window pop up. 👍
+  >  You may see errors like `Error: Can't open display: 172.20.192.1:0"`: open Windows Defender Firewall with Advanced Security, check inbound rules and make sure that VcXsrv windows server doesn't block private connections.
 
 ## Building and running in WSL
 
@@ -50,15 +47,8 @@ fi
    [`Debian-based Linux prerequisites`](https://github.com/microsoft/vscode/wiki/How-to-Contribute#prerequisites).
 2. Install the build dependencies
 
-```
-sudo apt install python3 python-is-python3 libsecret-1-dev libxss1 libx11-dev libxkbfile-dev libasound2 libgtk-3-0 libgdk-pixbuf2.0-0 libnss3 libxtst6 libxi6 libxdamage1 libxcursor1 libxcomposite1 libx11-xcb1 libgbm1
-```
-
-3. Install
-   [`VS Code Insiders for Windows`](https://code.visualstudio.com/docs/?dv=win64user&build=insiders)
-   and the
-   [`Remote - WSL`](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
-   extension.
-4. Follow the
-   [`build and run`](https://github.com/microsoft/vscode/wiki/How-to-Contribute#getting-the-sources)
-   instructions for Linux.
+  ```
+  sudo apt install python3 python-is-python3 libsecret-1-dev libxss1 libx11-dev libxkbfile-dev libasound2 libgtk-3-0 libgdk-pixbuf2.0-0 libnss3 libxtst6 libxi6 libxdamage1 libxcursor1 libxcomposite1 libx11-xcb1 libgbm1
+  ```
+3. Install [VS Code Insiders for Windows](https://code.visualstudio.com/docs/?dv=win64user&build=insiders) and the [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension.
+4. Follow the [build and run](https://github.com/microsoft/vscode/wiki/How-to-Contribute#getting-the-sources) instructions for Linux.

@@ -37,24 +37,22 @@ projects.
 | [`vscode-docs`](https://github.com/microsoft/vscode-docs) |
 
 ## Languages
-
-| Language                       | Repository                                                                              |
-| ------------------------------ | --------------------------------------------------------------------------------------- |
-| Language server protocol       | [`Language Server Protocol`](https://github.com/Microsoft/language-server-protocol)       |
-| CSS/LESS/SCSS Language Service | [`vscode-css-languageservice`](https://github.com/microsoft/vscode-css-languageservice)   |
-| JSON Language Service          | [`vscode-json-languageservice`](https://github.com/microsoft/vscode-json-languageservice) |
-| HTML Language Service          | [`vscode-html-languageservice`](https://github.com/microsoft/vscode-html-languageservice) |
-| Go                             | [`vscode-go`](https://github.com/microsoft/vscode-go)                                     |
-| Emmet Helper                   | [`vscode-emmet-helper`](https://github.com/Microsoft/vscode-emmet-helper)                 |
-| Markdown Textmate Grammar      | [`vscode-markdown-tm-grammar`](https://github.com/Microsoft/vscode-markdown-tm-grammar)   |
-| Python                         | [`vscode-python`](https://github.com/microsoft/vscode-python)                             |
+|Language|Repository|
+|---|---|
+|Language server protocol|[Language Server Protocol](https://github.com/Microsoft/language-server-protocol)
+|CSS/LESS/SCSS Language Service|[vscode-css-languageservice](https://github.com/microsoft/vscode-css-languageservice)|
+|JSON Language Service|[vscode-json-languageservice](https://github.com/microsoft/vscode-json-languageservice)|
+|HTML Language Service|[vscode-html-languageservice](https://github.com/microsoft/vscode-html-languageservice)|
+|Go|[vscode-go](https://github.com/microsoft/vscode-go)|
+|Emmet Helper|[vscode-emmet-helper](https://github.com/Microsoft/vscode-emmet-helper)|
+|Markdown Textmate Grammar|[vscode-markdown-tm-grammar](https://github.com/Microsoft/vscode-markdown-tm-grammar)|
+|Python|[vscode-python](https://github.com/microsoft/vscode-python)|
 
 ## Data Science
-
-| Tool          | Repository                                                                |
-| ------------- | ------------------------------------------------------------------------- |
-| Jupyter       | [`vscode-jupyter`](https://github.com/microsoft/vscode-jupyter)             |
-| Data Wrangler | [`vscode-data-wrangler`](https://github.com/microsoft/vscode-data-wrangler) |
+|Tool|Repository|
+|---|---|
+|Jupyter|[vscode-jupyter](https://github.com/microsoft/vscode-jupyter)|
+|Data Wrangler|[vscode-data-wrangler](https://github.com/microsoft/vscode-data-wrangler)|
 
 ## Localization
 
